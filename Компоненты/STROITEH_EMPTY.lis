@@ -1,0 +1,302 @@
+PROFILE DATABASE EXPORT VERSION = 3
+
+PROFILE_NAME = "STROITEH_EMPTY_34";
+{
+    TYPE = 998; SUB_TYPE = "STROITEH_EMPTY_34"; COORDINATE = 0.000;
+    {
+        "HEIGHT"                            8.100000000E+01
+        "WIDTH"                             1.620000000E+02
+        "WEB_THICKNESS"                     1.000000000E+00
+        "FLANGE_THICKNESS"                  1.000000000E+00
+        "ROUNDING_RADIUS"                   0.000000000E+00
+        "HEIGHT_2"                          0.000000000E+00
+        "WIDTH_2"                           0.000000000E+00
+        "WEB_THICKNESS_2"                   0.000000000E+00
+        "FLANGE_THICKNESS_2"                0.000000000E+00
+        "ROUNDING_RADIUS_2"                 0.000000000E+00
+        "ECCENTRICITY_X"                    0.000000000E+00
+        "ECCENTRICITY_Y"                    0.000000000E+00
+        "FLANGE_SLOPE_RATIO"                0.000000000E+00
+        "EQUIVALENT_TYPE"                   1
+        "COVER_AREA"                        4.368018122E-01
+        "CROSS_SECTION_AREA"                1.031200000E+04
+        "MOMENT_OF_INERTIA_X"               0.000000000E+00
+        "MOMENT_OF_INERTIA_Y"               0.000000000E+00
+        "NEUTRAL_AXIS_LOCATION_ELASTIC_X"   0.000000000E+00
+        "NEUTRAL_AXIS_LOCATION_ELASTIC_Y"   0.000000000E+00
+        "NEUTRAL_AXIS_LOCATION_PLASTIC_X"   0.000000000E+00
+        "NEUTRAL_AXIS_LOCATION_PLASTIC_Y"   0.000000000E+00
+        "NORMALIZED_WARPING_CONSTANT"       0.000000000E+00
+        "PLASTIC_MODULUS_X"                 0.000000000E+00
+        "PLASTIC_MODULUS_Y"                 0.000000000E+00
+        "POLAR_RADIUS_OF_GYRATION"          0.000000000E+00
+        "RADIUS_OF_GYRATION_X"              0.000000000E+00
+        "RADIUS_OF_GYRATION_Y"              0.000000000E+00
+        "SECTION_MODULUS_X"                 0.000000000E+00
+        "SECTION_MODULUS_Y"                 0.000000000E+00
+        "SHEAR_CENTER_LOCATION"             0.000000000E+00
+        "SQRT_OF_E_x_Cw_PER_G_x_J"          0.000000000E+00
+        "STATICAL_MOMENT_Qf"                0.000000000E+00
+        "STATICAL_MOMENT_Qw"                0.000000000E+00
+        "TANGENT_OF_PRINCIPAL_AXIS_ANGLE"   0.000000000E+00
+        "TORSIONAL_CONSTANT"                0.000000000E+00
+        "WARPING_CONSTANT"                  0.000000000E+00
+        "WARPING_STATICAL_MOMENT"           0.000000000E+00
+        "WEIGHT_PER_UNIT_LENGTH"            2.578000000E+01
+        "COST"                              ""
+        "FULL_NAME"                         ""
+        "FULL_NAME_ENG"                     ""
+        "GOST_NAME"                         ""
+        "GOST_NAME_ENG"                     ""
+        "GOST_NOTE"                         ""
+        "GOST_NOTE_ENG"                     ""
+        "GOST_WEIGHT"                       0.000000000E+00
+        "MAKER_NAME"                        ""
+        "SYMBOL_NAME"                       ""
+        "SYMBOL_NAME_ENG"                   ""
+        "TPL_NAME"                          ""
+        "TPL_NAME_ENG"                      ""
+        "TPL_NAME_FULL"                     ""
+        "TPL_NAME_FULL_ENG"                 ""
+        "TPL_SORT"                          ""
+        "TYPE_MATERIAL"                     ""
+    }
+}
+
+CROSS_SECTION_NAME = "STROITEH_EMPTY_34";
+{
+    POINT_NUMBER = 1;
+    {
+        POINT_X      =   66.00;
+        POINT_Y      =   26.00;
+        CHAMFER_TYPE =       0;
+        CHAMFER_X    =    0.00;
+        CHAMFER_Y    =    0.00;
+    }
+    POINT_NUMBER = 2;
+    {
+        POINT_X      =   26.00;
+        POINT_Y      =   40.50;
+        CHAMFER_TYPE =       0;
+        CHAMFER_X    =    0.00;
+        CHAMFER_Y    =    0.00;
+    }
+    POINT_NUMBER = 3;
+    {
+        POINT_X      =  -26.00;
+        POINT_Y      =   40.50;
+        CHAMFER_TYPE =       0;
+        CHAMFER_X    =    0.00;
+        CHAMFER_Y    =    0.00;
+    }
+    POINT_NUMBER = 4;
+    {
+        POINT_X      =  -66.00;
+        POINT_Y      =   26.00;
+        CHAMFER_TYPE =       0;
+        CHAMFER_X    =    0.00;
+        CHAMFER_Y    =    0.00;
+    }
+    POINT_NUMBER = 5;
+    {
+        POINT_X      =  -81.00;
+        POINT_Y      =    0.00;
+        CHAMFER_TYPE =       0;
+        CHAMFER_X    =    0.00;
+        CHAMFER_Y    =    0.00;
+    }
+    POINT_NUMBER = 6;
+    {
+        POINT_X      =  -66.00;
+        POINT_Y      =  -26.00;
+        CHAMFER_TYPE =       0;
+        CHAMFER_X    =    0.00;
+        CHAMFER_Y    =    0.00;
+    }
+    POINT_NUMBER = 7;
+    {
+        POINT_X      =  -26.00;
+        POINT_Y      =  -40.50;
+        CHAMFER_TYPE =       0;
+        CHAMFER_X    =    0.00;
+        CHAMFER_Y    =    0.00;
+    }
+    POINT_NUMBER = 8;
+    {
+        POINT_X      =   26.00;
+        POINT_Y      =  -40.50;
+        CHAMFER_TYPE =       0;
+        CHAMFER_X    =    0.00;
+        CHAMFER_Y    =    0.00;
+    }
+    POINT_NUMBER = 9;
+    {
+        POINT_X      =   66.00;
+        POINT_Y      =  -26.00;
+        CHAMFER_TYPE =       0;
+        CHAMFER_X    =    0.00;
+        CHAMFER_Y    =    0.00;
+    }
+    POINT_NUMBER = 10;
+    {
+        POINT_X      =   81.00;
+        POINT_Y      =    0.00;
+        CHAMFER_TYPE =       0;
+        CHAMFER_X    =    0.00;
+        CHAMFER_Y    =    0.00;
+    }
+};
+
+PROPERTY_NAME = "COST";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "COST";
+    LABEL_STRING  = "Стоимость";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "FULL_NAME";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "FULL_NAME";
+    LABEL_STRING  = "Название профиля";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "FULL_NAME_ENG";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "FULL_NAME_ENG";
+    LABEL_STRING  = "Название профиля на англ";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "GOST_NAME";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "GOST_NAME";
+    LABEL_STRING  = "ГОСТ";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "GOST_NAME_ENG";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "GOST_NAME_ENG";
+    LABEL_STRING  = "ГОСТ на англ";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "GOST_NOTE";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "GOST_NOTE";
+    LABEL_STRING  = "Наименование ГОСТа";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "GOST_NOTE_ENG";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "GOST_NOTE_ENG";
+    LABEL_STRING  = "Наименование ГОСТа на англ";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "GOST_WEIGHT";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "GOST_WEIGHT";
+    LABEL_STRING  = "Масса (1м или 1000шт.)";
+    QUANTITY_TYPE = 102;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "MAKER_NAME";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "MAKER_NAME";
+    LABEL_STRING  = "Производитель профиля";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "SYMBOL_NAME";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "SYMBOL_NAME";
+    LABEL_STRING  = "Символ и размер профиля";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "SYMBOL_NAME_ENG";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "SYMBOL_NAME_ENG";
+    LABEL_STRING  = "Символ и размер профиля на англ";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "TPL_NAME";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "TPL_NAME";
+    LABEL_STRING  = "Название профиля в таблицах";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "TPL_NAME_ENG";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "TPL_NAME_ENG";
+    LABEL_STRING  = "Название профиля в табл. на анг";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "TPL_NAME_FULL";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "TPL_NAME_FULL";
+    LABEL_STRING  = "Полное название профиля в табл.";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "TPL_NAME_FULL_ENG";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "TPL_NAME_FULL_ENG";
+    LABEL_STRING  = "Пол наз профиля в табл. на англ";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "TPL_SORT";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "TPL_SORT";
+    LABEL_STRING  = "Сортамент";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+
+PROPERTY_NAME = "TYPE_MATERIAL";
+{
+    PROFILE_TYPE  = -1;
+    SYMBOL        = "TYPE_MATERIAL";
+    LABEL_STRING  = "Материал";
+    QUANTITY_TYPE = -1;
+    ORDER_NUMBER  = 0;
+};
+

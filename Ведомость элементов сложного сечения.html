@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet">
+		<title>Проверка</title>
+	</head>
+	<body>
+
+
+
+
+
+
+
+<div>
+<p>Панели строим инструментом <b>Панель</b> с вкладки <b>Бетон</b>.</p>
+<p><img src="image\Slojnoe_sechenie.png" alt="В редакторе шаблонов"></p>
+
+<p>Строка ASSEMBLY<p>
+<code>if IsSet("USERDEFINED.comment")  then
+  Output()
+else
+  StepOver()
+endif</code>
+
+<p>Строка PART<p>
+<code>if IsSet("USERDEFINED.USER_FIELD_1") then
+  Output()
+else
+  StepOver()
+endif</code>
+</div>
+
+<p>
+
+
+
+</p>
+
+<div>
+<p>В строку ASSEMBLY:</p>
+<p>1</p>
+<p><code>GetValue("USERDEFINED.comment")</code></p>
+
+<p>2</p>
+<p><code>GetValue("MAINPART.USERDEFINED.USER_FIELD_1")</code></p>
+
+<p>3</p>
+<p><code>if GetValue("MAINPART.PROFILE.TPL_NAME") !="" then GetValue("MAINPART.PROFILE.TPL_NAME") else GetValue("MAINPART.PROFILE") endif</code></p>
+
+<p>В строку PART:</p>
+<p>4</p>
+<p><code>GetValue("USERDEFINED.USER_FIELD_1")</code></p>
+
+<p>5</p>
+<p><code>if GetValue("PROFILE.TPL_NAME") !="" then GetValue("PROFILE.TPL_NAME") else GetValue("PROFILE") endif + GetValue("USERDEFINED.comment")</code></p>
+</p>
+
+<p><img src="image\Slojnoe_sechenie_na_cherteje.png" alt="Slojnoe_sechenie_na_cherteje"></p>
+
+
+
+</div>
+
+
+<div>
+<p>Стыки между двумя панелями по длине делать компонентом <b>Среда_Торец панели под стык на петлях PEIKKO 3</b></p>
+
+<p><img src="image\panel_component Torec_Peikko_3.png" alt="Вставка компонента"></p>
+<p><img src="image\Panel_Torec_property.png" alt="Настройки компонента. Часть 1"></p>
+<p><img src="image\Panel_Torec_property 2.png" alt="Настройки компонента. Часть 2"></p>
+
+</div>
+
+
+
+
+	</body>
+</html>
+
+
