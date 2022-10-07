@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Добавление правил в файервол</title>
+  </head>
+
+  <body>
+	
+	
+	
+<div>
+<p>Добавление прилоежний в фаервол брандмауера через коммандную строку</p>
+</div>	
+<div>
+<p>
+<table>
+<tr><td>netsh advfirewall firewall add rule </td><td>- комманда Добавить правило фаервола в брандмауер с именем</td></tr>
+<tr><td>name="10000 tekla_dstv2dxf.exe" </td><td>- имя правила</td></tr>
+<tr><td>action=allow </td><td>- действие=разрешить </td></tr>
+<tr><td>action=block </td><td>- действие=блокировать</td></tr>
+<tr><td>dir=IN </td><td>- исходящее соединение</td></tr>
+<tr><td>dir=out </td><td>- входящее соединение</td></tr>
+<tr><td>program="полный путь к программе" </td><td>- путь к программе</td></tr>
+<tr><td>enable=yes </td><td>- включить правило</td></tr>
+<tr><td>enable=no </td><td>- не включать правило</td></tr>
+</table>
+</p>
+
+<p>netsh advfirewall firewall add rule name="<b>10000 tekla_dstv2dxf.exe</b>" dir=out action=block program="<b>c:\TeklaStructures\2021.0\nt\dstv2dxf\tekla_dstv2dxf.exe</b>" enable=yes</p>
+</div>
+	
+<div>
+<H3>c:\TeklaStructures\2021.0\</H3>
+<p>netsh advfirewall firewall add rule name="10000 Tekla" dir=out action=block program="c:\ProgramData\Tekla" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10001 " dir=out action=block program="c:\TeklaStructures\2021.0\" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10002 TeklaStructures" dir=out action=block program="c:\Users\Nevajno\AppData\Local\Trimble\TeklaStructures" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10003 " dir=out action=block program="" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10004 WeldApp.exe" dir=out action=block program="c:\TeklaStructures\2021.0\Environments\common\macros\drawings\WeldApp.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10005 tekla_dstv2dxf.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\dstv2dxf\tekla_dstv2dxf.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10006 msxsl.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\msxsl.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10007 LogExporter.exe" dir=out action=block program="c:\TeklaStructures\2021.0\Environments\common\macros\LogExporter.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10008 MultiReportGenerator.exe" dir=out action=block program="c:\TeklaStructures\2021.0\Environments\common\macros\MultiReportGenerator.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10009 PXY_Converter.exe" dir=out action=block program="c:\TeklaStructures\2021.0\Environments\common\macros\PXY_Converter.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10010 AllViewToPlane.exe" dir=out action=block program="c:\TeklaStructures\2021.0\Environments\common\macros\AllViewToPlane.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10011 uninstallanchorservice.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\License\x64\uninstallanchorservice.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10012 installanchorservice.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\License\x64\installanchorservice.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10013 TrimbleConnectVisualizer.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TrimbleConnectVisualizer\TrimbleConnectVisualizer.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10014 UnityCrashHandler64.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TrimbleConnectVisualizer\UnityCrashHandler64.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10015 convtemplate.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TplEd\convtemplate.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10016 StartTemplateEditor.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TplEd\StartTemplateEditor.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10017 tpled.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TplEd\tpled.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10018 symed.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\symed\symed.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10019 ImportLoader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\referenceplugins\trimbim\ImportLoader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10020 ImportLoader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\referenceplugins\stepiges\ImportLoader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10021 ImportLoader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\referenceplugins\landxml\ImportLoader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10022 ImportLoader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\referenceplugins\skp\ImportLoader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10023 IFCPluginWorker_Loader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\referenceplugins\ifc\IFCPluginWorker_Loader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10024 ImportLoader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\referenceplugins\ifc\ImportLoader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10025 ImportLoader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\referenceplugins\dwg\ImportLoader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10026 ImportLoader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\referenceplugins\assimp\ImportLoader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10027 ImportLoader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\referenceplugins\dgn\ImportLoader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10028 TzfImporter_cmd.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\Features\PotreeConverter\TzfImporter_cmd.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10029 PotreeConverter.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\Features\PotreeConverter\PotreeConverter.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10030 DirectoryBrowser.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Tools\DirectoryBrowser.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10031 Tekla.Technology.UserFeedback.Client.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Tools\Feedback\Tekla.Technology.UserFeedback.Client.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10032 SupportTool.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Tools\SupportTool\SupportTool.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10033 CefSharp.BrowserSubprocess.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\cef\CefSharp.BrowserSubprocess.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10034 TrimbleConnectInteroperability.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\TrimbleConnector\TrimbleConnectInteroperability.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10035 TrimbleConnector.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\TrimbleConnector\TrimbleConnector.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10036 ObjectBrowser.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\ObjectBrowser\ObjectBrowser.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10037 PatternLineEditor.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\PatternLineEditor\PatternLineEditor.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10038 PublishAnnotationsToTrimbleConnect.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\PublishAnnotationsToTrimbleConnect\PublishAnnotationsToTrimbleConnect.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10039 RebarSplitAndCoupler.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\RebarCouplers\RebarSplitAndCoupler.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10040 UpdateRebarAttributes.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\RebarCouplers\UpdateRebarAttributes.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10041 ShapeCleaner.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\ShapeCleaner\ShapeCleaner.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10042 Steps.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\Steps\Steps.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10043 TeklaConnectFolderSync.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\TrimbleConnector\TeklaConnectFolderSync.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10044 AutomaticSplicingTool.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\AutomaticSplicingTool\AutomaticSplicingTool.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10045 ContinuousBeamReinforcement.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\ContinuousBeamReinforcement\ContinuousBeamReinforcement.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10046 CustomComponentDialogEditor.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\CustomComponentDialogEditor\CustomComponentDialogEditor.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10047 DesignGroupNumbering.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\DesignGroupNumbering\DesignGroupNumbering.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10048 DPMPrinterCommand.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\DPMPrinter\DPMPrinterCommand.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10049 HMSExport.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\HMSExport\HMSExport.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10050 LayoutManager.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\LayoutManager\LayoutManager.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10051 XMLtoTEZconverter.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\XMLtoTEZconverter.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10052 AddSurfaceSymbols.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\AddSurfaceSymbols.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10053 CutLines.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\CutLines.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10054 DefineMasterDrawing.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\DefineMasterDrawing.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10055 MultiPurposeDimensioning.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\Dimensioning\MultiPurposeDimensioning.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10056 SpiralBeamDimensioningPluginRuleEditor.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\Dimensioning\SpiralBeamDimensioningPluginRuleEditor.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10057 DrawingAttributesConverter.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\DrawingAttributesConverter.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10058 Drawingtools.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\Drawingtools.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10059 DrawRebarPullouts.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\DrawRebarPullouts\DrawRebarPullouts.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10060 Dwg.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\DwgExport\Dwg.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10061 MasterDrawingCatalog.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\MasterDrawingCatalog.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10062 MomentConnectionSymbol.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\MomentConnectionSymbol.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10063 NodeAlignment.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\NodeAlignment.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10064 RebarLayeringMarker.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\RebarLayeringMarker\RebarLayeringMarker.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10065 RebarMeshViewCreator.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\RebarMeshViewCreator\RebarMeshViewCreator.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10066 SideSymbolsNumerical.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\SideSymbolsNumerical.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10067 SketchReports.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\SketchReports.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10068 TSDrawingTools.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\drawings\TSDrawingTools\TSDrawingTools.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10069 MigrationWizard.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Migrations\MigrationWizard.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10070 ClashCheckManager.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\ClashCheckManager.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10071 ExportSketchUp.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\ExportSketchUp.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10072 ImportFromTeklaBIMsight.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\ImportFromTeklaBIMsight.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10073 pdf2xxx.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\pdf2xxx.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10074 PDFReferenceModel.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\PDFReferenceModel.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10075 PropertySetDefinitions.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\PropertySetDefinitions.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10076 ps2xxx.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\ps2xxx.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10077 Publish_to_Tekla_BIMsight.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\Publish_to_Tekla_BIMsight.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10078 RebarClassificator.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\RebarClassificator.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10079 SaveAsModelTemplate.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\SaveAsModelTemplate.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10080 Tube.NC.Export.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\applications\Tekla\Model\Tube.NC.Export.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10081 TsepFileDispatcher.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TsepFileDispatcher.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10082 TsepInstallerConsole.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TsepInstallerConsole.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10083 xs_cancel.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\xs_cancel.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10084 TeklaWarehouseDownloader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TeklaWarehouseDownloader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10085 TeklaWarehouseInstaller.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TeklaWarehouseInstaller.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10086 TeklaStructures.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TeklaStructures.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10087 Tekla.Technology.Scripting.Sandbox.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\Tekla.Technology.Scripting.Sandbox.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10088 TeklaExtensionPackage.BatchBuilder.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TeklaExtensionPackage.BatchBuilder.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10089 TeklaExtensionPackage.Builder.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TeklaExtensionPackage.Builder.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10090 TeklaExtensionPackage.Manager.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TeklaExtensionPackage.Manager.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10091 TeklaExtensionPackage.TepAutoInstaller.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TeklaExtensionPackage.TepAutoInstaller.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10092 TeklaExtensionPackage.WarehouseDownloadDispatcher.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\TeklaExtensionPackage.WarehouseDownloadDispatcher.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10093 SPMBenchmarker.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\SPMBenchmarker.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10094 ReferenceModelImportConfiguration.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\ReferenceModelImportConfiguration.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10095 ReportExporter.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\ReportExporter.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10096 ModelExporter.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\ModelExporter.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10097 IFCExporter.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\IFCExporter.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10098 IFCPluginWorker-142_Loader.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\IFCPluginWorker-142_Loader.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10099 FileSystemWatcherServer.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\FileSystemWatcherServer.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10100 DBserver.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\DBserver.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10101 CatalogApplication.exe" dir=out action=block program="c:\TeklaStructures\2021.0\nt\bin\CatalogApplication.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10102 TPP.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\TPP\TPP.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10103 ultrazed.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\ultrazed\ultrazed.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10104 unitechnik.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\unitechnik\unitechnik.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10105 steelSections.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\steelSections\steelSections.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10106 tower.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\tower\tower.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10107 steel5.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\steel5\steel5.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10108 steel6.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\steel6\steel6.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10109 steel3.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\steel3\steel3.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10110 steel4.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\steel4\steel4.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10111 steel2.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\steel2\steel2.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10112 metsec.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\metsec\metsec.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10113 reid.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\reid\reid.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10114 steel1.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\steel1\steel1.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10115 hispan.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\hispan\hispan.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10116 Kingspan.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\Kingspan\Kingspan.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10117 elematic.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\elematic\elematic.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10118 export.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\export\export.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10119 concrete3.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\concrete3\concrete3.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10120 concrete2.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\concrete2\concrete2.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10121 CMF.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\CMF\CMF.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10122 cold_rolled.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\cold_rolled\cold_rolled.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10123 concrete1.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\concrete1\concrete1.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10124 albion.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\albion\albion.exe" enable=yes</p>
+<p>netsh advfirewall firewall add rule name="10125 ayrshire.exe" dir=out action=block program="c:\TeklaStructures\2021.0\applications\ayrshire\ayrshire.exe" enable=yes</p>
+
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+
+
+</div>	
+<div>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p>Копируем текст в буфер обмена. Нажимаем <b>Win + R</b>, и вставляем текст из буфера обмена. Правила создадутся автоматически</p>
+</div>	
+<div>
+<p></p>
+</div>	
+<div>
+<p></p>
+</div>	
+	
+	
+    
+  </body>
+</html>
