@@ -80,6 +80,12 @@
   }
 }
 
+div.section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70em
+  }
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
