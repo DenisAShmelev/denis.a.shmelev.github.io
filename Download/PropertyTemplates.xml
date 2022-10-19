@@ -1,0 +1,914 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<PropertyTemplates Format="2017">
+  <PropertyTemplate Type="Bolt" Title="translation:albl_Bolt">
+    <PropertyGroup Name="Bolt" Label="translation:albl_Bolt" Tooltip="translation:albl_Bolt" IsVisible="true">
+      <Property Name="Property.Bolt.Grade" Label="Болт" Tooltip="translation:albl_Bolt" />
+      <Property Name="Property.Bolt.Type" Label="Тип болта" Tooltip="translation:albl_Bolt_assembly_type" />
+      <Property Name="Property.Bolt.ConnectAs" Label="Присоединить как" Tooltip="translation:albl_Connect_as" />
+      <Property Name="Property.Bolt.ThreadInMaterial" Label="Резьба болта в детали" Tooltip="translation:albl_Threadinmaterial" />
+      <Property Name="Property.Bolt.CutLength" Label="Длина разреза" Tooltip="translation:albl_Cut_length" />
+      <Property Name="Property.Bolt.ExtraLength" Label="Дополнительная длина" Tooltip="translation:albl_Extra_length" />
+      <Property Name="Property.Bolt.Assembly" Label="Комплект" Tooltip="translation:albl_Assembly" />
+    </PropertyGroup>
+    <PropertyGroup Name="Group" Label="translation:albl_BoltGroup" Tooltip="translation:albl_BoltGroup" IsVisible="true">
+      <Property Name="Property.Bolt.Group" Label="Группа болтов" Tooltip="translation:albl_BoltGroup" />
+    </PropertyGroup>
+    <PropertyGroup Name="Holes" Label="translation:albl_Holes" Tooltip="translation:albl_Holes" IsVisible="true">
+      <Property Name="Property.Bolt.HoleTolerance" Label="translation:albl_Tolerance" Tooltip="translation:albl_Tolerance" />
+      <Property Name="Property.Bolt.SlottedHolesProperty" Label="Отверстия" Tooltip="translation:albl_Holes" />
+      <Property Name="Property.Bolt.PlainHolesProperty" Label="translation:albl_Plain_holes" Tooltip="translation:albl_Plain_holes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Position" Label="translation:albl_Position" Tooltip="translation:albl_Position" IsVisible="true">
+      <Property Name="Property.Bolt.OnPlane" Label="На плоскости" Tooltip="translation:albl_On_Plane" />
+      <Property Name="Property.Bolt.Rotation" Label="Поворот" Tooltip="translation:albl_Rotation" />
+      <Property Name="Property.Bolt.AtDepth" Label="По глубине" Tooltip="translation:albl_At_Depth" />
+    </PropertyGroup>
+    <PropertyGroup Name="Offset" Label="translation:albl_Offset_from" Tooltip="translation:albl_Offset_from" IsVisible="true">
+      <Property Name="Property.Bolt.Offset" Label="Смещение торца" Tooltip="translation:albl_End_offset" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_Custom_properties" Tooltip="translation:albl_Custom_properties" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <PropertyGroup Name="Undefined.2c34bf7475ce67cfad1c45882be01ca8" Label="Параметры">
+        <Property Name="Property.UDA.BOLT_COMMENT" Label="translation:j_bolt_comment" Tooltip="Примечание к болту: (BOLT_COMMENT), Польз. атрибут" />
+        <Property Name="Property.UDA.BOLT_USERFIELD_1" Label="translation:j_bolt_ufield_1" Tooltip="Болт - пользовательское поле 1 (BOLT_USERFIELD_1), Польз. атрибут" />
+        <Property Name="Property.UDA.BOLT_USERFIELD_2" Label="translation:j_bolt_ufield_2" Tooltip="Болт - пользовательское поле 2 (BOLT_USERFIELD_2), Польз. атрибут" />
+        <Property Name="Property.UDA.BOLT_USERFIELD_3" Label="translation:j_bolt_ufield_3" Tooltip="Болт - пользовательское поле 3 (BOLT_USERFIELD_3), Польз. атрибут" />
+        <Property Name="Property.UDA.BOLT_USERFIELD_4" Label="translation:j_bolt_ufield_4" Tooltip="Болт - пользовательское поле 4 (BOLT_USERFIELD_4), Польз. атрибут" />
+        <Property Name="Property.UDA.BOLT_USERFIELD_5" Label="translation:j_bolt_ufield_5" Tooltip="Болт - пользовательское поле 5 (BOLT_USERFIELD_5), Польз. атрибут" />
+        <Property Name="Property.UDA.BOLT_USERFIELD_6" Label="translation:j_bolt_ufield_6" Tooltip="Болт - пользовательское поле 6 (BOLT_USERFIELD_6), Польз. атрибут" />
+        <Property Name="Property.UDA.BOLT_USERFIELD_7" Label="translation:j_bolt_ufield_7" Tooltip="Болт - пользовательское поле 7 (BOLT_USERFIELD_7), Польз. атрибут" />
+        <Property Name="Property.UDA.BOLT_USERFIELD_8" Label="translation:j_bolt_ufield_8" Tooltip="Болт - пользовательское поле 8 (BOLT_USERFIELD_8), Польз. атрибут" />
+        <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.a38e0f94cfaf0437b022be2f8b118271" Label="Мех. свойства болта, гаек, шайб">
+        <PropertyGroup Name="Undefined.552ac2e907c443d3f0ae5696ce3c4937" Label="Болт">
+          <Property Name="Property.UDA.B_ispol" Label="Исполнение" Tooltip="B_ispol, Польз. атрибут" />
+          <Property Name="Property.UDA.B_s" Label="Шаг резьбы" Tooltip="B_s, Польз. атрибут" />
+          <Property Name="Property.UDA.B_n" Label="Направление резьбы" Tooltip="B_n, Польз. атрибут" />
+          <Property Name="Property.UDA.B_d" Label="Поле допуска резьбы" Tooltip="B_d, Польз. атрибут" />
+          <Property Name="Property.UDA.B_k" Label="Класс прочности" Tooltip="B_k, Польз. атрибут" />
+          <Property Name="Property.UDA.B_m" Label="Сталь марки" Tooltip="B_m, Польз. атрибут" />
+          <Property Name="Property.UDA.B_ki" Label="Климатическое исполнение (ГОСТ 52644-2006)" Tooltip="B_ki, Польз. атрибут" />
+          <Property Name="Property.UDA.B_t" Label="Вид и толщина покрытия,мкм" Tooltip="B_t, Польз. атрибут" />
+          <Property Name="Property.UDA.B_kl" Label="Размер 'под ключ'" Tooltip="B_kl, Польз. атрибут" />
+          <Property Name="Property.UDA.B_c" Label="Примечание" Tooltip="B_c, Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.eae6ab8059c23ff676a2ca13649d235e" Label="Гайка">
+          <Property Name="Property.UDA.N_ispol" Label="Исполнение" Tooltip="N_ispol, Польз. атрибут" />
+          <Property Name="Property.UDA.N_s" Label="Шаг резьбы" Tooltip="N_s, Польз. атрибут" />
+          <Property Name="Property.UDA.N_n" Label="Направление резьбы" Tooltip="N_n, Польз. атрибут" />
+          <Property Name="Property.UDA.N_d" Label="Поле допуска резьбы" Tooltip="N_d, Польз. атрибут" />
+          <Property Name="Property.UDA.N_k" Label="Класс прочности" Tooltip="N_k, Польз. атрибут" />
+          <Property Name="Property.UDA.N_m" Label="Сталь марки" Tooltip="N_m, Польз. атрибут" />
+          <Property Name="Property.UDA.N_ki" Label="Климатическое исполнение (ГОСТ 52645-2006)" Tooltip="N_ki, Польз. атрибут" />
+          <Property Name="Property.UDA.N_t" Label="Вид и толщина покрытия,мкм" Tooltip="N_t, Польз. атрибут" />
+          <Property Name="Property.UDA.N_kl" Label="Размер 'под ключ'" Tooltip="N_kl, Польз. атрибут" />
+          <Property Name="Property.UDA.N_c" Label="Примечание" Tooltip="N_c, Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.5d44543b2d366e49132cd19f6bd81b3e" Label="Шайба">
+          <Property Name="Property.UDA.W_ispol" Label="Исполнение" Tooltip="W_ispol, Польз. атрибут" />
+          <Property Name="Property.UDA.W_k" Label="Класс точности" Tooltip="W_k, Польз. атрибут" />
+          <Property Name="Property.UDA.W_m" Label="Сталь марки" Tooltip="W_m, Польз. атрибут" />
+          <Property Name="Property.UDA.W_ki" Label="Климатическое исполнение (ГОСТ 52646-2006)" Tooltip="W_ki, Польз. атрибут" />
+          <Property Name="Property.UDA.W_t" Label="Вид и толщина покрытия,мкм" Tooltip="W_t, Польз. атрибут" />
+          <Property Name="Property.UDA.W_c" Label="Примечание" Tooltip="W_c, Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.e741326e7559547ba1fc6473a9a64f15" Label="Шайба пружинная">
+          <Property Name="Property.UDA.Wp_ispol" Label="Исполнение" Tooltip="Wp_ispol, Польз. атрибут" />
+          <Property Name="Property.UDA.Wp_tip" Label="Тип " Tooltip="Wp_tip, Польз. атрибут" />
+          <Property Name="Property.UDA.Wp_m" Label="Сталь марки" Tooltip="Wp_m, Польз. атрибут" />
+          <Property Name="Property.UDA.Wp_t" Label="Вид и толщина покрытия,мкм" Tooltip="Wp_t, Польз. атрибут" />
+          <Property Name="Property.UDA.Wp_c" Label="Примечание" Tooltip="Wp_c, Польз. атрибут" />
+        </PropertyGroup>
+      </PropertyGroup>
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="Weld" Title="translation:albl_modelObjectType_Weld">
+    <PropertyGroup Name="CommonAttributes" Label="translation:albl_Common_attributes" Tooltip="translation:albl_Common_attributes" IsVisible="true">
+      <Property Name="Property.Weld.Around" Label="Кромка/По периметру" Tooltip="translation:albl_Edge_around" />
+      <Property Name="Property.Weld.Workshop" Label="Заводской/Монтажный" Tooltip="translation:albl_Workshop_site" />
+      <Property Name="Property.Weld.Position" Label="Положение" Tooltip="translation:albl_Position" />
+      <Property Name="Property.Weld.Shape" Label="Форма" Tooltip="translation:albl_Shape" />
+      <Property Name="Property.Weld.ConnectAssemblies" Label="Присоединить как" Tooltip="translation:albl_Connect_as" />
+      <Property Name="Property.Weld.Placement" Label="Размещение:" Tooltip="translation:albl_Placement_" />
+      <Property Name="Property.Weld.Preparation" Label="Подготовка:" Tooltip="translation:albl_Preparation_" />
+    </PropertyGroup>
+    <PropertyGroup Name="WeldType" Label="translation:albl_modelObjectType_Weld" Tooltip="translation:albl_modelObjectType_Weld" IsVisible="true">
+      <Property Name="Property.Weld.AboveBelowLabels" />
+      <Property Name="Property.Weld.Prefix" Label="Префикс" Tooltip="translation:albl_Prefix" />
+      <Property Name="Property.Weld.Type" Label="Тип" Tooltip="translation:albl_Type" />
+      <Property Name="Property.Weld.Size" Label="Катет" Tooltip="translation:albl_Size" />
+      <Property Name="Property.Weld.AdditionalSize" Label="Катет" Tooltip="translation:albl_Additional_Size" />
+      <Property Name="Property.Weld.Angle" Label="Угол" Tooltip="translation:albl_Angle" />
+      <Property Name="Property.Weld.Contour" Label="Контурный" Tooltip="translation:albl_Contour" />
+      <Property Name="Property.Weld.Finish" Label="Обработка поверхности" Tooltip="translation:albl_Finish" />
+      <Property Name="Property.Weld.RootFace" Label="Притупление" Tooltip="translation:albl_root_face" />
+      <Property Name="Property.Weld.EffectiveThroat" Label="Эффективная толщина" Tooltip="translation:albl_effective_throat" />
+      <Property Name="Property.Weld.RootOpening" Label="Зазор между кромками" Tooltip="translation:albl_Root_opening" />
+      <Property Name="Property.Weld.Increments" Label="№ приращения" Tooltip="translation:albl_Weld_amount_of_incr_" />
+      <Property Name="Property.Weld.Length" Label="Длина" Tooltip="translation:albl_Length" />
+      <Property Name="Property.Weld.Pitch" Label="Шаг" Tooltip="translation:albl_Pitch" />
+      <Property Name="Property.Weld.Synchronize" />
+    </PropertyGroup>
+    <PropertyGroup Name="TailInformation" Label="translation:albl_Tail_information" Tooltip="translation:albl_Tail_information" IsVisible="true">
+      <Property Name="Property.Weld.NdtInspectionLevel" Label="Неразрушающий контроль" Tooltip="translation:albl_Weld_ndt_inspection" />
+      <Property Name="Property.Weld.ElectroCode.Class" Label="Класс электрода" Tooltip="translation:albl_Weld_electrode_classification" />
+      <Property Name="Property.Weld.ElectroCode.Strength" Label="Прочность электрода" Tooltip="translation:albl_Weld_electrode_strength" />
+      <Property Name="Property.Weld.ElectroCode.Coefficient" Label="Коэффициент электрода" Tooltip="translation:albl_Weld_electrode_coefficient" />
+      <Property Name="Property.Weld.ProcessType" Label="Тип процесса" Tooltip="translation:albl_Weld_process_type" />
+      <Property Name="Property.Weld.ReferenceText" Label="Примечание" Tooltip="translation:albl_Reference_text" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_Custom_properties" Tooltip="translation:albl_Custom_properties" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <PropertyGroup Name="Undefined.2c34bf7475ce67cfad1c45882be01ca8" Label="Параметры">
+        <Property Name="Property.UDA.WELD_COMMENT" Label="translation:j_weld_comment" Tooltip="Примечание к сварному шву (WELD_COMMENT), Польз. атрибут" />
+        <Property Name="Property.UDA.WELD_USERFIELD_1" Label="translation:j_weld_ufield_1" Tooltip="Сварной шов - пользовательское поле 1 (WELD_USERFIELD_1), Польз. атрибут" />
+        <Property Name="Property.UDA.WELD_USERFIELD_2" Label="translation:j_weld_ufield_2" Tooltip="Сварной шов - пользовательское поле 2 (WELD_USERFIELD_2), Польз. атрибут" />
+        <Property Name="Property.UDA.WELD_USERFIELD_3" Label="translation:j_weld_ufield_3" Tooltip="Сварной шов - пользовательское поле 3 (WELD_USERFIELD_3), Польз. атрибут" />
+        <Property Name="Property.UDA.WELD_USERFIELD_4" Label="translation:j_weld_ufield_4" Tooltip="Сварной шов - пользовательское поле 4 (WELD_USERFIELD_4), Польз. атрибут" />
+        <Property Name="Property.UDA.WELD_USERFIELD_5" Label="translation:j_weld_ufield_5" Tooltip="Сварной шов - пользовательское поле 5 (WELD_USERFIELD_5), Польз. атрибут" />
+        <Property Name="Property.UDA.WELD_USERFIELD_6" Label="translation:j_weld_ufield_6" Tooltip="Сварной шов - пользовательское поле 6 (WELD_USERFIELD_6), Польз. атрибут" />
+        <Property Name="Property.UDA.WELD_USERFIELD_7" Label="translation:j_weld_ufield_7" Tooltip="Сварной шов - пользовательское поле 7 (WELD_USERFIELD_7), Польз. атрибут" />
+        <Property Name="Property.UDA.WELD_USERFIELD_8" Label="translation:j_weld_ufield_8" Tooltip="Сварной шов - пользовательское поле 8 (WELD_USERFIELD_8), Польз. атрибут" />
+        <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.1e6568c4d91cce60f121e55a9cfffde5" Label="Таблица сварных швов">
+        <Property Name="Property.UDA.weld_nomer" Label="Номер сварного шва " Tooltip="weld_nomer, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_GOST_tip_shva" Label="ГОСТ " Tooltip="weld_GOST_tip_shva, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_tip" Label="Вид соединения " Tooltip="weld_tip, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_tip_C" Label="Стыковое " Tooltip="weld_tip_C, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_tip_Y" Label="Угловое " Tooltip="weld_tip_Y, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_tip_T" Label="Тавровое " Tooltip="weld_tip_T, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_tip_N" Label="Нахлесточное " Tooltip="weld_tip_N, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_sposob" Label="Способ сварки " Tooltip="weld_sposob, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_prer" Label="Тип прерывистого шва" Tooltip="weld_prer, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_uch" Label="Длина участка" Tooltip="weld_uch, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_shag" Label="Шаг" Tooltip="weld_shag, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_kat_shva" Label="кат " Tooltip="weld_kat_shva, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_planki" Label="Кол-во выводных планок " Tooltip="weld_planki, Польз. атрибут" />
+        <Property Name="Property.UDA.weld_primechanie" Label="Примечание " Tooltip="weld_primechanie, Польз. атрибут" />
+      </PropertyGroup>
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="CoRebar.Group" Title="translation:albl_modelObjectType_RebarGroup">
+    <PropertyGroup Name="General" Label="translation:albl_General" Tooltip="translation:albl_General" IsVisible="true">
+      <Property Name="Property.Rebar.Group.Type" Label="Тип группы арматуры" Tooltip="translation:albl_rebar_group_type" />
+      <Property Name="Property.Name" Label="Имя" Tooltip="translation:albl_Name" />
+      <Property Name="Property.Rebar.Grade" Label="Сорт" Tooltip="translation:albl_Grade" />
+      <Property Name="Property.Class" Label="Класс" Tooltip="translation:albl_Class" />
+      <Property Name="Property.Rebar.Numbering" Label="Нумерация" Tooltip="translation:albl_Numbering" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1cf0ef956be9abdb801033bf4670d24f" Label="Погонные метры" IsVisible="true">
+      <Property Name="Property.UDA.ru_pogon_metr" Label="Метры погонные" Tooltip="ru_pogon_metr, Польз. атрибут" />
+      <Property Name="Property.UDA.ru_koef_zapasa" Label="Коэффициент запаса" Tooltip="ru_koef_zapasa, Польз. атрибут" />
+    </PropertyGroup>
+    <PropertyGroup Name="Hooks" Label="translation:albl_Hooks" Tooltip="translation:albl_Hooks" IsVisible="true">
+      <PropertyGroup Name="HooksAtStart" Label="translation:albl_Hooks_at_start" Tooltip="translation:albl_Hooks_at_start">
+        <Property Name="Property.Rebar.Hook.Start" Label="Крюк" Tooltip="translation:albl_Hook" />
+      </PropertyGroup>
+      <PropertyGroup Name="HooksAtEnd" Label="translation:albl_Hooks_at_end" Tooltip="translation:albl_Hooks_at_end">
+        <Property Name="Property.Rebar.Hook.End" Label="Крюк" Tooltip="translation:albl_Hook" />
+      </PropertyGroup>
+    </PropertyGroup>
+    <PropertyGroup Name="CoverThickness" Label="translation:albl_Cover_thickness" Tooltip="translation:albl_Cover_thickness" IsVisible="true">
+      <Property Name="Property.Rebar.OnPlane" Label="На плоскости" Tooltip="translation:albl_offset_xy" />
+      <Property Name="Property.Rebar.FromPlane" Label="От плоскости" Tooltip="translation:albl_offset_from_plane" />
+      <Property Name="Property.Rebar.Offset.Start" Label="Начало" Tooltip="translation:albl_Start" />
+      <Property Name="Property.Rebar.Offset.End" Label="Конец" Tooltip="translation:albl_End" />
+    </PropertyGroup>
+    <PropertyGroup Name="Distribution" Label="translation:albl_LoadMDistribution" Tooltip="translation:albl_LoadMDistribution" IsVisible="true">
+      <Property Name="Property.Rebar.Group.Creation" Label="Создание" Tooltip="translation:albl_Creation" />
+    </PropertyGroup>
+    <PropertyGroup Name="Creation" Label="translation:albl_Creation" Tooltip="translation:albl_Creation" IsVisible="true">
+      <Property Name="Property.Rebar.Group.ExcludedType" Label="Исключить" Tooltip="translation:albl_Exclude" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_Custom_properties" Tooltip="translation:albl_Custom_properties" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.56c6a6f930f9c5f2d516424aaaef2b55" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <PropertyGroup Name="Undefined.0ec7afe8c76e5c0f2b880e440c5f8d47" Label="Параметры">
+        <Property Name="Property.UDA.comment" Label="translation:j_comment" Tooltip="Комментарий (comment), Польз. атрибут" />
+        <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_1" Label="translation:j_user_field_1" Tooltip="Пользовательское поле 1 (USER_FIELD_1), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_2" Label="translation:j_user_field_2" Tooltip="Пользовательское поле 2 (USER_FIELD_2), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_3" Label="translation:j_user_field_3" Tooltip="Пользовательское поле 3 (USER_FIELD_3), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_4" Label="translation:j_user_field_4" Tooltip="Пользовательское поле 4 (USER_FIELD_4), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_PHASE" Label="translation:j_UserPhase_effects_numbering" Tooltip="Фаза   (влияет на нумерацию) (USER_PHASE), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.REBAR_SEQ_NO" Label="translation:j_rebar_sequence_number" Tooltip="Порядковый номер стержня (REBAR_SEQ_NO), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_DESCR" Label="translation:j_Product_description" Tooltip="Описание изделия (PRODUCT_DESCR), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.3f889b9b834116ca4101a2c80c77aef7" Label="Набор арматуры">
+        <PropertyGroup Name="Undefined.a9c701b99463dbbdac93e797c2224b99" Label="Общие (Набор арматуры)">
+          <Property Name="Property.UDA.__LEG_CONNECT_TOL" Label="translation:albl_Leg_connection_tolerance" Tooltip="Допуск соединения участков (__LEG_CONNECT_TOL), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.491eae06b9c60f8b7261a4d0020576e3" Label="Настройки создания слоёв (Набор арматуры)">
+          <Property Name="Property.UDA.LAYER_PREFIX" Label="translation:albl_Layer_prefix" Tooltip="Префикс слоя (LAYER_PREFIX), Польз. атрибут" />
+          <Property Name="Property.UDA.LAYER_NUMBER" Label="translation:albl_Layer_number" Tooltip="Номер слоя (LAYER_NUMBER), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.e93c3573a8a92bdd5c39318101c77898" Label="Настройки группирования (Набор арматуры)">
+          <Property Name="Property.UDA.__GROUP_LINEAR_TOL" Label="translation:albl_Tapered_linear_tolerance" Tooltip="Допуск для линейного перемен. сечения (__GROUP_LINEAR_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_CURVED_TOL" Label="translation:albl_Tapered_curved_tolerance" Tooltip="Допуск для криволинейного перемен. сеч. (__GROUP_CURVED_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_SIMILAR_NUM" Label="translation:albl_Minimum_number_of_bars_in_similar_group" Tooltip="Мин. кол-во стержней в подобной группе (__GROUP_SIMILAR_NUM), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.a162c147748cf78dd9a9d586d834d281" Label="Округление (Набор арматуры)" />
+        <PropertyGroup Name="Undefined.ac156dda52ab32442cb269997c240509" Label="Ступенчатое сужение" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.c12f996db17a22003a334bb908ece690" Label="Чертёж">
+        <Property Name="Property.UDA.ru_chertyozh_arm" Label="Требуется чертёж" Tooltip="ru_chertyozh_arm, Польз. атрибут" />
+        <Property Name="Property.UDA.ru_chertyozh_nom" Label="Номер чертежа" Tooltip="ru_chertyozh_nom, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_FRM_PRF" Label="Форма периодического профиля" Tooltip="RU_RNF_FRM_PRF, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_STT_SPP" Label="Состояние поставки" Tooltip="RU_RNF_STT_SPP, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_SPC" Label="Технические требования" Tooltip="RU_RNF_SPC, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_DVT_WGH" Label="Предел отклонений массы 1м" Tooltip="RU_RNF_DVT_WGH, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_ACC_OVL" Label="Точность по овальности проката" Tooltip="RU_RNF_ACC_OVL, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_TST" Label="Проведение испытаний" Tooltip="RU_RNF_TST, Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.6f0cd837cbcf11a30126d71429b73f30" Label="Экспорт в IFC">
+        <Property Name="Property.UDA.IFC_ENTITY" Label="translation:j_IFC_entity" Tooltip="Объект IFC (IFC_ENTITY), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.36305b26d40b0e937724c099ef932921" Label="Муфты">
+        <Property Name="Property.UDA.METHOD_START" Label="translation:j_Method_start" Tooltip="Метод (начало) (METHOD_START), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_START" Label="translation:j_Type_start" Tooltip="Тип (начало) (TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_START" Label="translation:j_Product_start" Tooltip="Изделие (начало) (PRODUCT_START), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_START" Label="translation:j_Code_start" Tooltip="Код (начало) (CODE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_START" Label="translation:j_Thread_type_start" Tooltip="Тип резьбы (начало) (THREAD_TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_START" Label="translation:j_Threaded_length_start" Tooltip="Длина резьбы (начало) (THREAD_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_START" Label="translation:j_Extra_fab_length_start" Tooltip="Доп. длина при изготовлении (начало) (EXTRA_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_START" Label="translation:j_Free_distance_1_start" Tooltip="Произвольное расстояние 1 (начало) (FREE_1_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_START" Label="translation:j_Free_text_2_start" Tooltip="Произвольный текст 2 (начало) (FREE_2_START), Польз. атрибут" />
+        <Property Name="Property.UDA.METHOD_END" Label="translation:j_Method_end" Tooltip="Метод (конец) (METHOD_END), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_END" Label="translation:j_Type_end" Tooltip="Тип (конец) (TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_END" Label="translation:j_Product_end" Tooltip="Изделие (конец) (PRODUCT_END), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_END" Label="translation:j_Code_end" Tooltip="Код (конец) (CODE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_END" Label="translation:j_Thread_type_end" Tooltip="Тип резьбы (конец) (THREAD_TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_END" Label="translation:j_Threaded_length_end" Tooltip="Длина резьбы (конец) (THREAD_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_END" Label="translation:j_Extra_fab_length_end" Tooltip="Доп. длина при изготовлении (конец) (EXTRA_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_END" Label="translation:j_Free_distance_1_end" Tooltip="Произвольное расстояние 1 (конец) (FREE_1_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_END" Label="translation:j_Free_text_2_end" Tooltip="Произвольный текст 2 (конец) (FREE_2_END), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ccc51470ce9716aaeb804b3ae07fa76f" Label="Unitechnik">
+        <Property Name="Property.UDA.UT_REBAR_TYPE" Label="translation:j_unitechnik_reinforcement_type" Tooltip="Тип армирования Unitechnik (UT_REBAR_TYPE), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_CAGE_id" Label="translation:j_d_j_Cage_group_number" Tooltip="Номер группы каркаса (UT_CAGE_id), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageType" Label="translation:j_cage_type" Tooltip="Тип каркаса (utCageType), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageShape" Label="translation:j_cage_shape" Tooltip="Форма каркаса (utCageShape), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_MESH_TYPE" Label="translation:j_d_j_Unitechnik_mesh_type" Tooltip="Тип сетки (UT_MESH_TYPE), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ed2bd9f460a78ae38650894f0c693893" Label="BVBS">
+        <Property Name="Property.UDA.BVBS_BENDING_ROLL" Label="translation:j_Bending_roll_diameter" Tooltip="Диаметр гибочного валка (BVBS_BENDING_ROLL), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.5957edeacf4d5e323e5d910e147f9dba" Label="Проектирование" />
+      <PropertyGroup Name="Undefined.96c636928df961e3c6f693d5ae01f64d" Label="Производство" />
+      <PropertyGroup Name="Undefined.8070497544e69463eeb8970997a5e762" Label="Монтаж" />
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="CoRebar.Single" Title="translation:albl_modelObjectType_SingleRebar">
+    <PropertyGroup Name="General" Label="translation:albl_General" Tooltip="translation:albl_General" IsVisible="true">
+      <Property Name="Property.Name" Label="Имя" Tooltip="translation:albl_Name" />
+      <Property Name="Property.Rebar.Grade" Label="Сорт" Tooltip="translation:albl_Grade" />
+      <Property Name="Property.Class" Label="Класс" Tooltip="translation:albl_Class" />
+      <Property Name="Property.Rebar.Numbering" Label="Нумерация" Tooltip="translation:albl_Numbering" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1cf0ef956be9abdb801033bf4670d24f" Label="Погонные метры" IsVisible="true">
+      <Property Name="Property.UDA.ru_pogon_metr" Label="Метры погонные" Tooltip="ru_pogon_metr, Польз. атрибут" />
+      <Property Name="Property.UDA.ru_koef_zapasa" Label="Коэффициент запаса" Tooltip="ru_koef_zapasa, Польз. атрибут" />
+    </PropertyGroup>
+    <PropertyGroup Name="Hooks" Label="translation:albl_Hooks" Tooltip="translation:albl_Hooks" IsVisible="true">
+      <PropertyGroup Name="HooksAtStart" Label="translation:albl_Hooks_at_start" Tooltip="translation:albl_Hooks_at_start">
+        <Property Name="Property.Rebar.Hook.Start" Label="Крюк" Tooltip="translation:albl_Hook" />
+      </PropertyGroup>
+      <PropertyGroup Name="HooksAtEnd" Label="translation:albl_Hooks_at_end" Tooltip="translation:albl_Hooks_at_end">
+        <Property Name="Property.Rebar.Hook.End" Label="Крюк" Tooltip="translation:albl_Hook" />
+      </PropertyGroup>
+    </PropertyGroup>
+    <PropertyGroup Name="CoverThickness" Label="translation:albl_Cover_thickness" Tooltip="translation:albl_Cover_thickness" IsVisible="true">
+      <Property Name="Property.Rebar.OnPlane" Label="На плоскости" Tooltip="translation:albl_offset_xy" />
+      <Property Name="Property.Rebar.FromPlane" Label="От плоскости" Tooltip="translation:albl_offset_from_plane" />
+      <Property Name="Property.Rebar.Offset.Start" Label="Начало" Tooltip="translation:albl_Start" />
+      <Property Name="Property.Rebar.Offset.End" Label="Конец" Tooltip="translation:albl_End" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_Custom_properties" Tooltip="translation:albl_Custom_properties" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <PropertyGroup Name="Undefined.2c34bf7475ce67cfad1c45882be01ca8" Label="Параметры">
+        <Property Name="Property.UDA.comment" Label="translation:j_comment" Tooltip="Комментарий (comment), Польз. атрибут" />
+        <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_1" Label="translation:j_user_field_1" Tooltip="Пользовательское поле 1 (USER_FIELD_1), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_2" Label="translation:j_user_field_2" Tooltip="Пользовательское поле 2 (USER_FIELD_2), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_3" Label="translation:j_user_field_3" Tooltip="Пользовательское поле 3 (USER_FIELD_3), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_4" Label="translation:j_user_field_4" Tooltip="Пользовательское поле 4 (USER_FIELD_4), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_PHASE" Label="translation:j_UserPhase_effects_numbering" Tooltip="Фаза   (влияет на нумерацию) (USER_PHASE), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.REBAR_SEQ_NO" Label="translation:j_rebar_sequence_number" Tooltip="Порядковый номер стержня (REBAR_SEQ_NO), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_DESCR" Label="translation:j_Product_description" Tooltip="Описание изделия (PRODUCT_DESCR), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.3f889b9b834116ca4101a2c80c77aef7" Label="Набор арматуры">
+        <PropertyGroup Name="Undefined.a9c701b99463dbbdac93e797c2224b99" Label="Общие (Набор арматуры)">
+          <Property Name="Property.UDA.__LEG_CONNECT_TOL" Label="translation:albl_Leg_connection_tolerance" Tooltip="Допуск соединения участков (__LEG_CONNECT_TOL), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.491eae06b9c60f8b7261a4d0020576e3" Label="Настройки создания слоёв (Набор арматуры)">
+          <Property Name="Property.UDA.LAYER_PREFIX" Label="translation:albl_Layer_prefix" Tooltip="Префикс слоя (LAYER_PREFIX), Польз. атрибут" />
+          <Property Name="Property.UDA.LAYER_NUMBER" Label="translation:albl_Layer_number" Tooltip="Номер слоя (LAYER_NUMBER), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.e93c3573a8a92bdd5c39318101c77898" Label="Настройки группирования (Набор арматуры)">
+          <Property Name="Property.UDA.__GROUP_LINEAR_TOL" Label="translation:albl_Tapered_linear_tolerance" Tooltip="Допуск для линейного перемен. сечения (__GROUP_LINEAR_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_CURVED_TOL" Label="translation:albl_Tapered_curved_tolerance" Tooltip="Допуск для криволинейного перемен. сеч. (__GROUP_CURVED_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_SIMILAR_NUM" Label="translation:albl_Minimum_number_of_bars_in_similar_group" Tooltip="Мин. кол-во стержней в подобной группе (__GROUP_SIMILAR_NUM), Польз. атрибут" />
+        </PropertyGroup>
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.c12f996db17a22003a334bb908ece690" Label="Чертёж">
+        <Property Name="Property.UDA.ru_chertyozh_arm" Label="Требуется чертёж" Tooltip="ru_chertyozh_arm, Польз. атрибут" />
+        <Property Name="Property.UDA.ru_chertyozh_nom" Label="Номер чертежа" Tooltip="ru_chertyozh_nom, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_FRM_PRF" Label="Форма периодического профиля" Tooltip="RU_RNF_FRM_PRF, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_STT_SPP" Label="Состояние поставки" Tooltip="RU_RNF_STT_SPP, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_SPC" Label="Технические требования" Tooltip="RU_RNF_SPC, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_DVT_WGH" Label="Предел отклонений массы 1м" Tooltip="RU_RNF_DVT_WGH, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_ACC_OVL" Label="Точность по овальности проката" Tooltip="RU_RNF_ACC_OVL, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_TST" Label="Проведение испытаний" Tooltip="RU_RNF_TST, Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.6f0cd837cbcf11a30126d71429b73f30" Label="Экспорт в IFC">
+        <Property Name="Property.UDA.IFC_ENTITY" Label="translation:j_IFC_entity" Tooltip="Объект IFC (IFC_ENTITY), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.36305b26d40b0e937724c099ef932921" Label="Муфты">
+        <Property Name="Property.UDA.METHOD_START" Label="translation:j_Method_start" Tooltip="Метод (начало) (METHOD_START), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_START" Label="translation:j_Type_start" Tooltip="Тип (начало) (TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_START" Label="translation:j_Product_start" Tooltip="Изделие (начало) (PRODUCT_START), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_START" Label="translation:j_Code_start" Tooltip="Код (начало) (CODE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_START" Label="translation:j_Thread_type_start" Tooltip="Тип резьбы (начало) (THREAD_TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_START" Label="translation:j_Threaded_length_start" Tooltip="Длина резьбы (начало) (THREAD_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_START" Label="translation:j_Extra_fab_length_start" Tooltip="Доп. длина при изготовлении (начало) (EXTRA_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_START" Label="translation:j_Free_distance_1_start" Tooltip="Произвольное расстояние 1 (начало) (FREE_1_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_START" Label="translation:j_Free_text_2_start" Tooltip="Произвольный текст 2 (начало) (FREE_2_START), Польз. атрибут" />
+        <Property Name="Property.UDA.METHOD_END" Label="translation:j_Method_end" Tooltip="Метод (конец) (METHOD_END), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_END" Label="translation:j_Type_end" Tooltip="Тип (конец) (TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_END" Label="translation:j_Product_end" Tooltip="Изделие (конец) (PRODUCT_END), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_END" Label="translation:j_Code_end" Tooltip="Код (конец) (CODE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_END" Label="translation:j_Thread_type_end" Tooltip="Тип резьбы (конец) (THREAD_TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_END" Label="translation:j_Threaded_length_end" Tooltip="Длина резьбы (конец) (THREAD_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_END" Label="translation:j_Extra_fab_length_end" Tooltip="Доп. длина при изготовлении (конец) (EXTRA_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_END" Label="translation:j_Free_distance_1_end" Tooltip="Произвольное расстояние 1 (конец) (FREE_1_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_END" Label="translation:j_Free_text_2_end" Tooltip="Произвольный текст 2 (конец) (FREE_2_END), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ccc51470ce9716aaeb804b3ae07fa76f" Label="Unitechnik">
+        <Property Name="Property.UDA.UT_REBAR_TYPE" Label="translation:j_unitechnik_reinforcement_type" Tooltip="Тип армирования Unitechnik (UT_REBAR_TYPE), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_CAGE_id" Label="translation:j_d_j_Cage_group_number" Tooltip="Номер группы каркаса (UT_CAGE_id), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageType" Label="translation:j_cage_type" Tooltip="Тип каркаса (utCageType), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageShape" Label="translation:j_cage_shape" Tooltip="Форма каркаса (utCageShape), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_MESH_TYPE" Label="translation:j_d_j_Unitechnik_mesh_type" Tooltip="Тип сетки (UT_MESH_TYPE), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ed2bd9f460a78ae38650894f0c693893" Label="BVBS">
+        <Property Name="Property.UDA.BVBS_BENDING_ROLL" Label="translation:j_Bending_roll_diameter" Tooltip="Диаметр гибочного валка (BVBS_BENDING_ROLL), Польз. атрибут" />
+      </PropertyGroup>
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="CoRebar.Curve" Title="translation:albl_Curved_bar">
+    <PropertyGroup Name="General" Label="translation:albl_General" Tooltip="translation:albl_General" IsVisible="true">
+      <Property Name="Property.Name" Label="Имя" Tooltip="translation:albl_Name" />
+      <Property Name="Property.Rebar.Grade" Label="Сорт" Tooltip="translation:albl_Grade" />
+      <Property Name="Property.Class" Label="Класс" Tooltip="translation:albl_Class" />
+      <Property Name="Property.Rebar.Numbering" Label="Нумерация" Tooltip="translation:albl_Numbering" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1cf0ef956be9abdb801033bf4670d24f" Label="Погонные метры" IsVisible="true">
+      <Property Name="Property.UDA.ru_pogon_metr" Label="Метры погонные" Tooltip="ru_pogon_metr, Польз. атрибут" />
+      <Property Name="Property.UDA.ru_koef_zapasa" Label="Коэффициент запаса" Tooltip="ru_koef_zapasa, Польз. атрибут" />
+    </PropertyGroup>
+    <PropertyGroup Name="Hooks" Label="translation:albl_Hooks" Tooltip="translation:albl_Hooks" IsVisible="true">
+      <PropertyGroup Name="HooksAtStart" Label="translation:albl_Hooks_at_start" Tooltip="translation:albl_Hooks_at_start">
+        <Property Name="Property.Rebar.Hook.Start" Label="Крюк" Tooltip="translation:albl_Hook" />
+      </PropertyGroup>
+      <PropertyGroup Name="HooksAtEnd" Label="translation:albl_Hooks_at_end" Tooltip="translation:albl_Hooks_at_end">
+        <Property Name="Property.Rebar.Hook.End" Label="Крюк" Tooltip="translation:albl_Hook" />
+      </PropertyGroup>
+    </PropertyGroup>
+    <PropertyGroup Name="CoverThickness" Label="translation:albl_Cover_thickness" Tooltip="translation:albl_Cover_thickness" IsVisible="true">
+      <Property Name="Property.Rebar.OnPlane" Label="На плоскости" Tooltip="translation:albl_offset_xy" />
+      <Property Name="Property.Rebar.FromPlane" Label="От плоскости" Tooltip="translation:albl_offset_from_plane" />
+      <Property Name="Property.Rebar.Offset.Start" Label="Начало" Tooltip="translation:albl_Start" />
+      <Property Name="Property.Rebar.Offset.End" Label="Конец" Tooltip="translation:albl_End" />
+    </PropertyGroup>
+    <PropertyGroup Name="Distribution" Label="translation:albl_LoadMDistribution" Tooltip="translation:albl_LoadMDistribution" IsVisible="true">
+      <Property Name="Property.Rebar.Group.Creation" Label="Создание" Tooltip="translation:albl_Creation" />
+    </PropertyGroup>
+    <PropertyGroup Name="Creation" Label="translation:albl_Creation" Tooltip="translation:albl_Creation" IsVisible="true">
+      <Property Name="Property.Rebar.Group.ExcludedType" Label="Исключить" Tooltip="translation:albl_Exclude" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_Custom_properties" Tooltip="translation:albl_Custom_properties" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <PropertyGroup Name="Undefined.2c34bf7475ce67cfad1c45882be01ca8" Label="Параметры">
+        <Property Name="Property.UDA.comment" Label="translation:j_comment" Tooltip="Комментарий (comment), Польз. атрибут" />
+        <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_1" Label="translation:j_user_field_1" Tooltip="Пользовательское поле 1 (USER_FIELD_1), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_2" Label="translation:j_user_field_2" Tooltip="Пользовательское поле 2 (USER_FIELD_2), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_3" Label="translation:j_user_field_3" Tooltip="Пользовательское поле 3 (USER_FIELD_3), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_4" Label="translation:j_user_field_4" Tooltip="Пользовательское поле 4 (USER_FIELD_4), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_PHASE" Label="translation:j_UserPhase_effects_numbering" Tooltip="Фаза   (влияет на нумерацию) (USER_PHASE), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.REBAR_SEQ_NO" Label="translation:j_rebar_sequence_number" Tooltip="Порядковый номер стержня (REBAR_SEQ_NO), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_DESCR" Label="translation:j_Product_description" Tooltip="Описание изделия (PRODUCT_DESCR), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.3f889b9b834116ca4101a2c80c77aef7" Label="Набор арматуры">
+        <PropertyGroup Name="Undefined.a9c701b99463dbbdac93e797c2224b99" Label="Общие (Набор арматуры)">
+          <Property Name="Property.UDA.__LEG_CONNECT_TOL" Label="translation:albl_Leg_connection_tolerance" Tooltip="Допуск соединения участков (__LEG_CONNECT_TOL), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.491eae06b9c60f8b7261a4d0020576e3" Label="Настройки создания слоёв (Набор арматуры)">
+          <Property Name="Property.UDA.LAYER_PREFIX" Label="translation:albl_Layer_prefix" Tooltip="Префикс слоя (LAYER_PREFIX), Польз. атрибут" />
+          <Property Name="Property.UDA.LAYER_NUMBER" Label="translation:albl_Layer_number" Tooltip="Номер слоя (LAYER_NUMBER), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.e93c3573a8a92bdd5c39318101c77898" Label="Настройки группирования (Набор арматуры)">
+          <Property Name="Property.UDA.__GROUP_LINEAR_TOL" Label="translation:albl_Tapered_linear_tolerance" Tooltip="Допуск для линейного перемен. сечения (__GROUP_LINEAR_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_CURVED_TOL" Label="translation:albl_Tapered_curved_tolerance" Tooltip="Допуск для криволинейного перемен. сеч. (__GROUP_CURVED_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_SIMILAR_NUM" Label="translation:albl_Minimum_number_of_bars_in_similar_group" Tooltip="Мин. кол-во стержней в подобной группе (__GROUP_SIMILAR_NUM), Польз. атрибут" />
+        </PropertyGroup>
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.c12f996db17a22003a334bb908ece690" Label="Чертёж">
+        <Property Name="Property.UDA.ru_chertyozh_arm" Label="Требуется чертёж" Tooltip="ru_chertyozh_arm, Польз. атрибут" />
+        <Property Name="Property.UDA.ru_chertyozh_nom" Label="Номер чертежа" Tooltip="ru_chertyozh_nom, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_FRM_PRF" Label="Форма периодического профиля" Tooltip="RU_RNF_FRM_PRF, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_STT_SPP" Label="Состояние поставки" Tooltip="RU_RNF_STT_SPP, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_SPC" Label="Технические требования" Tooltip="RU_RNF_SPC, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_DVT_WGH" Label="Предел отклонений массы 1м" Tooltip="RU_RNF_DVT_WGH, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_ACC_OVL" Label="Точность по овальности проката" Tooltip="RU_RNF_ACC_OVL, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_TST" Label="Проведение испытаний" Tooltip="RU_RNF_TST, Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.6f0cd837cbcf11a30126d71429b73f30" Label="Экспорт в IFC">
+        <Property Name="Property.UDA.IFC_ENTITY" Label="translation:j_IFC_entity" Tooltip="Объект IFC (IFC_ENTITY), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.36305b26d40b0e937724c099ef932921" Label="Муфты">
+        <Property Name="Property.UDA.METHOD_START" Label="translation:j_Method_start" Tooltip="Метод (начало) (METHOD_START), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_START" Label="translation:j_Type_start" Tooltip="Тип (начало) (TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_START" Label="translation:j_Product_start" Tooltip="Изделие (начало) (PRODUCT_START), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_START" Label="translation:j_Code_start" Tooltip="Код (начало) (CODE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_START" Label="translation:j_Thread_type_start" Tooltip="Тип резьбы (начало) (THREAD_TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_START" Label="translation:j_Threaded_length_start" Tooltip="Длина резьбы (начало) (THREAD_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_START" Label="translation:j_Extra_fab_length_start" Tooltip="Доп. длина при изготовлении (начало) (EXTRA_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_START" Label="translation:j_Free_distance_1_start" Tooltip="Произвольное расстояние 1 (начало) (FREE_1_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_START" Label="translation:j_Free_text_2_start" Tooltip="Произвольный текст 2 (начало) (FREE_2_START), Польз. атрибут" />
+        <Property Name="Property.UDA.METHOD_END" Label="translation:j_Method_end" Tooltip="Метод (конец) (METHOD_END), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_END" Label="translation:j_Type_end" Tooltip="Тип (конец) (TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_END" Label="translation:j_Product_end" Tooltip="Изделие (конец) (PRODUCT_END), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_END" Label="translation:j_Code_end" Tooltip="Код (конец) (CODE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_END" Label="translation:j_Thread_type_end" Tooltip="Тип резьбы (конец) (THREAD_TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_END" Label="translation:j_Threaded_length_end" Tooltip="Длина резьбы (конец) (THREAD_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_END" Label="translation:j_Extra_fab_length_end" Tooltip="Доп. длина при изготовлении (конец) (EXTRA_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_END" Label="translation:j_Free_distance_1_end" Tooltip="Произвольное расстояние 1 (конец) (FREE_1_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_END" Label="translation:j_Free_text_2_end" Tooltip="Произвольный текст 2 (конец) (FREE_2_END), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ccc51470ce9716aaeb804b3ae07fa76f" Label="Unitechnik">
+        <Property Name="Property.UDA.UT_REBAR_TYPE" Label="translation:j_unitechnik_reinforcement_type" Tooltip="Тип армирования Unitechnik (UT_REBAR_TYPE), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_CAGE_id" Label="translation:j_d_j_Cage_group_number" Tooltip="Номер группы каркаса (UT_CAGE_id), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageType" Label="translation:j_cage_type" Tooltip="Тип каркаса (utCageType), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageShape" Label="translation:j_cage_shape" Tooltip="Форма каркаса (utCageShape), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_MESH_TYPE" Label="translation:j_d_j_Unitechnik_mesh_type" Tooltip="Тип сетки (UT_MESH_TYPE), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ed2bd9f460a78ae38650894f0c693893" Label="BVBS">
+        <Property Name="Property.UDA.BVBS_BENDING_ROLL" Label="translation:j_Bending_roll_diameter" Tooltip="Диаметр гибочного валка (BVBS_BENDING_ROLL), Польз. атрибут" />
+      </PropertyGroup>
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="CoRebar.Circle" Title="translation:albl_modelObjectType_CircleRebar">
+    <PropertyGroup Name="General" Label="translation:albl_General" Tooltip="translation:albl_General" IsVisible="true">
+      <Property Name="Property.Rebar.Circular.Group.Type" Label="Тип группы арматуры" Tooltip="translation:albl_rebar_group_type" />
+      <Property Name="Property.Name" Label="Имя" Tooltip="translation:albl_Name" />
+      <Property Name="Property.Rebar.Grade" Label="Сорт" Tooltip="translation:albl_Grade" />
+      <Property Name="Property.Class" Label="Класс" Tooltip="translation:albl_Class" />
+      <Property Name="Property.Rebar.Numbering" Label="Нумерация" Tooltip="translation:albl_Numbering" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1cf0ef956be9abdb801033bf4670d24f" Label="Погонные метры" IsVisible="true">
+      <Property Name="Property.UDA.ru_pogon_metr" Label="Метры погонные" Tooltip="ru_pogon_metr, Польз. атрибут" />
+      <Property Name="Property.UDA.ru_koef_zapasa" Label="Коэффициент запаса" Tooltip="ru_koef_zapasa, Польз. атрибут" />
+    </PropertyGroup>
+    <PropertyGroup Name="Hooks" Label="translation:albl_Hooks" Tooltip="translation:albl_Hooks" IsVisible="true">
+      <PropertyGroup Name="HooksAtStart" Label="translation:albl_Hooks_at_start" Tooltip="translation:albl_Hooks_at_start">
+        <Property Name="Property.Rebar.Hook.Start" Label="Крюк" Tooltip="translation:albl_Hook" />
+      </PropertyGroup>
+      <PropertyGroup Name="HooksAtEnd" Label="translation:albl_Hooks_at_end" Tooltip="translation:albl_Hooks_at_end">
+        <Property Name="Property.Rebar.Hook.End" Label="Крюк" Tooltip="translation:albl_Hook" />
+      </PropertyGroup>
+    </PropertyGroup>
+    <PropertyGroup Name="CoverThickness" Label="translation:albl_Cover_thickness" Tooltip="translation:albl_Cover_thickness" IsVisible="true">
+      <Property Name="Property.Rebar.OnPlane" Label="На плоскости" Tooltip="translation:albl_offset_xy" />
+      <Property Name="Property.Rebar.FromPlane" Label="От плоскости" Tooltip="translation:albl_offset_from_plane" />
+      <Property Name="Property.Rebar.Offset.Start" Label="Начало" Tooltip="translation:albl_Start" />
+      <Property Name="Property.Rebar.Offset.End" Label="Конец" Tooltip="translation:albl_End" />
+    </PropertyGroup>
+    <PropertyGroup Name="Distribution" Label="translation:albl_LoadMDistribution" Tooltip="translation:albl_LoadMDistribution" IsVisible="true">
+      <Property Name="Property.Rebar.Group.Creation" Label="Создание" Tooltip="translation:albl_Creation" />
+    </PropertyGroup>
+    <PropertyGroup Name="Creation" Label="translation:albl_Creation" Tooltip="translation:albl_Creation" IsVisible="true">
+      <Property Name="Property.Rebar.Group.ExcludedType" Label="Исключить" Tooltip="translation:albl_Exclude" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_Custom_properties" Tooltip="translation:albl_Custom_properties" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <PropertyGroup Name="Undefined.2c34bf7475ce67cfad1c45882be01ca8" Label="Параметры">
+        <Property Name="Property.UDA.comment" Label="translation:j_comment" Tooltip="Комментарий (comment), Польз. атрибут" />
+        <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_1" Label="translation:j_user_field_1" Tooltip="Пользовательское поле 1 (USER_FIELD_1), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_2" Label="translation:j_user_field_2" Tooltip="Пользовательское поле 2 (USER_FIELD_2), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_3" Label="translation:j_user_field_3" Tooltip="Пользовательское поле 3 (USER_FIELD_3), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_4" Label="translation:j_user_field_4" Tooltip="Пользовательское поле 4 (USER_FIELD_4), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_PHASE" Label="translation:j_UserPhase_effects_numbering" Tooltip="Фаза   (влияет на нумерацию) (USER_PHASE), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.REBAR_SEQ_NO" Label="translation:j_rebar_sequence_number" Tooltip="Порядковый номер стержня (REBAR_SEQ_NO), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_DESCR" Label="translation:j_Product_description" Tooltip="Описание изделия (PRODUCT_DESCR), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.3f889b9b834116ca4101a2c80c77aef7" Label="Набор арматуры">
+        <PropertyGroup Name="Undefined.a9c701b99463dbbdac93e797c2224b99" Label="Общие (Набор арматуры)">
+          <Property Name="Property.UDA.__LEG_CONNECT_TOL" Label="translation:albl_Leg_connection_tolerance" Tooltip="Допуск соединения участков (__LEG_CONNECT_TOL), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.491eae06b9c60f8b7261a4d0020576e3" Label="Настройки создания слоёв (Набор арматуры)">
+          <Property Name="Property.UDA.LAYER_PREFIX" Label="translation:albl_Layer_prefix" Tooltip="Префикс слоя (LAYER_PREFIX), Польз. атрибут" />
+          <Property Name="Property.UDA.LAYER_NUMBER" Label="translation:albl_Layer_number" Tooltip="Номер слоя (LAYER_NUMBER), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.e93c3573a8a92bdd5c39318101c77898" Label="Настройки группирования (Набор арматуры)">
+          <Property Name="Property.UDA.__GROUP_LINEAR_TOL" Label="translation:albl_Tapered_linear_tolerance" Tooltip="Допуск для линейного перемен. сечения (__GROUP_LINEAR_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_CURVED_TOL" Label="translation:albl_Tapered_curved_tolerance" Tooltip="Допуск для криволинейного перемен. сеч. (__GROUP_CURVED_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_SIMILAR_NUM" Label="translation:albl_Minimum_number_of_bars_in_similar_group" Tooltip="Мин. кол-во стержней в подобной группе (__GROUP_SIMILAR_NUM), Польз. атрибут" />
+        </PropertyGroup>
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.c12f996db17a22003a334bb908ece690" Label="Чертёж">
+        <Property Name="Property.UDA.ru_chertyozh_arm" Label="Требуется чертёж" Tooltip="ru_chertyozh_arm, Польз. атрибут" />
+        <Property Name="Property.UDA.ru_chertyozh_nom" Label="Номер чертежа" Tooltip="ru_chertyozh_nom, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_FRM_PRF" Label="Форма периодического профиля" Tooltip="RU_RNF_FRM_PRF, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_STT_SPP" Label="Состояние поставки" Tooltip="RU_RNF_STT_SPP, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_SPC" Label="Технические требования" Tooltip="RU_RNF_SPC, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_DVT_WGH" Label="Предел отклонений массы 1м" Tooltip="RU_RNF_DVT_WGH, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_ACC_OVL" Label="Точность по овальности проката" Tooltip="RU_RNF_ACC_OVL, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_TST" Label="Проведение испытаний" Tooltip="RU_RNF_TST, Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.6f0cd837cbcf11a30126d71429b73f30" Label="Экспорт в IFC">
+        <Property Name="Property.UDA.IFC_ENTITY" Label="translation:j_IFC_entity" Tooltip="Объект IFC (IFC_ENTITY), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.36305b26d40b0e937724c099ef932921" Label="Муфты">
+        <Property Name="Property.UDA.METHOD_START" Label="translation:j_Method_start" Tooltip="Метод (начало) (METHOD_START), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_START" Label="translation:j_Type_start" Tooltip="Тип (начало) (TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_START" Label="translation:j_Product_start" Tooltip="Изделие (начало) (PRODUCT_START), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_START" Label="translation:j_Code_start" Tooltip="Код (начало) (CODE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_START" Label="translation:j_Thread_type_start" Tooltip="Тип резьбы (начало) (THREAD_TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_START" Label="translation:j_Threaded_length_start" Tooltip="Длина резьбы (начало) (THREAD_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_START" Label="translation:j_Extra_fab_length_start" Tooltip="Доп. длина при изготовлении (начало) (EXTRA_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_START" Label="translation:j_Free_distance_1_start" Tooltip="Произвольное расстояние 1 (начало) (FREE_1_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_START" Label="translation:j_Free_text_2_start" Tooltip="Произвольный текст 2 (начало) (FREE_2_START), Польз. атрибут" />
+        <Property Name="Property.UDA.METHOD_END" Label="translation:j_Method_end" Tooltip="Метод (конец) (METHOD_END), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_END" Label="translation:j_Type_end" Tooltip="Тип (конец) (TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_END" Label="translation:j_Product_end" Tooltip="Изделие (конец) (PRODUCT_END), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_END" Label="translation:j_Code_end" Tooltip="Код (конец) (CODE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_END" Label="translation:j_Thread_type_end" Tooltip="Тип резьбы (конец) (THREAD_TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_END" Label="translation:j_Threaded_length_end" Tooltip="Длина резьбы (конец) (THREAD_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_END" Label="translation:j_Extra_fab_length_end" Tooltip="Доп. длина при изготовлении (конец) (EXTRA_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_END" Label="translation:j_Free_distance_1_end" Tooltip="Произвольное расстояние 1 (конец) (FREE_1_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_END" Label="translation:j_Free_text_2_end" Tooltip="Произвольный текст 2 (конец) (FREE_2_END), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ccc51470ce9716aaeb804b3ae07fa76f" Label="Unitechnik">
+        <Property Name="Property.UDA.UT_REBAR_TYPE" Label="translation:j_unitechnik_reinforcement_type" Tooltip="Тип армирования Unitechnik (UT_REBAR_TYPE), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_CAGE_id" Label="translation:j_d_j_Cage_group_number" Tooltip="Номер группы каркаса (UT_CAGE_id), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageType" Label="translation:j_cage_type" Tooltip="Тип каркаса (utCageType), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageShape" Label="translation:j_cage_shape" Tooltip="Форма каркаса (utCageShape), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_MESH_TYPE" Label="translation:j_d_j_Unitechnik_mesh_type" Tooltip="Тип сетки (UT_MESH_TYPE), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ed2bd9f460a78ae38650894f0c693893" Label="BVBS">
+        <Property Name="Property.UDA.BVBS_BENDING_ROLL" Label="translation:j_Bending_roll_diameter" Tooltip="Диаметр гибочного валка (BVBS_BENDING_ROLL), Польз. атрибут" />
+      </PropertyGroup>
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="CoRebar.Mesh" Title="translation:albl_modelObjectType_RebarMesh">
+    <PropertyGroup Name="General" Label="translation:albl_General" Tooltip="translation:albl_General" IsVisible="true">
+      <Property Name="Property.Rebar.Numbering" Label="Нумерация" Tooltip="translation:albl_Numbering" />
+      <Property Name="Property.Name" Label="Имя" Tooltip="translation:albl_Name" />
+      <Property Name="Property.Class" Label="Класс" Tooltip="translation:albl_Class" />
+      <Property Name="Property.Rebar.Mesh.Type" Label="Тип сетки" Tooltip="translation:j_d_xc_MeshType" />
+      <Property Name="Property.Rebar.Mesh.CrossBarLocation" Label="Расп. поперечины" Tooltip="translation:albl_Cross_bar_location" />
+      <Property Name="Property.Rebar.Mesh.CutType" Label="Разрезать по гл. детали" Tooltip="translation:albl_Cut_by_father_part_cuts" />
+    </PropertyGroup>
+    <PropertyGroup Name="Layout" Label="translation:albl_Layout" Tooltip="translation:albl_Layout" IsVisible="true">
+      <Property Name="Property.Rebar.Mesh.Layout" Label="Сетка" Tooltip="translation:albl_Mesh" />
+    </PropertyGroup>
+    <PropertyGroup Name="Hooks" Label="translation:albl_Hooks" Tooltip="translation:albl_Hooks" IsVisible="true">
+      <PropertyGroup Name="HooksAtStart" Label="translation:albl_Hooks_at_start" Tooltip="translation:albl_Hooks_at_start">
+        <Property Name="Property.Rebar.Mesh.Hook.Start" Label="Крюк" Tooltip="translation:albl_Hook" />
+      </PropertyGroup>
+      <PropertyGroup Name="HooksAtEnd" Label="translation:albl_Hooks_at_end" Tooltip="translation:albl_Hooks_at_end">
+        <Property Name="Property.Rebar.Mesh.Hook.End" Label="Крюк" Tooltip="translation:albl_Hook" />
+      </PropertyGroup>
+    </PropertyGroup>
+    <PropertyGroup Name="CoverThickness" Label="translation:albl_Cover_thickness" Tooltip="translation:albl_Cover_thickness" IsVisible="true">
+      <Property Name="Property.Rebar.OnPlane" Label="На плоскости" Tooltip="translation:albl_offset_xy" />
+      <Property Name="Property.Rebar.FromPlane" Label="От плоскости" Tooltip="translation:albl_offset_from_plane" />
+      <Property Name="Property.Rebar.Offset.Start" Label="Начало" Tooltip="translation:albl_Start" />
+      <Property Name="Property.Rebar.Offset.End" Label="Конец" Tooltip="translation:albl_End" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_Custom_properties" Tooltip="translation:albl_Custom_properties" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <PropertyGroup Name="Undefined.2c34bf7475ce67cfad1c45882be01ca8" Label="Параметры">
+        <Property Name="Property.UDA.comment" Label="translation:j_comment" Tooltip="Комментарий (comment), Польз. атрибут" />
+        <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_1" Label="translation:j_user_field_1" Tooltip="Пользовательское поле 1 (USER_FIELD_1), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_2" Label="translation:j_user_field_2" Tooltip="Пользовательское поле 2 (USER_FIELD_2), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_3" Label="translation:j_user_field_3" Tooltip="Пользовательское поле 3 (USER_FIELD_3), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_4" Label="translation:j_user_field_4" Tooltip="Пользовательское поле 4 (USER_FIELD_4), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_PHASE" Label="translation:j_UserPhase_effects_numbering" Tooltip="Фаза   (влияет на нумерацию) (USER_PHASE), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.REBAR_SEQ_NO" Label="translation:j_rebar_sequence_number" Tooltip="Порядковый номер стержня (REBAR_SEQ_NO), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_DESCR" Label="translation:j_Product_description" Tooltip="Описание изделия (PRODUCT_DESCR), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.3f889b9b834116ca4101a2c80c77aef7" Label="Набор арматуры">
+        <PropertyGroup Name="Undefined.a9c701b99463dbbdac93e797c2224b99" Label="Общие (Набор арматуры)">
+          <Property Name="Property.UDA.__LEG_CONNECT_TOL" Label="translation:albl_Leg_connection_tolerance" Tooltip="Допуск соединения участков (__LEG_CONNECT_TOL), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.491eae06b9c60f8b7261a4d0020576e3" Label="Настройки создания слоёв (Набор арматуры)">
+          <Property Name="Property.UDA.LAYER_PREFIX" Label="translation:albl_Layer_prefix" Tooltip="Префикс слоя (LAYER_PREFIX), Польз. атрибут" />
+          <Property Name="Property.UDA.LAYER_NUMBER" Label="translation:albl_Layer_number" Tooltip="Номер слоя (LAYER_NUMBER), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.e93c3573a8a92bdd5c39318101c77898" Label="Настройки группирования (Набор арматуры)">
+          <Property Name="Property.UDA.__GROUP_LINEAR_TOL" Label="translation:albl_Tapered_linear_tolerance" Tooltip="Допуск для линейного перемен. сечения (__GROUP_LINEAR_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_CURVED_TOL" Label="translation:albl_Tapered_curved_tolerance" Tooltip="Допуск для криволинейного перемен. сеч. (__GROUP_CURVED_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_SIMILAR_NUM" Label="translation:albl_Minimum_number_of_bars_in_similar_group" Tooltip="Мин. кол-во стержней в подобной группе (__GROUP_SIMILAR_NUM), Польз. атрибут" />
+        </PropertyGroup>
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.c12f996db17a22003a334bb908ece690" Label="Чертёж">
+        <Property Name="Property.UDA.ru_chertyozh_arm" Label="Требуется чертёж" Tooltip="ru_chertyozh_arm, Польз. атрибут" />
+        <Property Name="Property.UDA.ru_chertyozh_nom" Label="Номер чертежа" Tooltip="ru_chertyozh_nom, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_FRM_PRF" Label="Форма периодического профиля" Tooltip="RU_RNF_FRM_PRF, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_STT_SPP" Label="Состояние поставки" Tooltip="RU_RNF_STT_SPP, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_SPC" Label="Технические требования" Tooltip="RU_RNF_SPC, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_DVT_WGH" Label="Предел отклонений массы 1м" Tooltip="RU_RNF_DVT_WGH, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_ACC_OVL" Label="Точность по овальности проката" Tooltip="RU_RNF_ACC_OVL, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_TST" Label="Проведение испытаний" Tooltip="RU_RNF_TST, Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.6f0cd837cbcf11a30126d71429b73f30" Label="Экспорт в IFC">
+        <Property Name="Property.UDA.IFC_ENTITY" Label="translation:j_IFC_entity" Tooltip="Объект IFC (IFC_ENTITY), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.36305b26d40b0e937724c099ef932921" Label="Муфты">
+        <Property Name="Property.UDA.METHOD_START" Label="translation:j_Method_start" Tooltip="Метод (начало) (METHOD_START), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_START" Label="translation:j_Type_start" Tooltip="Тип (начало) (TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_START" Label="translation:j_Product_start" Tooltip="Изделие (начало) (PRODUCT_START), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_START" Label="translation:j_Code_start" Tooltip="Код (начало) (CODE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_START" Label="translation:j_Thread_type_start" Tooltip="Тип резьбы (начало) (THREAD_TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_START" Label="translation:j_Threaded_length_start" Tooltip="Длина резьбы (начало) (THREAD_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_START" Label="translation:j_Extra_fab_length_start" Tooltip="Доп. длина при изготовлении (начало) (EXTRA_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_START" Label="translation:j_Free_distance_1_start" Tooltip="Произвольное расстояние 1 (начало) (FREE_1_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_START" Label="translation:j_Free_text_2_start" Tooltip="Произвольный текст 2 (начало) (FREE_2_START), Польз. атрибут" />
+        <Property Name="Property.UDA.METHOD_END" Label="translation:j_Method_end" Tooltip="Метод (конец) (METHOD_END), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_END" Label="translation:j_Type_end" Tooltip="Тип (конец) (TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_END" Label="translation:j_Product_end" Tooltip="Изделие (конец) (PRODUCT_END), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_END" Label="translation:j_Code_end" Tooltip="Код (конец) (CODE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_END" Label="translation:j_Thread_type_end" Tooltip="Тип резьбы (конец) (THREAD_TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_END" Label="translation:j_Threaded_length_end" Tooltip="Длина резьбы (конец) (THREAD_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_END" Label="translation:j_Extra_fab_length_end" Tooltip="Доп. длина при изготовлении (конец) (EXTRA_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_END" Label="translation:j_Free_distance_1_end" Tooltip="Произвольное расстояние 1 (конец) (FREE_1_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_END" Label="translation:j_Free_text_2_end" Tooltip="Произвольный текст 2 (конец) (FREE_2_END), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ccc51470ce9716aaeb804b3ae07fa76f" Label="Unitechnik">
+        <Property Name="Property.UDA.UT_REBAR_TYPE" Label="translation:j_unitechnik_reinforcement_type" Tooltip="Тип армирования Unitechnik (UT_REBAR_TYPE), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_CAGE_id" Label="translation:j_d_j_Cage_group_number" Tooltip="Номер группы каркаса (UT_CAGE_id), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageType" Label="translation:j_cage_type" Tooltip="Тип каркаса (utCageType), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageShape" Label="translation:j_cage_shape" Tooltip="Форма каркаса (utCageShape), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_MESH_TYPE" Label="translation:j_d_j_Unitechnik_mesh_type" Tooltip="Тип сетки (UT_MESH_TYPE), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ed2bd9f460a78ae38650894f0c693893" Label="BVBS">
+        <Property Name="Property.UDA.BVBS_BENDING_ROLL" Label="translation:j_Bending_roll_diameter" Tooltip="Диаметр гибочного валка (BVBS_BENDING_ROLL), Польз. атрибут" />
+      </PropertyGroup>
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="CoRebar.Set" Title="translation:albl_modelObjectType_RebarSet">
+    <PropertyGroup Name="Attributes" Label="translation:albl_Attributes" Tooltip="translation:albl_Attributes" IsVisible="true">
+      <Property Name="Property.Rebar.Numbering" Label="Нумерация" Tooltip="translation:albl_Numbering" />
+      <Property Name="Property.Name" Label="Имя" Tooltip="translation:albl_Name" />
+      <Property Name="Property.RebarSet.Grade" Label="Сорт" Tooltip="translation:albl_Grade" />
+      <Property Name="Property.Class" Label="Класс" Tooltip="translation:albl_Class" />
+      <Property Name="Property.RebarSet.LayerOrderNumber" Label="Порядковый номер слоя" Tooltip="translation:albl_Layer_number" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1cf0ef956be9abdb801033bf4670d24f" Label="Погонные метры" IsVisible="true">
+      <Property Name="Property.UDA.ru_pogon_metr" Label="Метры погонные" Tooltip="ru_pogon_metr, Польз. атрибут" />
+      <Property Name="Property.UDA.ru_koef_zapasa" Label="Коэффициент запаса" Tooltip="ru_koef_zapasa, Польз. атрибут" />
+    </PropertyGroup>
+    <PropertyGroup Name="SpacingProperties" Label="translation:albl_Spacing_properties" Tooltip="translation:albl_Spacing_properties" IsVisible="true">
+      <Property Name="Property.RebarSet.StartOffset" Label="Смещение начала" Tooltip="translation:albl_Start_offset" />
+      <Property Name="Property.RebarSet.EndOffset" Label="Смещение торца" Tooltip="translation:albl_End_offset" />
+      <Property Name="Property.RebarSet.SpacingZones" Label="Зоны распределения" Tooltip="translation:albl_Spacing_zones" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_Custom_properties" Tooltip="translation:albl_Custom_properties" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <PropertyGroup Name="Undefined.2c34bf7475ce67cfad1c45882be01ca8" Label="Параметры">
+        <Property Name="Property.UDA.comment" Label="translation:j_comment" Tooltip="Комментарий (comment), Польз. атрибут" />
+        <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_1" Label="translation:j_user_field_1" Tooltip="Пользовательское поле 1 (USER_FIELD_1), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_2" Label="translation:j_user_field_2" Tooltip="Пользовательское поле 2 (USER_FIELD_2), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_3" Label="translation:j_user_field_3" Tooltip="Пользовательское поле 3 (USER_FIELD_3), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_FIELD_4" Label="translation:j_user_field_4" Tooltip="Пользовательское поле 4 (USER_FIELD_4), Польз. атрибут" />
+        <Property Name="Property.UDA.USER_PHASE" Label="translation:j_UserPhase_effects_numbering" Tooltip="Фаза   (влияет на нумерацию) (USER_PHASE), Уникальный польз. атрибут" />
+        <Property Name="Property.UDA.REBAR_SEQ_NO" Label="translation:j_rebar_sequence_number" Tooltip="Порядковый номер стержня (REBAR_SEQ_NO), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_DESCR" Label="translation:j_Product_description" Tooltip="Описание изделия (PRODUCT_DESCR), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.3f889b9b834116ca4101a2c80c77aef7" Label="Набор арматуры">
+        <PropertyGroup Name="Undefined.a9c701b99463dbbdac93e797c2224b99" Label="Общие (Набор арматуры)">
+          <Property Name="Property.UDA.__LEG_CONNECT_TOL" Label="translation:albl_Leg_connection_tolerance" Tooltip="Допуск соединения участков (__LEG_CONNECT_TOL), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.491eae06b9c60f8b7261a4d0020576e3" Label="Настройки создания слоёв (Набор арматуры)">
+          <Property Name="Property.UDA.LAYER_PREFIX" Label="translation:albl_Layer_prefix" Tooltip="Префикс слоя (LAYER_PREFIX), Польз. атрибут" />
+          <Property Name="Property.UDA.LAYER_NUMBER" Label="translation:albl_Layer_number" Tooltip="Номер слоя (LAYER_NUMBER), Польз. атрибут" />
+        </PropertyGroup>
+        <PropertyGroup Name="Undefined.e93c3573a8a92bdd5c39318101c77898" Label="Настройки группирования (Набор арматуры)">
+          <Property Name="Property.UDA.__GROUP_LINEAR_TOL" Label="translation:albl_Tapered_linear_tolerance" Tooltip="Допуск для линейного перемен. сечения (__GROUP_LINEAR_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_CURVED_TOL" Label="translation:albl_Tapered_curved_tolerance" Tooltip="Допуск для криволинейного перемен. сеч. (__GROUP_CURVED_TOL), Польз. атрибут" />
+          <Property Name="Property.UDA.__GROUP_SIMILAR_NUM" Label="translation:albl_Minimum_number_of_bars_in_similar_group" Tooltip="Мин. кол-во стержней в подобной группе (__GROUP_SIMILAR_NUM), Польз. атрибут" />
+        </PropertyGroup>
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.c12f996db17a22003a334bb908ece690" Label="Чертёж">
+        <Property Name="Property.UDA.ru_chertyozh_arm" Label="Требуется чертёж" Tooltip="ru_chertyozh_arm, Польз. атрибут" />
+        <Property Name="Property.UDA.ru_chertyozh_nom" Label="Номер чертежа" Tooltip="ru_chertyozh_nom, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_FRM_PRF" Label="Форма периодического профиля" Tooltip="RU_RNF_FRM_PRF, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_STT_SPP" Label="Состояние поставки" Tooltip="RU_RNF_STT_SPP, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_SPC" Label="Технические требования" Tooltip="RU_RNF_SPC, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_DVT_WGH" Label="Предел отклонений массы 1м" Tooltip="RU_RNF_DVT_WGH, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_ACC_OVL" Label="Точность по овальности проката" Tooltip="RU_RNF_ACC_OVL, Польз. атрибут" />
+        <Property Name="Property.UDA.RU_RNF_TST" Label="Проведение испытаний" Tooltip="RU_RNF_TST, Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.6f0cd837cbcf11a30126d71429b73f30" Label="Экспорт в IFC">
+        <Property Name="Property.UDA.IFC_ENTITY" Label="translation:j_IFC_entity" Tooltip="Объект IFC (IFC_ENTITY), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.36305b26d40b0e937724c099ef932921" Label="Муфты">
+        <Property Name="Property.UDA.METHOD_START" Label="translation:j_Method_start" Tooltip="Метод (начало) (METHOD_START), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_START" Label="translation:j_Type_start" Tooltip="Тип (начало) (TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_START" Label="translation:j_Product_start" Tooltip="Изделие (начало) (PRODUCT_START), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_START" Label="translation:j_Code_start" Tooltip="Код (начало) (CODE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_START" Label="translation:j_Thread_type_start" Tooltip="Тип резьбы (начало) (THREAD_TYPE_START), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_START" Label="translation:j_Threaded_length_start" Tooltip="Длина резьбы (начало) (THREAD_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_START" Label="translation:j_Extra_fab_length_start" Tooltip="Доп. длина при изготовлении (начало) (EXTRA_LENGTH_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_START" Label="translation:j_Free_distance_1_start" Tooltip="Произвольное расстояние 1 (начало) (FREE_1_START), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_START" Label="translation:j_Free_text_2_start" Tooltip="Произвольный текст 2 (начало) (FREE_2_START), Польз. атрибут" />
+        <Property Name="Property.UDA.METHOD_END" Label="translation:j_Method_end" Tooltip="Метод (конец) (METHOD_END), Польз. атрибут" />
+        <Property Name="Property.UDA.TYPE_END" Label="translation:j_Type_end" Tooltip="Тип (конец) (TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.PRODUCT_END" Label="translation:j_Product_end" Tooltip="Изделие (конец) (PRODUCT_END), Польз. атрибут" />
+        <Property Name="Property.UDA.CODE_END" Label="translation:j_Code_end" Tooltip="Код (конец) (CODE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_TYPE_END" Label="translation:j_Thread_type_end" Tooltip="Тип резьбы (конец) (THREAD_TYPE_END), Польз. атрибут" />
+        <Property Name="Property.UDA.THREAD_LENGTH_END" Label="translation:j_Threaded_length_end" Tooltip="Длина резьбы (конец) (THREAD_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.EXTRA_LENGTH_END" Label="translation:j_Extra_fab_length_end" Tooltip="Доп. длина при изготовлении (конец) (EXTRA_LENGTH_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_1_END" Label="translation:j_Free_distance_1_end" Tooltip="Произвольное расстояние 1 (конец) (FREE_1_END), Польз. атрибут" />
+        <Property Name="Property.UDA.FREE_2_END" Label="translation:j_Free_text_2_end" Tooltip="Произвольный текст 2 (конец) (FREE_2_END), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ccc51470ce9716aaeb804b3ae07fa76f" Label="Unitechnik">
+        <Property Name="Property.UDA.UT_REBAR_TYPE" Label="translation:j_unitechnik_reinforcement_type" Tooltip="Тип армирования Unitechnik (UT_REBAR_TYPE), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_CAGE_id" Label="translation:j_d_j_Cage_group_number" Tooltip="Номер группы каркаса (UT_CAGE_id), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageType" Label="translation:j_cage_type" Tooltip="Тип каркаса (utCageType), Польз. атрибут" />
+        <Property Name="Property.UDA.utCageShape" Label="translation:j_cage_shape" Tooltip="Форма каркаса (utCageShape), Польз. атрибут" />
+        <Property Name="Property.UDA.UT_MESH_TYPE" Label="translation:j_d_j_Unitechnik_mesh_type" Tooltip="Тип сетки (UT_MESH_TYPE), Польз. атрибут" />
+      </PropertyGroup>
+      <PropertyGroup Name="Undefined.ed2bd9f460a78ae38650894f0c693893" Label="BVBS">
+        <Property Name="Property.UDA.BVBS_BENDING_ROLL" Label="translation:j_Bending_roll_diameter" Tooltip="Диаметр гибочного валка (BVBS_BENDING_ROLL), Польз. атрибут" />
+      </PropertyGroup>
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="RectangularGrid" Title="translation:albl_Rectangular_grid">
+    <PropertyGroup Name="Coordinates" Label="translation:albl_Coordinates" Tooltip="translation:albl_Coordinates" IsVisible="true">
+      <Property Name="Property.Grid.CoordinateX" Label="translation:albl_X" Tooltip="translation:albl_X" />
+      <Property Name="Property.Grid.CoordinateY" Tooltip="translation:albl_Y" />
+      <Property Name="Property.Grid.CoordinateZ" Tooltip="translation:albl_Z" />
+    </PropertyGroup>
+    <PropertyGroup Name="Labels" Label="translation:albl_Labels" Tooltip="translation:albl_Labels" IsVisible="true">
+      <Property Name="Property.Grid.LabelX" Tooltip="translation:albl_X" />
+      <Property Name="Property.Grid.LabelY" Tooltip="translation:albl_Y" />
+      <Property Name="Property.Grid.LabelZ" Tooltip="translation:albl_Z" />
+    </PropertyGroup>
+    <PropertyGroup Name="LineExtensions" Label="translation:albl_Line_extensions" Tooltip="translation:albl_Line_extensions" IsVisible="true">
+      <PropertyGroup Name="LeftBelow" Label="translation:albl_Left_below" Tooltip="translation:albl_Left_below">
+        <Property Name="Property.Grid.ExtensionXLeftBelow" Tooltip="translation:albl_X" />
+        <Property Name="Property.Grid.ExtensionYLeftBelow" Tooltip="translation:albl_Y" />
+        <Property Name="Property.Grid.ExtensionZLeftBelow" Tooltip="translation:albl_Z" />
+      </PropertyGroup>
+      <PropertyGroup Name="RightAbove" Label="translation:albl_Right_above" Tooltip="translation:albl_Right_above">
+        <Property Name="Property.Grid.ExtensionXRightAbove" Tooltip="translation:albl_X" />
+        <Property Name="Property.Grid.ExtensionYRightAbove" Tooltip="translation:albl_Y" />
+        <Property Name="Property.Grid.ExtensionZRightAbove" Tooltip="translation:albl_Z" />
+      </PropertyGroup>
+    </PropertyGroup>
+    <PropertyGroup Name="Origin" Label="translation:albl_Origin" Tooltip="translation:albl_Origin" IsVisible="true">
+      <Property Name="Property.Grid.OriginX" Tooltip="translation:albl_X" />
+      <Property Name="Property.Grid.OriginY" Tooltip="translation:albl_Y" />
+      <Property Name="Property.Grid.OriginZ" Tooltip="translation:albl_Z" />
+    </PropertyGroup>
+    <PropertyGroup Name="Magnetism" Label="translation:albl_MagneticGridPlane" Tooltip="translation:albl_MagneticGridPlane" IsVisible="true">
+      <Property Name="Property.Grid.MagneticGridPlane" Tooltip="translation:albl_Magnetic" />
+    </PropertyGroup>
+    <PropertyGroup Name="GridColor" Label="translation:albl_GridColor" Tooltip="translation:albl_GridColor" IsVisible="true">
+      <Property Name="Property.Grid.GridColor" Tooltip="translation:albl_Color" />
+    </PropertyGroup>
+    <PropertyGroup Name="GridLabel" Label="translation:Property.LabelFontSizeAndColor" Tooltip="translation:Property.LabelFontSizeAndColor" IsVisible="true">
+      <Property Name="Property.Grid.GridFontSize" Tooltip="translation:albl_Font_size" />
+      <Property Name="Property.Grid.GridFontColor" Tooltip="translation:albl_Font_color" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_More" Tooltip="translation:albl_Custom_properties" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+      <Property Name="Property.UDA.GRID_TEXT" Label="translation:albl_Grid_Label_Text" Tooltip="Текст меток сетки (GRID_TEXT), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSX_PRE" Label="translation:albl_Prefix_offset_in_X" Tooltip="Префикс смещения по оси X (COORDTRANSX_PRE), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSY_PRE" Label="translation:albl_Prefix_offset_in_Y" Tooltip="Префикс смещения по оси Y (COORDTRANSY_PRE), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSZ_PRE" Label="translation:albl_Prefix_offset_in_Z" Tooltip="Префикс смещения по оси Z (COORDTRANSZ_PRE), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSX" Label="translation:albl_Offset_in_X" Tooltip="Смещение по оси X (COORDTRANSX), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSY" Label="translation:albl_Offset_in_Y" Tooltip="Смещение по оси Y (COORDTRANSY), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSZ" Label="translation:albl_Offset_in_Z" Tooltip="Смещение по оси Z (COORDTRANSZ), Польз. атрибут" />
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="RadialGrid" Title="translation:albl_Radial_grid">
+    <PropertyGroup Name="Coordinates" Label="translation:albl_Coordinates" Tooltip="translation:albl_Coordinates" IsVisible="true">
+      <Property Name="Property.RadialGrid.RadialCoordinates" Label="translation:albl_Radial" Tooltip="translation:albl_Radial" />
+      <Property Name="Property.RadialGrid.AngularCoordinates" Tooltip="translation:albl_Angular" />
+      <Property Name="Property.RadialGrid.ElevationCoordinates" Tooltip="translation:albl_Z_Coordinates" />
+    </PropertyGroup>
+    <PropertyGroup Name="Labels" Label="translation:albl_Labels" Tooltip="translation:albl_Labels" IsVisible="true">
+      <Property Name="Property.RadialGrid.RadialLabels" Tooltip="translation:albl_Radial" />
+      <Property Name="Property.RadialGrid.AngularLabels" Tooltip="translation:albl_Angular" />
+      <Property Name="Property.RadialGrid.ElevationLabels" Tooltip="translation:albl_Z_Coordinates" />
+    </PropertyGroup>
+    <PropertyGroup Name="LineExtensions" Label="translation:albl_Line_extensions" Tooltip="translation:albl_Line_extensions" IsVisible="true">
+      <PropertyGroup Name="Start" Label="translation:albl_Start" Tooltip="translation:albl_Start">
+        <Property Name="Property.RadialGrid.ExtensionRadialStart" Tooltip="translation:albl_Radial" />
+        <Property Name="Property.RadialGrid.ExtensionAngularStart" Tooltip="translation:albl_Angular" />
+        <Property Name="Property.RadialGrid.ExtensionElevationsStart" Tooltip="translation:albl_Z_Coordinates" />
+      </PropertyGroup>
+      <PropertyGroup Name="End" Label="translation:albl_End" Tooltip="translation:albl_End">
+        <Property Name="Property.RadialGrid.ExtensionRadialEnd" Tooltip="translation:albl_Radial" />
+        <Property Name="Property.RadialGrid.ExtensionAngularEnd" Tooltip="translation:albl_Angular" />
+        <Property Name="Property.RadialGrid.ExtensionElevationsEnd" Tooltip="translation:albl_Z_Coordinates" />
+      </PropertyGroup>
+    </PropertyGroup>
+    <PropertyGroup Name="Origin" Label="translation:albl_Origin" Tooltip="translation:albl_Origin" IsVisible="true">
+      <Property Name="Property.Grid.OriginX" Tooltip="translation:albl_X" />
+      <Property Name="Property.Grid.OriginY" Tooltip="translation:albl_Y" />
+      <Property Name="Property.Grid.OriginZ" Tooltip="translation:albl_Z" />
+    </PropertyGroup>
+    <PropertyGroup Name="GridColor" Label="translation:albl_GridColor" Tooltip="translation:albl_GridColor" IsVisible="true">
+      <Property Name="Property.Grid.GridColor" Tooltip="translation:albl_Color" />
+    </PropertyGroup>
+    <PropertyGroup Name="GridLabel" Label="translation:Property.LabelFontSizeAndColor" Tooltip="translation:Property.LabelFontSizeAndColor" IsVisible="true">
+      <Property Name="Property.Grid.GridFontSize" Tooltip="translation:albl_Font_size" />
+      <Property Name="Property.Grid.GridFontColor" Tooltip="translation:albl_Font_color" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_More" Tooltip="translation:albl_Custom_properties" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+      <Property Name="Property.UDA.GRID_TEXT" Label="translation:albl_Grid_Label_Text" Tooltip="Текст меток сетки (GRID_TEXT), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSX_PRE" Label="translation:albl_Prefix_offset_in_X" Tooltip="Префикс смещения по оси X (COORDTRANSX_PRE), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSY_PRE" Label="translation:albl_Prefix_offset_in_Y" Tooltip="Префикс смещения по оси Y (COORDTRANSY_PRE), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSZ_PRE" Label="translation:albl_Prefix_offset_in_Z" Tooltip="Префикс смещения по оси Z (COORDTRANSZ_PRE), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSX" Label="translation:albl_Offset_in_X" Tooltip="Смещение по оси X (COORDTRANSX), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSY" Label="translation:albl_Offset_in_Y" Tooltip="Смещение по оси Y (COORDTRANSY), Польз. атрибут" />
+      <Property Name="Property.UDA.COORDTRANSZ" Label="translation:albl_Offset_in_Z" Tooltip="Смещение по оси Z (COORDTRANSZ), Польз. атрибут" />
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="GridPlane" Title="translation:albl_Grid_line">
+    <PropertyGroup Name="General" Label="translation:albl_General" Tooltip="translation:albl_General" IsVisible="true">
+      <Property Name="Property.GridPlane.Label" Tooltip="translation:albl_Label" />
+      <Property Name="Property.GridPlane.DepthInViewPlane" Tooltip="translation:albl_DepthInViewPlane" />
+    </PropertyGroup>
+    <PropertyGroup Name="Line extensions" Label="translation:albl_Line_extensions" Tooltip="translation:albl_Line_extensions" IsVisible="true">
+      <Property Name="Property.GridPlane.LineExtensionLeftBelow" Tooltip="translation:albl_Left_below" />
+      <Property Name="Property.GridPlane.LineExtensionRightAbove" Tooltip="translation:albl_Right_above" />
+    </PropertyGroup>
+    <PropertyGroup Name="Magnetism" Label="translation:albl_Magnetism" Tooltip="translation:albl_Magnetism" IsVisible="true">
+      <Property Name="Property.GridPlane.Magnetic" Tooltip="translation:albl_Magnetic" />
+    </PropertyGroup>
+    <PropertyGroup Name="Other settings" Label="translation:albl_Other_settings" Tooltip="translation:albl_Other_settings" IsVisible="true">
+      <Property Name="Property.GridPlane.VisibleInDrawings" Label="translation:albl_GridLineVisibleInDrawing" Tooltip="translation:albl_GridLineVisibleInDrawing" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_More" Tooltip="translation:albl_More" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+      <Property Name="Property.UDA.GRID_TEXT" Label="translation:albl_Grid_Label_Text" Tooltip="Текст меток сетки (GRID_TEXT), Польз. атрибут" />
+    </PropertyGroup>
+  </PropertyTemplate>
+  <PropertyTemplate Type="GridCylindricalSurface" Title="translation:albl_Grid_line">
+    <PropertyGroup Name="General" Label="translation:albl_General" Tooltip="translation:albl_General" IsVisible="true">
+      <Property Name="Property.GridPlane.Label" Tooltip="translation:albl_Label" />
+      <Property Name="Property.GridPlane.DepthInViewPlane" Tooltip="translation:albl_DepthInViewPlane" />
+      <Property Name="Property.GridPlane.Magnetic" Label="translation:albl_Magnetic" Tooltip="translation:albl_Magnetic" />
+    </PropertyGroup>
+    <PropertyGroup Name="Line extensions" Label="translation:albl_Line_extensions" Tooltip="translation:albl_Line_extensions" IsVisible="true">
+      <Property Name="Property.GridPlane.LineExtensionLeftBelow" Tooltip="translation:albl_Left_below" />
+      <Property Name="Property.GridPlane.LineExtensionRightAbove" Tooltip="translation:albl_Right_above" />
+    </PropertyGroup>
+    <PropertyGroup Name="Other settings" Label="translation:albl_Other_settings" Tooltip="translation:albl_Other_settings" IsVisible="true">
+      <Property Name="Property.GridPlane.VisibleInDrawings" Tooltip="translation:albl_GridLineVisibleInDrawing" />
+    </PropertyGroup>
+    <PropertyGroup Name="UserDefinedAttributes" Label="translation:albl_More" Tooltip="translation:albl_More" IsVisible="true">
+      <Property Name="Property.UserDefinedAttributes" />
+    </PropertyGroup>
+    <PropertyGroup Name="Undefined.1e29c543884566d51ccf5a6e01fbc851" Label="!!! Далее пользовательские атрибуты" IsVisible="true">
+      <Property Name="Property.UDA.OBJECT_LOCKED" Label="translation:j_Locked" Tooltip="Заблокировано (OBJECT_LOCKED), Уникальный польз. атрибут" />
+      <Property Name="Property.UDA.GRID_TEXT" Label="translation:albl_Grid_Label_Text" Tooltip="Текст меток сетки (GRID_TEXT), Польз. атрибут" />
+    </PropertyGroup>
+  </PropertyTemplate>
+</PropertyTemplates>
