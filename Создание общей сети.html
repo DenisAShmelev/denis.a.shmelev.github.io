@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="style.css" rel="stylesheet">
+		<title>Создание общей сети</title>
+	</head>
+	<body>
+
+
+
+
+
+<h3>Windows не видит компьютеры в сетевом окружении</h3>
+
+<p>Не отображаются компьютеры Windows в сетевом окружении рабочей группы</p>
+
+<p>Пользователи стали сталкиваться с проблемами отображения соседних компьютеров в локальной сети рабочей группы еще начиная с Windows 10 1703 (Creators Update). После установки этой (или более новой версии Windows 10) ваш компьютер может перестать видеть соседние компьютеры в сети. При попытке просмотреть список устройства в сетевом окружении из File Explorer появляется ошибка.</p>
+
+<p><code>Обнаружение в сети отключено. Сетевые компьютеры и устройства не видны. Включите обнаружение сети в Центре управления сетями и общим доступом.</code></p>
+
+<p><code>Network discovery is turned off. Network computers and devices are not visible. Please turn on network discovery in Network and Sharing Center.</code></p>
+
+<div>
+<p><img src="image\setevoe-obnaruzhenie-otklucheno-windows.png" border=0 alt="setevoe-obnaruzhenie-otklucheno-windows.png"></p>
+<div>
+
+При попытке показать список компьютеров в сетевом окружении командой <code>net view</code> появляется ошибка:
+
+<p><code>
+System error 6118 has occurred.
+The list of servers for this workgroup is not currently available.
+</code></p>
+
+<p><code>Недоступен список серверов для этой рабочей группы.</code></p>
+<div>
+<p><img src="image\net-view-6188-spisok-serverov-rabochey-gruppy-nedostupen.png" border=0 alt="net-view-6188-spisok-serverov-rabochey-gruppy-nedostupen.png"></p>
+<div>
+
+<p>Чтобы включить отображение сетевых устройств в Windows, проверьте следующие настройки:</p>
+
+<p>Перейдите в раздел <b>Панель управления -> Центр управления сетями и общим доступом -> Дополнительные параметры общего доступа</b> (для быстрого доступа можно выполнить команду <code>control.exe /name Microsoft.NetworkAndSharingCenter /page Advanced</code>). </p>
+<p>или</p>
+<p><b>Панель управления\Все элементы панели управления\Центр управления сетями и общим доступом\Дополнительные параметры общего доступа</b></p>
+
+<div>
+<p><img src="image\Parametri_obshego_1.png" border=0 alt="Parametri_obshego_1.png"></p>
+<div>
+<p></p>
+<div>
+<p><img src="image\Parametri_obshego_2.png" border=0 alt="Parametri_obshego_2.png"></p>
+<div>
+<p></p>
+<div>
+<p><img src="image\Parametri_obshego_3.png" border=0 alt="Parametri_obshego_3.png"></p>
+<div>
+<p></p>
+
+
+<p>Затем откройте пункт <b>Параметры Windows -> Сеть и Интернет -> Ethernet</b> (если вы подключены к локальной сети через беспроводное адаптер, выберите Wi-Fi). Щелкните по сетевому значку и проверьте, что включена опция <b>“Сделать этот компьютер доступным для обнаружения”</b>.</p>
+
+<p>Сбросьте кеш DNS на компьютере:</p>
+
+<p><code>ipconfig /flushdns</code></p>
+
+<p>Для включения обнаружения нужно в командной строке с правами администратора выполнить команду, разрешающую трафик сетевого обнаружений (Network Discovery) в Windows:</p>
+
+<p><code>netsh advfirewall firewall set rule group="Network Discovery" new enable=Yes</code></p>
+
+<div>
+<p><img src="image\netsh-rasreshit-protokol-network-discovery.png" border=0 alt="Parametri_obshego_3.png"></p>
+<div>
+
+<p>Бывает, что компьютер с Windows может не отображаться в сетевом окружении из-за неправильных настроек рабочей группы. Попробуйте заново добавить этот компьютер в рабочую группу, переприменив параметры (<b>Панель управления -> Система -> Дополнительные параметры системы -> Имя компьютера -> кнопка Идентификация</b>).</p>
+
+<p>В открывшемся мастере присоединения к домену или рабочей группе выберите последовательно: Компьютер входит в корпоративную сеть -> Моя организация использует сеть без доменов -> имя вашей рабочей группы. После этого нужно перезагрузить компьютер.</p>
+
+<p>Если после перезагрузки компьютер появился в сетевом окружении, но зайти на него не удается, проверьте тип сети компьютера. Скорее всего ваша локальная сеть распозналась как Публичная. Нужно сменить тип сети на Частная. Для этого откройте Settings -> Network and Internet -> Status-> выберите свое сетевое подключение (Ethernet 2 в моем случае) и нажмите Properties. Проверьте что в Network Profile указано Private (если здесь указано Public, измените тип сети на Private).</p>
+
+<p>Если указанные советы не помогли, и компьютеры в рабочей группе все еще не отображаются, попробуйте сбросить настройки сети (Параметры -> Сеть и Интернет -> Состояние -> Сброс сети).</p>
+
+
+
+
+<div>
+<h3>Windows 10 не видит сетевые папки</h3>
+
+<p>В некоторых случаях Windows 10 может видеть в сетевом окружении соседнее устройство, но не может отобразить список сетевых папок на нем. Чаще всего это сопровождается ошибкой “0x80070035 — Не найден сетевой путь”. Решение этой проблемы описано в этой статье.</p>
+
+<p>Если соседний компьютер (устройство) виден в сети, но при попытке открыть любую сетевую папку из сетевого окружения или по UNC пути ( \\Имя_компьютера_или_IP ) появляется ошибка “Вы не можете получить доступ к этой общей папке, так как политики безопасности вашей организации блокируют гостевой доступ без проверки подлинности”. В этом случае нужно включить параметр реестра AllowInsecureGuestAuth (подробности в статье по ссылке):</p>
+
+<code>reg add HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters /v AllowInsecureGuestAuth /t reg_dword /d 00000001 /f </code>
+
+
+setevoe-obnaruzhenie-otklucheno-windows.png
+
+
+<p>По умолчанию сервер устанавливается в следующую папку:</p>
+
+<p>c:\Program Files (x86)\Tekla Structures Multiuser Server</p>
+
+<p>Изменить путь установки во время установки нельзя.</p>
+
+<p>Если вы установили многопользовательский сервер на своем компьютере, имя сервера — это имя вашего компьютера.</p>
+
+<p>Многопользовательский сервер использует порт TCP/IP 1238.</p>
+</div>
+
+<div>
+<p>Открываем папку <b>c:\Program Files (x86)\Tekla Structures Multiuser Server\</b></p>
+<p><img src="image\setevoe-obnaruzhenie-otklucheno-windows.png" border=1 alt="setevoe-obnaruzhenie-otklucheno-windows.png"></p>
+<div>
+
+<div>
+<p>Запускаем от имени администратора файл <b>TS_MUSaaS_Install.cmd</b></p>
+<p><img src="image\TS_MUSaaS_Install.png" border=1 alt="TS_MUSaaS_Install"></p>
+<div>
+
+<div>
+<p>Жмём <b>P</b>. и вводим цифровой код порта по которому будет открыт доступ к серверу. Лучше <b>1238</b></p>
+<p><img src="image\TS_MUSaaS_Install_1.png" border=1 alt="TS_MUSaaS_Install"></p>
+<p></p>
+<p><img src="image\TS_MUSaaS_Install_2.png" border=1 alt="TS_MUSaaS_Install"></p>
+<p></p>
+<p><img src="image\TS_MUSaaS_Install_3.png" border=1 alt="TS_MUSaaS_Install"></p>
+<div>
+
+<div>
+<p>Проверяем открыт ли порт <b>1238</b></p>
+<p>Запускаем коммандную строку от имени администратора. В папке <b>C:\Windows\System32</b> файл <b>cmd.exe</b> правой кнопкой и выбрать "Запуск от имени администратора"</p>
+<p><img src="image\CMD_admin_rules.png" border=1 alt="CMD_admin_rules"></p>
+<div>
+
+<div>
+<p>В коммандной строке вводим <b>netstat -a</b></p>
+<p>Смотрим наличие в показанном списке наличие порта <b>1238</b></p>
+<p><img src="image\netstat-a.png" border=1 alt="CMD_admin_rules"></p>
+<p>Если адрес с этим портом есть в списке значит он открыт</p>
+<div>
+
+<div>
+<p>Если адреса с этим портом в списке нет, переходим дальше</p>
+<p>Провести проверку портов на открытость удаленного компьютера можно при помощи команды telnet.</p>
+<p>Telnet — это утилита, с помощью которой можно соединиться с удаленным портом любого компьютера. Telnet позволяет установить связь, чтобы передавать команды и получать ответы (например, сделать проброс портов).</p>
+<p>В Windows 10 утилита telnet отключена по умолчанию.</p>
+
+<p>В окне терминала введите команду:  telnet имя_сервера номер_порта. </p>
+<p>Можно проверить порт на доступность по IP, если ввести команду telnet IP_сервера номер_порта (например, telnet 192.168.30.79 1238).</p>
+<p><img src="image\telnet_1.png" border=1 alt="telnet_1"></p>
+<p>Если на экране появится текст «“telnet” не является внутренней или внешней командой, исполняемой программой или пакетным файлом», то на вашем компьютере отключена утилита и ее надо установить по инструкции:</p>
+
+<p>В командной строке наберите <b>pkgmgr /iu:"TelnetClient"</b> и нажмите <b>Enter</b>. Через мгновение вы вернетесь к командной строке.</p>
+<p>Перезагрузите командную строку, чтобы начать использовать Telnet.</p>
+
+
+<p>Если на экране командной строки появится ошибка, значит порт закрыт:</p>
+<p><img src="image\telnet_2.png" border=1 alt="telnet_2"></p>
+<p>Если экран станет полностью пустым или появится приглашение сервера, значит порт открыт</p>
+
+
+</div>
+
+<div>
+<p>Открыть порт через командную строку</p>
+<p>Запускаем коммандную строку с правами администратора</p>
+<p>Для открытия порта вводим команду</p>
+
+<b>netsh advfirewall firewall add rule name="Название правила" protocol="TCP или UDP" localport=Порт action=allow dir=IN</b>
+
+<b>netsh advfirewall firewall add rule name="PortTeklaServer" protocol="TCP" localport=1238 action=allow dir=IN</b>
+
+<p>После чего жмем enter.</p>
+
+<p>Если появилось сообщение ОК, то вы сделали все правильно.</p>
+
+</div>
+	</body>
+</html>
+
+
