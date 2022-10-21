@@ -312,7 +312,8 @@ svg {
 
 table {
   caption-side: bottom;
-  border-collapse: collapse;
+  border-collapse: collapse;/* Убираем двойные линии между ячейками */
+  border: 1px solid black; /* Параметры рамки */
 }
 
 caption {
@@ -322,9 +323,16 @@ caption {
   text-align: left;
 }
 
-th {
+td, th {
   text-align: inherit;
   text-align: -webkit-match-parent;
+  padding: 3px; /* Поля вокруг содержимого таблицы */
+  border: 1px solid black; /* Параметры рамки */
+}
+
+th {
+background-color:#999999;
+  border: 1px solid black; /* Параметры рамки */
 }
 
 thead,
@@ -336,6 +344,7 @@ th {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
+  border: 1px solid black; /* Параметры рамки */
 }
 
 label {
