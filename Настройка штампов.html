@@ -1,42 +1,45 @@
 <!doctype html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="style.css" rel="stylesheet">
-		<title>Настройки штампов</title>
-	</head>
-	<body>
 
-<div class="section">	
-<div>
-<p>Путь к файлам символов для вставки на чертёж <b>c:\TeklaStructures\2021.0\Environments\common\symbols\</b> </p>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style.css" rel="stylesheet">
+	<title>Настройки штампов</title>
+</head>
 
-<p>c:\TeklaStructures\2021.0\Environments\Russia\General\Symbols\</p>
-<p>c:\TeklaStructures\2021.0\Environments\common\symbols\</p>
-<p>c:\TeklaStructures\2021.0\nt\bin\TplEd\bitmaps\</p>
-</div>
+<body>
 
+	<div class="section">
+		<div>
+			<p>Путь к файлам символов для вставки на чертёж
+				<b>c:\TeklaStructures\2021.0\Environments\common\symbols\</b> </p>
 
-<div>
-<p>Чтобы получить сумму элементов в строке</p>
-<p>Выставляем в свойствах строки <b>Объединить</b></p>
-<p><img src="image\Property_string.png" border=1 alt="Property_string"></p>
-
-<p>Выставляем свойства поля значений следующим образом:</p>
-<p>Тип данных: Число</p>
-<p>Порядок: Нет</p>
-<p>При объединении строк: Суммировать значения по всем строкам</p>
-<p><img src="image\Property_pole_znachenij.png" border=1 alt="Property_pole_znachenij"></p>
-</div>
+			<p>c:\TeklaStructures\2021.0\Environments\Russia\General\Symbols\</p>
+			<p>c:\TeklaStructures\2021.0\Environments\common\symbols\</p>
+			<p>c:\TeklaStructures\2021.0\nt\bin\TplEd\bitmaps\</p>
+		</div>
 
 
-		
-<div>
-Цвет рамки чертежа можно поменять в файле <br>
-<b>c:\TeklaStructures\2021.0\Environments\Russia\General\DrawingSettings\standard.fms</b><br><br>
+		<div>
+			<p>Чтобы получить сумму элементов в строке</p>
+			<p>Выставляем в свойствах строки <b>Объединить</b></p>
+			<p><img src="image\Property_string.png" border=1 alt="Property_string"></p>
 
-<code>
+			<p>Выставляем свойства поля значений следующим образом:</p>
+			<p>Тип данных: Число</p>
+			<p>Порядок: Нет</p>
+			<p>При объединении строк: Суммировать значения по всем строкам</p>
+			<p><img src="image\Property_pole_znachenij.png" border=1 alt="Property_pole_znachenij"></p>
+		</div>
+
+
+
+		<div>
+			Цвет рамки чертежа можно поменять в файле <br>
+			<b>c:\TeklaStructures\2021.0\Environments\Russia\General\DrawingSettings\standard.fms</b><br><br>
+
+			<code>
 dia_drframe.drframe1_en 1<br>
 dia_drframe.drframe2_en 1<br>
 dia_drframe.fold_en 0<br>
@@ -55,19 +58,49 @@ dia_drframe.fold_height 0.000000<br>
 dia_drframe.fold_pen 0<br>
 </code>
 
-<p><img src="image\Colors.png" border=1 alt="Стандартные индексы цветов"></p>
-
-	
-XS_STORE_MULTIPLE_BAK_FILES=TRUE [MODEL]
-XS_PLOT_VIEW_FRAMES=FALSE [MODEL]
-
-<p><a href="#top">Перейти к верхней части текста</a></p>
-<p><a href="index.html">Вернуться к списку тем</a></p>
-</div>
+			<p><img src="image\Colors.png" border=1 alt="Стандартные индексы цветов"></p>
 
 
-</div>
-	</body>
+			XS_STORE_MULTIPLE_BAK_FILES=TRUE [MODEL]
+			XS_PLOT_VIEW_FRAMES=FALSE [MODEL]
+
+			<p><a href="#top">Перейти к верхней части текста</a></p>
+			<p><a href="index.html">Вернуться к списку тем</a></p>
+		</div>
+
+
+
+
+
+
+		XS_VIEW_FRAMES_VISIBLE=TRUE [USER]
+
+		Если этот расширенный параметр установлен в значение FALSE, рамки видов на чертежах будут скрыты, пока вы не
+		наведете указатель мыши на вид. это значение используется по умолчанию.
+
+		Когда этот расширенный параметр установлен в значение TRUE, рамки видов на чертежах будут отображаться
+		постоянно.
+
+		Этот расширенный параметр задается для конкретного пользователя; его значение сохраняется в файле options.bin в
+		папке пользователя, например C:\Users\<user>\AppData\Local\Trimble\Tekla Structures\<version>\UserSettings
+				Перезапустите Tekla Structures, чтобы новое значение вступило в силу.
+
+
+
+
+
+				XS_​USE_​SMOOTH_​LINES
+						
+				Вид модели
+				
+				Если этот расширенный параметр установлен в значение TRUE, используется сглаживание для минимизации ступенчатости краев объектов на видах модели. Прежде чем использовать этот расширенный параметр, проверьте, поддерживает ли ваш графический адаптер сглаживание (антиальясинг). Этот расширенный параметр поддерживается только при визуализации OpenGL.
+				
+				Значение по умолчанию — FALSE.
+				
+				Этот расширенный параметр задается для конкретного пользователя; его значение сохраняется в файле options.bin в папке пользователя, например в C:\Users\<user>\AppData\Local\Trimble\Tekla Structures\<version>\UserSettings. Перезапустите Tekla Structures, чтобы новое значение вступило в силу.
+				
+
+	</div>
+</body>
+
 </html>
-
-
