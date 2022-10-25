@@ -1,23 +1,23 @@
-Среда Каркас плоский 4_attributes.saveas_file "Среда Каркас_Вертикальный"
-Среда Каркас плоский 4_attributes.get_menu "< Внешняя разработка >"
-Среда Каркас плоский 4_attributes.name_enable 0
-Среда Каркас плоский 4_attributes.ThirdHandle 0
-Среда Каркас плоский 4_attributes.AtDepthValue 0.000000
-Среда Каркас плоский 4_attributes.AtDepth 0
-Среда Каркас плоский 4_attributes.RotationValue 0.000000
-Среда Каркас плоский 4_attributes.Rotation 0
-Среда Каркас плоский 4_attributes.OnPlaneValue 2.500000
-Среда Каркас плоский 4_attributes.OnPlane 0
-Среда Каркас плоский 4_attributes.v4 10.000000
-Среда Каркас плоский 4_attributes.v3 10.000000
-Среда Каркас плоский 4_attributes.v2 30.000000
-Среда Каркас плоский 4_attributes.sv4 "100.0"
-Среда Каркас плоский 4_attributes.Nv1_vvod 2
-Среда Каркас плоский 4_attributes.v_size 20
-Среда Каркас плоский 4_attributes.Vid 0
-Среда Каркас плоский 4_attributes.h4 10.000000
-Среда Каркас плоский 4_attributes.h3 10.000000
-Среда Каркас плоский 4_attributes.sh4 "100.0"
-Среда Каркас плоский 4_attributes.sh2 5.000000
-Среда Каркас плоский 4_attributes.Nh1_vvod 5
-Среда Каркас плоский 4_attributes.H1 2000.000000
+   4_attributes.saveas_file " _"
+   4_attributes.get_menu "<   >"
+   4_attributes.name_enable 0
+   4_attributes.ThirdHandle 0
+   4_attributes.AtDepthValue 0.000000
+   4_attributes.AtDepth 0
+   4_attributes.RotationValue 0.000000
+   4_attributes.Rotation 0
+   4_attributes.OnPlaneValue 2.500000
+   4_attributes.OnPlane 0
+   4_attributes.v4 10.000000
+   4_attributes.v3 10.000000
+   4_attributes.v2 30.000000
+   4_attributes.sv4 "100.0"
+   4_attributes.Nv1_vvod 2
+   4_attributes.v_size 20
+   4_attributes.Vid 0
+   4_attributes.h4 10.000000
+   4_attributes.h3 10.000000
+   4_attributes.sh4 "100.0"
+   4_attributes.sh2 5.000000
+   4_attributes.Nh1_vvod 5
+   4_attributes.H1 2000.000000
