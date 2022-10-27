@@ -152,16 +152,30 @@ h4, .h4 {
 }
 
 h5, .h5 {
+  margin-top: 20px;
+  margin-bottom: 0px;
   font-size: 1.25rem;
 }
 
 h6, .h6 {
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: 1rem;
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+p.otstup {
+  margin: 0 0 0 40px;
+}
+
+p.copyright {
+  text-align: right;
+  margin: 0 20px 0 0;
+  font-size: 1.25rem;
 }
 
 abbr[title] {
