@@ -1,0 +1,12 @@
+// Задаёмся точкой с будущим началом координат плоскости.
+_point point0 = new TSG.Point(origin0.X, origin1.Y, origin0.Z);
+
+// Задаём векторами указывающими направление осей X и Y (задаёмся двумя точками, и из координат конца, вычитаем координаты начала)
+TSG.Vector vectorX = new TSG.Vector(origin1.X - origin0.X, origin1.Y - origin0.Y, origin1.Z - origin0.Z);
+TSG.Vector vectorY = new TSG.Vector(origin2.X - origin0.X, origin2.Y - origin0.Y, origin2.Z - origin0.Z);
+            
+// Объявляем плоскость на основании точки и двух векторов.
+TSM.TransformationPlane newPlane = new TSM.TransformationPlane(point0, vectorX, vectorY);
+
+// Переносим рабочую плоскость модели на новую рабочую плоскость детали.
+MyModel.GetWorkPlaneHandler().SetCurrentTransformationPlane(newPlane);
