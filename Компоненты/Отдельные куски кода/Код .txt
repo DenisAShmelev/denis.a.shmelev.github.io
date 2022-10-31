@@ -1,0 +1,282 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+using Tekla.Structures;
+using TSM = Tekla.Structures.Model;
+using TSG = Tekla.Structures.Geometry3d;
+using TSMUI = Tekla.Structures.Model.UI;
+using System.Collections;
+using Tekla.Structures.Model.Operations;
+
+
+namespace Beam2
+{
+    public partial class Form2 : Form
+    {
+        TSM.Model model;
+
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private bool InitializeConnection()
+        {
+            TSM.Model _model = new TSM.Model();
+            if (_model.GetConnectionStatus())
+            {
+                model = _model;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            if (!InitializeConnection())
+            {
+                MessageBox.Show("Подключиться не удалось");
+                // this.Close();
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Объявяем новый "picker" для указания щелчками мыши.
+            TSMUI.Picker picker = new TSMUI.Picker();
+            // ArrayList picker_face = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_FACE);
+
+            // Создаём новый массив, и записываем в него две указнных мышью точки.
+            ArrayList picker_points = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_TWO_POINTS);
+            // Берём из массива значения по одному и подставляем в точки.
+            TSG.Point p1 = picker_points[0] as TSG.Point;
+            TSG.Point p2 = picker_points[1] as TSG.Point;
+
+            // Создаём новый массив, и записываем в него точки указнные мышью.
+            // ArrayList picker_polygons = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_POLYGON);
+            // Берём из массива значения по одному и подставляем в точки.
+            //TSG.Point p1 = picker_polygons[0] as TSG.Point;
+            //TSG.Point p2 = picker_polygons[1] as TSG.Point;
+
+            textBox1.Text = p1.X + " " + p1.Y + " " + p1.Z;
+            //Console.WriteLine(picker_polygons[0])
+
+            // Создаём вектор оси Х между указанными ранее точками взятыми из массива.
+            // (чтобы создать вектор нужно из координат конца отнять координаты начала).
+            // TSG.Vector vectorX = new TSG.Vector(p2.X - p1.X, p2.Y - p1.Y, p2.Z - p1.Z);
+            // Нормализуем вектор (приводим к единичному).
+            // vectorX.Normalize();
+            // Создаём вектор Z. (считаем что он всегда вертикален).
+            // TSG.Vector vectorY = new TSG.Vector(p2.X - p1.X, p2.Y - p1.Y, p2.Z - p1.Z);
+
+            // Создаём новую балку, передаём в неё данные о точках указанных ранее, и профиль.
+            clBeam b = new clBeam(p1.X, p1.Y, p1.Z, p2.X, p2.Y, p2.Z, "300*100");
+            clBeam b1 = new clBeam(p1.X+1000.0, p1.Y + 1000.0, p1.Z + 1000.0, p2.X + 1000.0, p2.Y + 1000.0, p2.Z + 1000.0, "300*100");
+            // b.StartPoint = new TSG.Point(p1.X, p1.Y, p1.Z);
+            // b.EndPoint = new TSG.Point(p2.X, p2.Y, p2.Z);
+            b.InsertBeam();
+            b1.InsertBeam();
+            model.CommitChanges();
+        }
+
+
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            TSM.Model myModel = new TSM.Model();
+
+            //The transformation plane to be set as the current transformation plane
+            myModel.GetWorkPlaneHandler().SetCurrentTransformationPlane(new TSM.TransformationPlane());
+
+            //Define origin and two vectors to set the UCS to the XZ plane
+            TSG.Point Origin = new TSG.Point(0, 0, 0);  //Represents the origin
+            TSG.Vector X = new TSG.Vector(1, 0, 1);     //Represents x-axis
+            TSG.Vector Y = new TSG.Vector(0, 1, 1);     //Represents y-axis
+
+            //Create a new transformation plane defined by the given origin and two vectors
+            TSM.TransformationPlane XZ_Plane = new TSM.TransformationPlane(Origin, X, Y);
+
+            //Setting the current transformation plane to be (XZ plane)
+            myModel.GetWorkPlaneHandler().SetCurrentTransformationPlane(XZ_Plane);
+            myModel.CommitChanges();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TSM.Model myModel = new TSM.Model();
+            TSM.Beam myBeam = new TSM.Beam(TSM.Beam.BeamTypeEnum.BEAM);
+
+            //Beam myBeam = new Beam(new TSG.Point(1000, 1000, 1000),
+            //                        new TSG.Point(6000, 6000, 1000));
+
+            //Beam myBeam = new Beam();
+            myBeam.Name = "Хомут";
+            myBeam.Material.MaterialString = "C245";
+            myBeam.Profile.ProfileString = "100*100";
+            myBeam.PartNumber.Prefix = "Деталь";
+            myBeam.PartNumber.StartNumber = 1;
+            myBeam.AssemblyNumber.Prefix = "Сборка";
+            myBeam.AssemblyNumber.StartNumber = 1;
+            myBeam.Class = "20";
+            myBeam.Position.Plane = TSM.Position.PlaneEnum.MIDDLE;
+            myBeam.Position.Depth = TSM.Position.DepthEnum.MIDDLE;
+            myBeam.Position.Rotation = TSM.Position.RotationEnum.TOP;
+            myBeam.Finish = "";
+            myBeam.StartPoint = new TSG.Point(0, 0, 0);
+            myBeam.EndPoint = new TSG.Point(1000, 0, 0);
+
+
+            myBeam.Insert();
+            myModel.CommitChanges();
+
+            if (!myBeam.Insert())
+            {
+                Console.WriteLine("не добавил");
+            }
+            if (myBeam.Insert())
+            {
+                Console.WriteLine("Добавлено!");
+            }
+        }
+
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            TSM.Model myModel = new TSM.Model();
+
+            // Объявяем новый "picker" для указания щелчками мыши.
+            TSMUI.Picker picker = new TSMUI.Picker();
+            //Создаём новый массив, и записываем в него точки указнные мышью.
+            ArrayList picker_polygons = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_POLYGON);
+            //Берём из массива значения по одному и подставляем в точки.
+            TSG.Point p1 = picker_polygons[0] as TSG.Point;
+            TSG.Point p2 = picker_polygons[1] as TSG.Point;
+
+            TSM.Chamfer myChamfer = new TSM.Chamfer(0, 0, TSM.Chamfer.ChamferTypeEnum.CHAMFER_ARC_POINT);
+
+            TSM.ContourPoint point = new TSM.ContourPoint(new TSG.Point(p1.X, p1.Y, p1.Z), null);
+            //TSM.ContourPoint point = new TSM.ContourPoint(new TSG.Point(0, 0, 0), null);
+            TSM.ContourPoint point2 = new TSM.ContourPoint(new TSG.Point(2000, 2000, 0), myChamfer);
+            TSM.ContourPoint point3 = new TSM.ContourPoint(new TSG.Point(0, 4000, 0), null);
+
+            TSM.PolyBeam myPolyBeam = new TSM.PolyBeam();
+
+            myPolyBeam.AddContourPoint(point);
+            myPolyBeam.AddContourPoint(point2);
+            myPolyBeam.AddContourPoint(point3);
+
+            myPolyBeam.Name = "Хомут";
+            myPolyBeam.Material.MaterialString = "C245";
+            myPolyBeam.Profile.ProfileString = "100*100";
+            myPolyBeam.PartNumber.Prefix = "Деталь";
+            myPolyBeam.PartNumber.StartNumber = 1;
+            myPolyBeam.AssemblyNumber.Prefix = "Сборка";
+            myPolyBeam.AssemblyNumber.StartNumber = 1;
+            myPolyBeam.Class = "20";
+            myPolyBeam.Position.Plane = TSM.Position.PlaneEnum.MIDDLE;
+            myPolyBeam.Position.Depth = TSM.Position.DepthEnum.MIDDLE;
+            myPolyBeam.Position.Rotation = TSM.Position.RotationEnum.TOP;
+            myPolyBeam.Finish = "";
+
+            bool Result = false;
+            Result = myPolyBeam.Insert();
+            myModel.CommitChanges();
+        }
+
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TSM.Model myModel = new TSM.Model();
+            TSMUI.Picker _picker = new TSMUI.Picker();
+            ArrayList pickedPoints = _picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_POLYGON, "Укажи полигон");
+
+            ArrayList contourPoints = new ArrayList();
+            foreach (TSG.Point mypoint in pickedPoints)
+            {
+                TSM.ContourPoint contourPoint = new TSM.ContourPoint(mypoint, new TSM.Chamfer());
+                contourPoints.Add(contourPoint);
+            }
+
+            TSM.ContourPlate myContourPlate = new TSM.ContourPlate();
+            myContourPlate.Contour.ContourPoints = contourPoints;
+            myContourPlate.Profile.ProfileString = "PL25";
+            myContourPlate.Material.MaterialString = "S235";
+            myContourPlate.Name = "Хомут";
+            myContourPlate.Material.MaterialString = "C245";
+            myContourPlate.PartNumber.Prefix = "Деталь";
+            myContourPlate.PartNumber.StartNumber = 1;
+            myContourPlate.AssemblyNumber.Prefix = "Сборка";
+            myContourPlate.AssemblyNumber.StartNumber = 1;
+            myContourPlate.Position.Depth = TSM.Position.DepthEnum.FRONT;
+            myContourPlate.Class = "21";
+            myContourPlate.Finish = "";
+
+            myContourPlate.Insert();
+            myModel.CommitChanges();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            // Объявяем новый "picker" для указания щелчками мыши.
+            TSMUI.Picker picker = new TSMUI.Picker();
+            // ArrayList picker_face = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_FACE);
+
+            // Создаём новый массив, и записываем в него две указанных мышью точки.
+            ArrayList picker_points_lenght = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_TWO_POINTS);
+            // Берём из массива значения по одному и подставляем в точки.
+            TSG.Point p1 = picker_points_lenght[0] as TSG.Point;
+            TSG.Point p2 = picker_points_lenght[1] as TSG.Point;
+
+            ArrayList picker_points_region = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_TWO_POINTS);
+            // Берём из массива значения по одному и подставляем в точки.
+            TSG.Point p3 = picker_points_region[0] as TSG.Point;
+            TSG.Point p4 = picker_points_region[1] as TSG.Point;
+
+            // Создаём новый массив, и записываем в него точки указнные мышью.
+            // ArrayList picker_polygons = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_POLYGON);
+            // Берём из массива значения по одному и подставляем в точки.
+            //TSG.Point p1 = picker_polygons[0] as TSG.Point;
+            //TSG.Point p2 = picker_polygons[1] as TSG.Point;
+
+            listBox1.Items.Add(p1.X + " " + p1.Y + " " + p1.Z);
+            listBox1.Items.Add(p2.X + " " + p2.Y + " " + p2.Z);
+            listBox1.Items.Add(p3.X + " " + p3.Y + " " + p3.Z);
+            listBox1.Items.Add(p4.X + " " + p4.Y + " " + p4.Z);
+            
+            //textBox1.Text = p1.X + " " + p1.Y + " " + p1.Z;
+            //Console.WriteLine(picker_polygons[0])
+
+            // Создаём вектор оси Х между указанными ранее точками взятыми из массива.
+            // (чтобы создать вектор нужно из координат конца отнять координаты начала).
+            // TSG.Vector vectorX = new TSG.Vector(p2.X - p1.X, p2.Y - p1.Y, p2.Z - p1.Z);
+            // Нормализуем вектор (приводим к единичному).
+            // vectorX.Normalize();
+            // Создаём вектор Z. (считаем что он всегда вертикален).
+            // TSG.Vector vectorY = new TSG.Vector(p2.X - p1.X, p2.Y - p1.Y, p2.Z - p1.Z);
+
+            // Создаём новую балку, передаём в неё данные о точках указанных ранее, и профиль.
+            clBeam b = new clBeam(p1.X, p1.Y, p1.Z, p2.X, p2.Y, p2.Z, "300*100");
+            clBeam b1 = new clBeam(p3.X, p3.Y, p3.Z, p4.X, p4.Y, p4.Z, "300*100");
+            // b.StartPoint = new TSG.Point(p1.X, p1.Y, p1.Z);
+            // b.EndPoint = new TSG.Point(p2.X, p2.Y, p2.Z);
+            b.InsertBeam();
+            b1.InsertBeam();
+            model.CommitChanges();
+        }
+    }
+}
