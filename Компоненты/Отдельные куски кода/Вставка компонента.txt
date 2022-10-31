@@ -1,0 +1,16 @@
+// Создадим экземпляр компонента для стандартного компонента.
+TSM.Component component1 = new TSM.Component();
+//Задаём название из загруженных в модель компонентов к которому будем обращаться.
+component1.Name = "Петля PVL60L";
+ // Создаём параметры ввода для компонента.
+TSM.ComponentInput input1 = new TSM.ComponentInput();	
+input1.AddOneInputPosition(p1);
+input1.AddOneInputPosition(p2);
+// Передаём в компонент заданные параметры ввода.
+component1.SetComponentInput(input1);
+// Вставляем компонент.
+component1.Insert();
+
+
+
+						
