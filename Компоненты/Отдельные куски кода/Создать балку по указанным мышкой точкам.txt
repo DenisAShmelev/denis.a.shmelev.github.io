@@ -1,0 +1,35 @@
+            // Объявяем новый "picker" для указания щелчками мыши.
+            TSMUI.Picker picker = new TSMUI.Picker();
+            // ArrayList picker_face = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_FACE);
+
+            // Создаём новый массив, и записываем в него две указнных мышью точки.
+            ArrayList picker_points = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_TWO_POINTS);
+            // Берём из массива значения по одному и подставляем в точки.
+            TSG.Point p1 = picker_points[0] as TSG.Point;
+            TSG.Point p2 = picker_points[1] as TSG.Point;
+
+            // Создаём новый массив, и записываем в него точки указнные мышью.
+            // ArrayList picker_polygons = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_POLYGON);
+            // Берём из массива значения по одному и подставляем в точки.
+            //TSG.Point p1 = picker_polygons[0] as TSG.Point;
+            //TSG.Point p2 = picker_polygons[1] as TSG.Point;
+
+            textBox1.Text = p1.X + " " + p1.Y + " " + p1.Z;
+            //Console.WriteLine(picker_polygons[0])
+
+            // Создаём вектор оси Х между указанными ранее точками взятыми из массива.
+            // (чтобы создать вектор нужно из координат конца отнять координаты начала).
+            // TSG.Vector vectorX = new TSG.Vector(p2.X - p1.X, p2.Y - p1.Y, p2.Z - p1.Z);
+            // Нормализуем вектор (приводим к единичному).
+            // vectorX.Normalize();
+            // Создаём вектор Z. (считаем что он всегда вертикален).
+            // TSG.Vector vectorY = new TSG.Vector(p2.X - p1.X, p2.Y - p1.Y, p2.Z - p1.Z);
+
+            // Создаём новую балку, передаём в неё данные о точках указанных ранее, и профиль.
+            clBeam b = new clBeam(p1.X, p1.Y, p1.Z, p2.X, p2.Y, p2.Z, "300*100");
+            clBeam b1 = new clBeam(p1.X+1000.0, p1.Y + 1000.0, p1.Z + 1000.0, p2.X + 1000.0, p2.Y + 1000.0, p2.Z + 1000.0, "300*100");
+            // b.StartPoint = new TSG.Point(p1.X, p1.Y, p1.Z);
+            // b.EndPoint = new TSG.Point(p2.X, p2.Y, p2.Z);
+            b.InsertBeam();
+            b1.InsertBeam();
+            model.CommitChanges();
