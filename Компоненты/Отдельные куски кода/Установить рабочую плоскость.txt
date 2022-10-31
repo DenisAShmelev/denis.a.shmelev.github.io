@@ -1,0 +1,16 @@
+            TSM.Model myModel = new TSM.Model();
+
+            //The transformation plane to be set as the current transformation plane
+            myModel.GetWorkPlaneHandler().SetCurrentTransformationPlane(new TSM.TransformationPlane());
+
+            //Define origin and two vectors to set the UCS to the XZ plane
+            TSG.Point Origin = new TSG.Point(0, 0, 0);  //Represents the origin
+            TSG.Vector X = new TSG.Vector(1, 0, 1);     //Represents x-axis
+            TSG.Vector Y = new TSG.Vector(0, 1, 1);     //Represents y-axis
+
+            //Create a new transformation plane defined by the given origin and two vectors
+            TSM.TransformationPlane XZ_Plane = new TSM.TransformationPlane(Origin, X, Y);
+
+            //Setting the current transformation plane to be (XZ plane)
+            myModel.GetWorkPlaneHandler().SetCurrentTransformationPlane(XZ_Plane);
+            myModel.CommitChanges();
