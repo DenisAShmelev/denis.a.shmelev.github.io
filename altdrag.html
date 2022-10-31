@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AltDrag</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Stefan Sundin">
+    <meta name="description" content="AltDrag brings the window moving behavior from Linux to Windows.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta property="og:site_name" content="AltDrag">
+    <meta property="og:title" content="AltDrag">
+    <meta property="og:description" content="AltDrag brings the window moving behavior from Linux to Windows.">
+    <meta property="og:url" content="https://stefansundin.github.io/altdrag/">
+    <meta property="og:image" content="https://stefansundin.github.io/altdrag/img/icon256.png">
+
+    <link rel="canonical" href="https://stefansundin.github.io/altdrag/">
+    <link rel="icon" href="/altdrag/img/icon32.png">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+        integrity="sha384-pdapHxIh7EYuwy6K7iE41uXVxGCXY0sAjBzaElYGJUrzwodck3Lx6IE2lA0rFREo" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
+        integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+    <link rel="stylesheet" href="/altdrag/css/main.css">
+    <link rel="alternate" type="application/atom+xml" href="/altdrag/feed.xml" title="AltDrag news">
+    <link rel="alternate" type="application/atom+xml" href="https://github.com/stefansundin/altdrag/releases.atom"
+        title="AltDrag release feed">
+    <link rel="license" href="https://www.gnu.org/licenses/gpl-3.0.html" title="GNU GPL v3 or later">
+    <script src="/altdrag/js/github-btn.js"></script>
+    <link rel="stylesheet" href="/altdrag/css/github-btn.css">
+</head>
+
+<body class="pad">
+    <header>
+        <img src="img/icon128.png" width="128" height="128" alt="AltDrag Icon" itemprop="image">
+        <h1 itemprop="name">AltDrag</h1>
+        <h2 itemprop="description">Easily drag windows when pressing the alt key</h2>
+    </header>
+
+    <div class="text-center hidden" id="os-warning">
+        <h3><strong>Note:</strong> AltDrag is a Windows only application!</h3>
+
+        
+    </div>
+
+    <div class="buttons btn-group-lg">
+        <a class="btn btn-primary"
+            href="https://github.com/stefansundin/altdrag/releases/download/v1.1/AltDrag-1.1.exe"><span
+                class="glyphicon glyphicon-download-alt"></span> Download v1.1</a>
+        <a class="btn btn-default"
+            href="https://github.com/stefansundin/altdrag/releases/download/v1.1/AltDrag-1.1.zip"><span
+                class="glyphicon glyphicon-send"></span> Portable</a>
+        <a target="_blank" class="btn btn-default" href="https://github.com/stefansundin/altdrag/releases"><span
+                class="glyphicon glyphicon-list"></span> Changelog</a>
+        <a class="btn btn-default" href="doc/"><span class="glyphicon glyphicon-book"></span> Documentation</a>
+    </div>
+    <div class="buttons btn-group-lg">
+        <p><strong>Note:</strong> AltDrag will not work properly if you use DPI scaling, <a target="_blank"
+                href="https://github.com/stefansundin/altdrag/issues/7#issuecomment-50701359">read here for a
+                workaround</a>.</p>
+    </div>
+
+    <div class="container">
+
+
+
+        <h2 id="news">News <a target="_blank" href="feed.xml"><img src="img/feed.png" alt="RSS feed"></a></h2>
+        https://stefansundin.github.io/altdrag/
+
+        <p><strong>2015-08-23 - AltDrag v1.1 released</strong></p>
+        <div class="post-body">
+            <p>Released 1.1. <a href="https://github.com/stefansundin/altdrag/releases">See the changelog here.</a></p>
+
+            <p>There are a few fixes in this new version, but I am mostly being forced to release it because Google Code
+                is shutting down, and this is my last chance to notify the users of v1.0 that there is a new version.
+            </p>
+
+            <p><strong>The installer has changed to install into your user’s directory by default. I therefore recommend
+                    that you uninstall any previous version and then install from scratch!</strong></p>
+
+            <p>I have plans to make the AltDrag source code simpler (by removing features), please see <a
+                    href="https://github.com/stefansundin/altdrag/issues/39">this issue</a> if you have any opinions.
+            </p>
+
+            <p>Lastly, I want to thank everyone who have donated. All support is greatly appreciated!</p>
+        </div>
+
+
+        <p><a href="news/">Read older news...</a></p>
+        <p>For an RSS feed with only new releases, use <a target="_blank"
+                href="https://github.com/stefansundin/altdrag/releases.atom">the GitHub release feed</a>.</p>
+
+
+        <h2 id="intro">What is AltDrag?</h2>
+
+        <p>AltDrag gives you the ability to move and resize windows in a new way. After starting AltDrag, you can simply
+            hold down the Alt key and then click and drag any window.</p>
+
+        <p>This behavior already exists in Linux and other operating systems, and AltDrag was made with the mission to
+            copy that behavior to the Windows platform, and then to further expand it with new intuitive functionality.
+        </p>
+
+        <p>You can use AltDrag in many ways. Here are some examples:</p>
+
+        <ul>
+            <li>Hold down the Alt key, then drag windows with the left mouse button.</li>
+            <li>Use the right mouse button to resize windows. It will resize from the corner or edge you grab closest
+                to.</li>
+            <li>Hold down the Shift key to snap to other windows. You can enable automatic snapping in the options.</li>
+            <li>If you have automatic snapping enabled, you can hit the Space key to temporarily disable it.</li>
+            <li>You can scroll inactive windows with the mouse wheel. If you hold down the Shift key while doing this,
+                it will scroll the window horizontally (some programs do not support this).</li>
+            <li>If you have trouble moving a window, it might be because it's an elevated program (administrator
+                privileges). To move it, you must run AltDrag with administrator privileges too. There is a button in
+                the options to do this.</li>
+            <li>Windows are not brought to the front by default, hit the Ctrl key to bring a window to the front. You
+                can change this in the options.</li>
+            <li>Double-click to maximize windows. Double-click with the right mouse button to move it to a corner or
+                side (which one depends on where you double-click).</li>
+            <li>If you drag a window to an edge or corner of the monitor, it will resize to occupy that space. In
+                Windows-speak, this is called <em>Aero Snap</em>.</li>
+            <li>You can configure Alt-scrolling to do cool things such as: scroll through open windows, changing the
+                volume, changing transparency. When changing the volume of transparency, you can hold down the Shift key
+                to change it in smaller steps.</li>
+            <li>You can enable MDI support in the options.</li>
+            <li>Multi-monitor support! You can hold Ctrl while dragging to trap the window within the current monitor.
+                This is particularly useful if you want to Aero Snap at edges between monitors.</li>
+            <li>If you move a maximized window from one monitor to another, the window will automatically be maximized
+                on arrival. You can hit the Ctrl key to restore it without needing to release the mouse button.</li>
+            <li>AltDrag is tested on Windows XP, 7, 8, 8.1 and 10.</li>
+        </ul>
+
+        <p>AltDrag has more tricks up its sleeve, read through <a href="doc/">the documentation</a> to learn more.</p>
+
+
+        <h2 id="languages">New languages since last release</h2>
+
+        <p>Simply save the desired language file in AltDrag's directory. <strong>Right-click</strong> and
+            <strong><em>Save link as...</em></strong></p>
+
+        <ul>
+            <li><a href="localization/ja_JP/Translation.ini">Japanese</a></li>
+        </ul>
+
+        <p>Read <a href="doc/translate.html">this page</a> to learn how to make your own translation.</p>
+
+
+        <h2 id="support">Support</h2>
+
+        <p>See <a href="doc/known-issues.html">this page</a> for a list of known issues.</p>
+
+        <p>Before reporting a bug, look through the <a target="_blank"
+                href="https://github.com/stefansundin/altdrag/issues">list of issues</a> on GitHub.</p>
+
+        <p>When reporting a bug, please specify what version of Windows you are using, and be sure to include any error
+            message you might see.</p>
+
+
+        <h2 id="license">License</h2>
+
+        <p>AltDrag is free software and licensed under <a target="_blank"
+                href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPL v3</a>. Get <a target="_blank"
+                href="https://github.com/stefansundin/altdrag">the source code</a> on GitHub.</p>
+
+        <p>You may redistribute AltDrag on your own website, but please provide a link to this website on the same page.
+            Please do not bundle AltDrag together with toolbars or other annoying adware, or otherwise degrade the
+            experience.</p>
+
+
+        <h2 id="credits">Credits</h2>
+
+        <p>Made by Stefan Sundin. <a target="_blank" href="https://github.com/stefansundin?tab=repositories">Browse my
+                other projects</a>.</p>
+    </div>
+
+
+    <script src="js/os-warning.js"></script>
+    <script src="js/main.js"></script>
+
+    <footer class="container">
+        <div data-github-btn></div>
+    </footer>
+
+</body>
+
+</html>
