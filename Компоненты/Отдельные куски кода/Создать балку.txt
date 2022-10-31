@@ -1,0 +1,34 @@
+            TSM.Model myModel = new TSM.Model();
+            TSM.Beam myBeam = new TSM.Beam(TSM.Beam.BeamTypeEnum.BEAM);
+
+            //Beam myBeam = new Beam(new TSG.Point(1000, 1000, 1000),
+            //                        new TSG.Point(6000, 6000, 1000));
+
+            //Beam myBeam = new Beam();
+            myBeam.Name = "Хомут";
+            myBeam.Material.MaterialString = "C245";
+            myBeam.Profile.ProfileString = "100*100";
+            myBeam.PartNumber.Prefix = "Деталь";
+            myBeam.PartNumber.StartNumber = 1;
+            myBeam.AssemblyNumber.Prefix = "Сборка";
+            myBeam.AssemblyNumber.StartNumber = 1;
+            myBeam.Class = "20";
+            myBeam.Position.Plane = TSM.Position.PlaneEnum.MIDDLE;
+            myBeam.Position.Depth = TSM.Position.DepthEnum.MIDDLE;
+            myBeam.Position.Rotation = TSM.Position.RotationEnum.TOP;
+            myBeam.Finish = "";
+            myBeam.StartPoint = new TSG.Point(0, 0, 0);
+            myBeam.EndPoint = new TSG.Point(1000, 0, 0);
+
+
+            myBeam.Insert();
+            myModel.CommitChanges();
+
+            if (!myBeam.Insert())
+            {
+                Console.WriteLine("не добавил");
+            }
+            if (myBeam.Insert())
+            {
+                Console.WriteLine("Добавлено!");
+            }
