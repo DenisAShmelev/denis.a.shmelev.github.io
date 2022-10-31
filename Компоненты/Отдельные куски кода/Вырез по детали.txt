@@ -1,0 +1,79 @@
+// Вырез по детали
+// Объявляем инициализацию модели для программы.
+            TSM.Model MyModel = new TSM.Model();
+            //1. Сохранить текущую рабочую плоскость как локальную переменную, чтобы восстановить её позже.
+            TSM.TransformationPlane currentPlane = MyModel.GetWorkPlaneHandler().GetCurrentTransformationPlane();
+            // Получаем локальную рабочую плоскость детали с выделенной балки.
+            // Указываем профиль в котором будем вырезать
+            TSM.UI.Picker firstpick = new TSM.UI.Picker();
+            TSM.Part firstp = firstpick.PickObject(TSM.UI.Picker.PickObjectEnum.PICK_ONE_OBJECT, "Выберите объект 1") as TSM.Part;
+
+            TSM.TransformationPlane localPlane = new TSM.TransformationPlane(firstp.GetCoordinateSystem());
+            // Переносим рабочую плоскость модели на локальную рабочую плоскость детали.
+            MyModel.GetWorkPlaneHandler().SetCurrentTransformationPlane(localPlane);
+
+
+            TSM.Solid solid1 = firstp.GetSolid() as TSM.Solid;
+
+            // Начальная грань
+            double x1 = firstp.GetSolid().MinimumPoint.X;
+            double y1 = firstp.GetSolid().MinimumPoint.Y;
+            double z1 = firstp.GetSolid().MaximumPoint.Z;
+
+            double x2 = firstp.GetSolid().MinimumPoint.X;
+            double y2 = firstp.GetSolid().MinimumPoint.Y;
+            double z2 = firstp.GetSolid().MinimumPoint.Z;
+
+            double x3 = firstp.GetSolid().MinimumPoint.X;
+            double y3 = firstp.GetSolid().MaximumPoint.Y;
+            double z3 = firstp.GetSolid().MaximumPoint.Z;
+
+            double x4 = firstp.GetSolid().MinimumPoint.X;
+            double y4 = firstp.GetSolid().MaximumPoint.Y;
+            double z4 = firstp.GetSolid().MinimumPoint.Z;
+
+            // Конечная грань
+            double x5 = firstp.GetSolid().MaximumPoint.X;
+            double y5 = firstp.GetSolid().MinimumPoint.Y;
+            double z5 = firstp.GetSolid().MaximumPoint.Z;
+
+            double x6 = firstp.GetSolid().MaximumPoint.X;
+            double y6 = firstp.GetSolid().MinimumPoint.Y;
+            double z6 = firstp.GetSolid().MinimumPoint.Z;
+
+            double x7 = firstp.GetSolid().MaximumPoint.X;
+            double y7 = firstp.GetSolid().MaximumPoint.Y;
+            double z7 = firstp.GetSolid().MaximumPoint.Z;
+
+            double x8 = firstp.GetSolid().MaximumPoint.X;
+            double y8 = firstp.GetSolid().MaximumPoint.Y;
+            double z8 = firstp.GetSolid().MinimumPoint.Z;
+
+            // Создаём профиль по которому будет отсекать.
+            Beam Virez = new Beam();
+            Virez.Profile.ProfileString = "PEIKKOC160*20";
+            Virez.StartPoint = new TSG.Point(x1, y1, z1);
+            Virez.EndPoint = new TSG.Point(x3, y3, z3);
+            Virez.Position.Plane = TSM.Position.PlaneEnum.RIGHT; // СПРАВА
+            Virez.Position.Rotation = TSM.Position.RotationEnum.TOP; // СВЕРХУ
+            Virez.Position.Depth = TSM.Position.DepthEnum.BEHIND; // ПОЗАДИ
+            Virez.Class = TSM.BooleanPart.BooleanOperativeClassName;
+            //clBeamConcrete Virez = new clBeamConcrete(x1, y1, z1, x3, y3, z3, "PEIKKOC100*20", "B25", "Плита", "МОНОЛИТ", 100, "ПБ", 1, "1", "СПРАВА", "СВЕРХУ", "ПОЗАДИ");
+            Virez.Insert();
+
+
+            //TSM.Part Virez2 = new TSM.Part();
+
+            BooleanPart B2 = new BooleanPart();
+            // Объявляем Объект главным. Его обрезаем. 
+            B2.Father = firstp;
+            // Производим операцию вычитания объёмов.
+            B2.SetOperativePart(Virez);
+            B2.Type = BooleanPart.BooleanTypeEnum.BOOLEAN_CUT; // BOOLEAN_CUT is default type. Чтобы заработало Раскоментил.
+            if (!B2.Insert())
+                Console.WriteLine("Insert failed!");
+            //B2.Delete(); // Not needed when using BOOLEAN_ADD, operative part is deleted automatically. Чтобы заработало Закоментил.
+
+            // Восстановление предыдущей рабочей плоскости.
+            MyModel.GetWorkPlaneHandler().SetCurrentTransformationPlane(currentPlane);
+            model.CommitChanges();
