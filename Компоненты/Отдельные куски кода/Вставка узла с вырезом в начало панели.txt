@@ -1,0 +1,276 @@
+
+        private void virez_po_detali_nachalo()
+        {
+            //string component_name = "Петля PVL60C local";
+            //listBox3.Items.Add(component_name);
+            string empty_profile_name = "400*400";
+            int loop_step = Convert.ToInt32(textBoxLoop_step.Text);
+            int loop_start = Convert.ToInt32(textBoxLoop_start.Text);
+            int loop_end = Convert.ToInt32(textBoxLoop_end.Text);
+            int loop_correction = Convert.ToInt32(textBoxLoop_correction.Text);
+
+            int A = (Convert.ToInt32(comboBoxVariant.Text));
+            if (A == 1)
+            {
+                empty_profile_name = "PEIKKOC";
+            }
+            else if (A == 2)
+            {
+                empty_profile_name = "PEIKKOD";
+            }
+
+            string component_name = Convert.ToString(comboBoxLoop_name.Text);
+            int i = 0;
+
+            // Объявляем инициализацию модели для программы.
+            TSM.Model MyModel = new TSM.Model();
+            //1. Сохранить текущую рабочую плоскость как локальную переменную, чтобы восстановить её позже.
+            TSM.TransformationPlane currentPlane = MyModel.GetWorkPlaneHandler().GetCurrentTransformationPlane();
+            // Получаем локальную рабочую плоскость детали с выделенной балки.
+            // Указываем профиль в котором будем вырезать
+            TSM.UI.Picker firstpick = new TSM.UI.Picker();
+            TSM.Part firstp = firstpick.PickObject(TSM.UI.Picker.PickObjectEnum.PICK_ONE_OBJECT, "Выберите объект 1") as TSM.Part;
+
+
+            //// Получаем координаты точек выделенной панели в мировой системе координат.
+            //TSM.Solid solid1 = firstp.GetSolid() as TSM.Solid;
+
+            //// Начальная грань
+            //double x1_global = firstp.GetSolid().MinimumPoint.X;
+            //double y1_global = firstp.GetSolid().MinimumPoint.Y;
+            //double z1_global = firstp.GetSolid().MaximumPoint.Z;
+
+            //double x2_global = firstp.GetSolid().MinimumPoint.X;
+            //double y2_global = firstp.GetSolid().MinimumPoint.Y;
+            //double z2_global = firstp.GetSolid().MinimumPoint.Z;
+
+            //double x3_global = firstp.GetSolid().MinimumPoint.X;
+            //double y3_global = firstp.GetSolid().MaximumPoint.Y;
+            //double z3_global = firstp.GetSolid().MaximumPoint.Z;
+
+            //double x4_global = firstp.GetSolid().MinimumPoint.X;
+            //double y4_global = firstp.GetSolid().MaximumPoint.Y;
+            //double z4_global = firstp.GetSolid().MinimumPoint.Z;
+
+            //// Конечная грань
+            //double x5_global = firstp.GetSolid().MaximumPoint.X;
+            //double y5_global = firstp.GetSolid().MinimumPoint.Y;
+            //double z5_global = firstp.GetSolid().MaximumPoint.Z;
+
+            //double x6_global = firstp.GetSolid().MaximumPoint.X;
+            //double y6_global = firstp.GetSolid().MinimumPoint.Y;
+            //double z6_global = firstp.GetSolid().MinimumPoint.Z;
+
+            //double x7_global = firstp.GetSolid().MaximumPoint.X;
+            //double y7_global = firstp.GetSolid().MaximumPoint.Y;
+            //double z7_global = firstp.GetSolid().MaximumPoint.Z;
+
+            //double x8_global = firstp.GetSolid().MaximumPoint.X;
+            //double y8_global = firstp.GetSolid().MaximumPoint.Y;
+            //double z8_global = firstp.GetSolid().MinimumPoint.Z;
+
+
+
+
+
+
+            TSM.TransformationPlane localPlane = new TSM.TransformationPlane(firstp.GetCoordinateSystem());
+            // Переносим рабочую плоскость модели на локальную рабочую плоскость детали.
+            MyModel.GetWorkPlaneHandler().SetCurrentTransformationPlane(localPlane);
+
+
+            TSMUI.Picker picker = new TSMUI.Picker();
+            ArrayList picker_1 = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_ONE_POINT, "Укажи точку ближе к концу на котором необходимо вставить узел");
+            TSG.Point p_1 = picker_1[0] as TSG.Point;
+            toolStripStatusLabel3.Text = Convert.ToString(p_1.X) + ", " + Convert.ToString(p_1.Y) + ", " + Convert.ToString(p_1.Z);
+
+
+            // Получаем координаты точек выделенной панели в локальных координатах.
+
+            TSM.Solid solid1 = firstp.GetSolid() as TSM.Solid;
+            // Начальная грань
+            double x1_local = firstp.GetSolid().MinimumPoint.X;
+            double y1_local = firstp.GetSolid().MinimumPoint.Y;
+            double z1_local = firstp.GetSolid().MaximumPoint.Z;
+
+            double x2_local = firstp.GetSolid().MinimumPoint.X;
+            double y2_local = firstp.GetSolid().MinimumPoint.Y;
+            double z2_local = firstp.GetSolid().MinimumPoint.Z;
+
+            double x3_local = firstp.GetSolid().MinimumPoint.X;
+            double y3_local = firstp.GetSolid().MaximumPoint.Y;
+            double z3_local = firstp.GetSolid().MaximumPoint.Z;
+
+            double x4_local = firstp.GetSolid().MinimumPoint.X;
+            double y4_local = firstp.GetSolid().MaximumPoint.Y;
+            double z4_local = firstp.GetSolid().MinimumPoint.Z;
+
+            // Конечная грань
+            double x5_local = firstp.GetSolid().MaximumPoint.X;
+            double y5_local = firstp.GetSolid().MinimumPoint.Y;
+            double z5_local = firstp.GetSolid().MaximumPoint.Z;
+
+            double x6_local = firstp.GetSolid().MaximumPoint.X;
+            double y6_local = firstp.GetSolid().MinimumPoint.Y;
+            double z6_local = firstp.GetSolid().MinimumPoint.Z;
+
+            double x7_local = firstp.GetSolid().MaximumPoint.X;
+            double y7_local = firstp.GetSolid().MaximumPoint.Y;
+            double z7_local = firstp.GetSolid().MaximumPoint.Z;
+
+            double x8_local = firstp.GetSolid().MaximumPoint.X;
+            double y8_local = firstp.GetSolid().MaximumPoint.Y;
+            double z8_local = firstp.GetSolid().MinimumPoint.Z;
+
+
+            double x1; double x2; double x3; double x4;
+            double y1; double y2; double y3; double y4;
+            double z1; double z2; double z3; double z4;
+
+            double x5; double x6; double x7; double x8;
+            double y5; double y6; double y7; double y8;
+            double z5; double z6; double z7; double z8;
+
+
+            // Проверяем и задаём точку вставки узла.
+
+            if ((Math.Sqrt(Math.Abs(Math.Pow(p_1.X, 2) - Math.Pow(x1_local, 2)))) < (Math.Sqrt(Math.Abs(Math.Pow(p_1.X, 2) - Math.Pow(x5_local, 2)))))
+            { 
+            //    toolStripStatusLabel4.Text = Convert.ToString("p_1.X=" + Convert.ToString(p_1.X) + "; x1_local=" + Convert.ToString(x1_local) + "   " + Convert.ToString(Math.Sqrt(Math.Abs(Math.Pow(p_1.X, 2) - Math.Pow(x1_local, 2)))) + "| ");
+            //toolStripStatusLabel5.Text = Convert.ToString("p_1.X=" + Convert.ToString(p_1.X) + "; x1_local=" + Convert.ToString(x5_local) + "   " + Convert.ToString(Math.Sqrt(Math.Abs(Math.Pow(p_1.X, 2) - Math.Pow(x5_local, 2)))) + "| ");
+
+            //textBox3.Text = Convert.ToString("p_1.X=" + Convert.ToString(p_1.X) + "; x1_local=" + Convert.ToString(x1_local) + "   " + Convert.ToString(Math.Sqrt(Math.Abs(Math.Pow(p_1.X, 2) - Math.Pow(x1_local, 2)))) + "| ");
+            //textBox4.Text = Convert.ToString("p_1.X=" + Convert.ToString(p_1.X) + "; x1_local=" + Convert.ToString(x5_local) + "   " + Convert.ToString(Math.Sqrt(Math.Abs(Math.Pow(p_1.X, 2) - Math.Pow(x5_local, 2)))) + "| ");
+                textBox5.Text = "К началу";
+                x1 = x1_local; x2 = x2_local; x3 = x3_local; x4 = x4_local;
+                y1 = y1_local; y2 = y2_local; y3 = y3_local; y4 = y4_local;
+                z1 = z1_local; z2 = z2_local; z3 = z3_local; z4 = z4_local;
+
+                x5 = x5_local; x6 = x6_local; x7 = x7_local; x8 = x8_local;
+                y5 = y5_local; y6 = y6_local; y7 = y7_local; y8 = y8_local;
+                z5 = z5_local; z6 = z6_local; z7 = z7_local; z8 = z8_local;
+            }
+            else
+            {
+                textBox5.Text = "К концу";
+                x1 = x6_local; x2 = x5_local; x3 = x8_local; x4 = x7_local;
+                y1 = y6_local; y2 = y5_local; y3 = y8_local; y4 = y7_local;
+                z1 = z6_local; z2 = z5_local; z3 = z8_local; z4 = z7_local;
+
+                x5 = x2_local; x6 = x1_local; x7 = x4_local; x8 = x3_local;
+                y5 = y2_local; y6 = y1_local; y7 = y4_local; y8 = y3_local;
+                z5 = z2_local; z6 = z1_local; z7 = z4_local; z8 = z3_local;
+            }
+
+
+
+
+
+            // ---------------------------------------------- Вставка выреза начало -------------------------------------------------------
+            Beam Virez = new Beam();
+            // Если 1, то узел к ребру 1-3, если 2, то узел к ребру 2-4.
+            if (A == 1)
+            {
+                empty_profile_name = "PEIKKOC";
+                Virez.Profile.ProfileString = empty_profile_name + "160*20"; //"PEIKKOC160*20";
+                Virez.StartPoint = new TSG.Point(x1, y1, z1);
+                Virez.EndPoint = new TSG.Point(x3, y3, z3);
+                Virez.Position.Plane = TSM.Position.PlaneEnum.RIGHT; // СПРАВА
+                Virez.Position.Rotation = TSM.Position.RotationEnum.TOP; // СВЕРХУ
+                Virez.Position.Depth = TSM.Position.DepthEnum.BEHIND; // ПОЗАДИ
+                Virez.Class = TSM.BooleanPart.BooleanOperativeClassName;
+                //clBeamConcrete Virez = new clBeamConcrete(x1, y1, z1, x3, y3, z3, "PEIKKOC100*20", "B25", "Плита", "МОНОЛИТ", 100, "ПБ", 1, "1", "СПРАВА", "СВЕРХУ", "ПОЗАДИ"); "СПРАВА", "СНИЗУ", "СПЕРЕДИ"
+                Virez.Insert();
+            }
+            else if (A == 2)
+            {
+                empty_profile_name = "PEIKKOD";
+                Virez.Profile.ProfileString = empty_profile_name + "160*20"; //"PEIKKOC160*20";
+                Virez.StartPoint = new TSG.Point(x2, y2, z2);
+                Virez.EndPoint = new TSG.Point(x4, y4, z4);
+                Virez.Position.Plane = TSM.Position.PlaneEnum.RIGHT; // СПРАВА
+                Virez.Position.Rotation = TSM.Position.RotationEnum.BELOW; // СВЕРХУ
+                Virez.Position.Depth = TSM.Position.DepthEnum.FRONT; // ПОЗАДИ
+                Virez.Class = TSM.BooleanPart.BooleanOperativeClassName;
+                //clBeamConcrete Virez = new clBeamConcrete(x1, y1, z1, x3, y3, z3, "PEIKKOC100*20", "B25", "Плита", "МОНОЛИТ", 100, "ПБ", 1, "1", "СПРАВА", "СВЕРХУ", "ПОЗАДИ"); "СПРАВА", "СНИЗУ", "СПЕРЕДИ"
+                Virez.Insert();
+            }
+
+
+            BooleanPart B2 = new BooleanPart();
+            // Объявляем Объект главным. Его обрезаем. 
+            B2.Father = firstp;
+            // Производим операцию вычитания объёмов.
+            B2.SetOperativePart(Virez);
+            B2.Type = BooleanPart.BooleanTypeEnum.BOOLEAN_CUT; // BOOLEAN_CUT is default type. Чтобы заработало Раскоментил.
+            if (!B2.Insert())
+                Console.WriteLine("Insert failed!");
+            //B2.Delete(); // Not needed when using BOOLEAN_ADD, operative part is deleted automatically. Чтобы заработало Закоментил.
+            Virez.Delete(); // Удаляем профиль по которому создали вырез. (сам вырез останется)
+
+            // ---------------------------------------------- Вставка выреза конец -------------------------------------------------------
+
+            int max_step = Convert.ToInt32((y1*(-1)+y3 - loop_end - loop_start) / loop_step) + 1;
+            toolStripStatusLabel1.Text = Convert.ToString(max_step);
+            while (i < max_step)
+            {
+                // Создадим экземпляр компонента для стандартного компонента.
+                TSM.Component component1 = new TSM.Component();
+            //Задаём название из загруженных в модель компонентов к которому будем обращаться.
+
+            string name = "Петля " + component_name + " local";
+            toolStripStatusLabel2.Text = Convert.ToString(name);
+            component1.Name = name;
+            // Создаём параметры ввода для компонента.
+            TSM.ComponentInput input1 = new TSM.ComponentInput();
+            input1.AddOneInputPosition(new TSG.Point(45, y1 + loop_start + (i * loop_step) + loop_correction, 0));
+            input1.AddOneInputPosition(new TSG.Point(45+22, y1 + loop_start + (i * loop_step) + loop_correction, 0));
+            // Передаём в компонент заданные параметры ввода.
+            component1.SetComponentInput(input1);
+            // Вставляем компонент.
+            component1.Insert();
+
+            input1.AddOneInputPosition(new TSG.Point(45, y1 + loop_start + (i * loop_step) + loop_correction, 0));
+            input1.AddOneInputPosition(new TSG.Point(45 + 22, y1 + loop_start + (i * loop_step) + loop_correction, 0));
+                clBeamConcrete b1 = new clBeamConcrete(40, (y1 + loop_start + (i * loop_step) + loop_correction - 18), 0, 40, (y1 + loop_start + (i * loop_step) + loop_correction - 18 + 160), 0, "27*50", "B25", "Заполнение", "МОНОЛИТ", 100, "У", 1, "1", "СПРАВА", "СПЕРЕДИ", "СЕРЕДИНА");
+                b1.InsertBeamConcrete();
+
+                // Дублирую балку b1 потому что пока не могу преобразовывать её в классе
+                //Beam Virez = new Beam();
+                //b1.Profile.ProfileString = "27*50";
+                //b1.Material.MaterialString = "B25";
+                //b1.Name = "Заполнение";
+                //b1.CastUnitType = TSM.Part.CastUnitTypeEnum.CAST_IN_PLACE; // монолит
+                ////Virez..CastUnitType = TSM.Part.CastUnitTypeEnum.PRECAST; // сборный
+                //b1.AssemblyNumber.Prefix = "У";
+                //b1.AssemblyNumber.StartNumber = 1;
+                //b1.Class = "100";
+
+                Virez.StartPoint = new TSG.Point(40, (y1 + loop_start + (i * loop_step) + loop_correction - 18), 0);
+                Virez.EndPoint = new TSG.Point(40, (y1 + loop_start + (i * loop_step) + loop_correction - 18 + 160), 0);
+                Virez.Profile.ProfileString = "27*50";
+                Virez.Position.Plane = TSM.Position.PlaneEnum.RIGHT; // СПРАВА
+                Virez.Position.Rotation = TSM.Position.RotationEnum.FRONT; // СПЕРЕДИ
+                Virez.Position.Depth = TSM.Position.DepthEnum.MIDDLE; // СЕРЕДИНА
+                Virez.Class = TSM.BooleanPart.BooleanOperativeClassName;
+                Virez.Insert();
+
+                //b1.InsertBeamConcrete();
+
+
+            // Производим операцию вычитания объёмов.
+            B2.SetOperativePart(Virez);
+            B2.Type = BooleanPart.BooleanTypeEnum.BOOLEAN_CUT; // BOOLEAN_CUT is default type. Чтобы заработало Раскоментил.
+            if (!B2.Insert())
+                Console.WriteLine("Insert failed!");
+            //B2.Delete(); // Not needed when using BOOLEAN_ADD, operative part is deleted automatically. Чтобы заработало Закоментил.
+            Virez.Delete(); // Удаляем профиль по которому создали вырез. (сам вырез останется)
+
+
+                i = i + 1;
+            }
+
+            // Восстановление предыдущей рабочей плоскости.
+            //MyModel.GetWorkPlaneHandler().SetCurrentTransformationPlane(currentPlane);
+            model.CommitChanges();
+        }
