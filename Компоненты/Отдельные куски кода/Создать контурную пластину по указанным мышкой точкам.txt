@@ -1,0 +1,27 @@
+            TSM.Model myModel = new TSM.Model();
+            TSMUI.Picker _picker = new TSMUI.Picker();
+            ArrayList pickedPoints = _picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_POLYGON, "Укажи полигон");
+
+            ArrayList contourPoints = new ArrayList();
+            foreach (TSG.Point mypoint in pickedPoints)
+            {
+                TSM.ContourPoint contourPoint = new TSM.ContourPoint(mypoint, new TSM.Chamfer());
+                contourPoints.Add(contourPoint);
+            }
+
+            TSM.ContourPlate myContourPlate = new TSM.ContourPlate();
+            myContourPlate.Contour.ContourPoints = contourPoints;
+            myContourPlate.Profile.ProfileString = "PL25";
+            myContourPlate.Material.MaterialString = "S235";
+            myContourPlate.Name = "Хомут";
+            myContourPlate.Material.MaterialString = "C245";
+            myContourPlate.PartNumber.Prefix = "Деталь";
+            myContourPlate.PartNumber.StartNumber = 1;
+            myContourPlate.AssemblyNumber.Prefix = "Сборка";
+            myContourPlate.AssemblyNumber.StartNumber = 1;
+            myContourPlate.Position.Depth = TSM.Position.DepthEnum.FRONT;
+            myContourPlate.Class = "21";
+            myContourPlate.Finish = "";
+
+            myContourPlate.Insert();
+            myModel.CommitChanges();
