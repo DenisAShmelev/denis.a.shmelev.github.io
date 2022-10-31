@@ -1,0 +1,39 @@
+            TSM.Model myModel = new TSM.Model();
+
+            // Объявяем новый "picker" для указания щелчками мыши.
+            TSMUI.Picker picker = new TSMUI.Picker();
+            //Создаём новый массив, и записываем в него точки указнные мышью.
+            ArrayList picker_polygons = picker.PickPoints(TSMUI.Picker.PickPointEnum.PICK_POLYGON);
+            //Берём из массива значения по одному и подставляем в точки.
+            TSG.Point p1 = picker_polygons[0] as TSG.Point;
+            TSG.Point p2 = picker_polygons[1] as TSG.Point;
+
+            TSM.Chamfer myChamfer = new TSM.Chamfer(0, 0, TSM.Chamfer.ChamferTypeEnum.CHAMFER_ARC_POINT);
+
+            TSM.ContourPoint point = new TSM.ContourPoint(new TSG.Point(p1.X, p1.Y, p1.Z), null);
+            //TSM.ContourPoint point = new TSM.ContourPoint(new TSG.Point(0, 0, 0), null);
+            TSM.ContourPoint point2 = new TSM.ContourPoint(new TSG.Point(2000, 2000, 0), myChamfer);
+            TSM.ContourPoint point3 = new TSM.ContourPoint(new TSG.Point(0, 4000, 0), null);
+
+            TSM.PolyBeam myPolyBeam = new TSM.PolyBeam();
+
+            myPolyBeam.AddContourPoint(point);
+            myPolyBeam.AddContourPoint(point2);
+            myPolyBeam.AddContourPoint(point3);
+
+            myPolyBeam.Name = "Хомут";
+            myPolyBeam.Material.MaterialString = "C245";
+            myPolyBeam.Profile.ProfileString = "100*100";
+            myPolyBeam.PartNumber.Prefix = "Деталь";
+            myPolyBeam.PartNumber.StartNumber = 1;
+            myPolyBeam.AssemblyNumber.Prefix = "Сборка";
+            myPolyBeam.AssemblyNumber.StartNumber = 1;
+            myPolyBeam.Class = "20";
+            myPolyBeam.Position.Plane = TSM.Position.PlaneEnum.MIDDLE;
+            myPolyBeam.Position.Depth = TSM.Position.DepthEnum.MIDDLE;
+            myPolyBeam.Position.Rotation = TSM.Position.RotationEnum.TOP;
+            myPolyBeam.Finish = "";
+
+            bool Result = false;
+            Result = myPolyBeam.Insert();
+            myModel.CommitChanges();
