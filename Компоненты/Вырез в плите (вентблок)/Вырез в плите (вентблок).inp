@@ -1,0 +1,107 @@
+page("TeklaStructures", "")
+{
+    detail(1, "Вырез в плите (вентблок) 2")
+    {
+        tab_page("", " Параметры 1 ", 1)
+        {
+
+			attribute("", "Ширина 2:", label, "%s", none, none, "0", "0", 60, 105)
+			attribute("", "Длина 2:", label, "%s", none, none, "0", "0", 250, 25)
+            attribute("AL2_S", "", option, "%s", none, none, "0.0", "0.0", 250, 50, 140, "toggle_field:AL2_U=1,2,3,4,5,6")
+            {
+                value("930 (705)", 0)
+                value("1040 (705)", 0)
+                value("1210 (705+880)", 0)
+                value("1640 (705+880)", 0)
+                value("1680 (705+880)", 0)
+                value("1750 (705+880)", 0)
+                value("1860 (705+880)", 1)
+                value("Ручной ввод", 0)
+            }
+			parameter("", "AL2_U", distance, number, 250, 80, 140)
+			parameter("", "AW2_U", distance, number, 50, 130, 140)
+
+
+            attribute("A2_YN", "", option, "%s", none, none, "0.0", "0.0", 250, 130, 140, "toggle_field:AL2_U=1;AW2_U=1;AL2_S=1")
+            {
+                value("Создать", 1)
+                value("Скрыть", 0)
+            }
+
+
+			attribute("", "Ширина 4:", label, "%s", none, none, "0", "0", 1000, 105)
+			attribute("", "Длина 4:", label, "%s", none, none, "0", "0", 800, 25)
+            attribute("AL4_S", "", option, "%s", none, none, "0.0", "0.0", 800, 50, 140, "toggle_field:AL4_U=1,2,3,4,5,6")
+            {
+                value("930 (705)", 0)
+                value("1040 (705)", 0)
+                value("1210 (705+880)", 0)
+                value("1640 (705+880)", 0)
+                value("1680 (705+880)", 0)
+                value("1750 (705+880)", 0)
+                value("1860 (705+880)", 1)
+                value("Ручной ввод", 0)
+            }
+			parameter("", "AL4_U", distance, number, 800, 80, 140)
+            parameter("", "AW4_U", distance, number, 1000, 130, 140)
+
+			
+            attribute("A4_YN", "", option, "%s", none, none, "0.0", "0.0", 800, 130, 140, "toggle_field:AL4_U=1;AW4_U=1;AL4_S=1")
+            {
+                value("Создать", 1)
+                value("Скрыть", 0)
+            }
+
+			attribute("", "Ширина 1:", label, "%s", none, none, "0", "0", 60, 250)
+			attribute("", "Длина 1:", label, "%s", none, none, "0", "0", 250, 315)
+			attribute("AL1_S", "", option, "%s", none, none, "0.0", "0.0", 250, 340, 140, "toggle_field:AL1_U=1,2,3,4,5,6")
+            {
+                value("930 (705)", 0)
+                value("1040 (705)", 0)
+                value("1210 (705+880)", 0)
+                value("1640 (705+880)", 0)
+                value("1680 (705+880)", 0)
+                value("1750 (705+880)", 0)
+                value("1860 (705+880)", 1)
+                value("Ручной ввод", 0)
+            }
+			parameter("", "AL1_U", distance, number, 250, 370, 140)
+			parameter("", "AW1_U", distance, number, 50, 275, 140)
+
+
+            attribute("A1_YN", "", option, "%s", none, none, "0.0", "0.0", 250, 275, 140, "toggle_field:AL1_U=1;AW1_U=1;AL1_S=1")
+            {
+                value("Создать", 1)
+                value("Скрыть", 0)
+            }
+
+			attribute("", "Ширина 3:", label, "%s", none, none, "0", "0", 1000, 250)
+			attribute("", "Длина 3:", label, "%s", none, none, "0", "0", 800, 315)
+            attribute("AL3_S", "", option, "%s", none, none, "0.0", "0.0", 800, 340, 140, "toggle_field:AL3_U=1,2,3,4,5,6")
+            {
+                value("930 (705)", 0)
+                value("1040 (705)", 0)
+                value("1210 (705+880)", 0)
+                value("1640 (705+880)", 0)
+                value("1680 (705+880)", 0)
+                value("1750 (705+880)", 0)
+                value("1860 (705+880)", 1)
+                value("Ручной ввод", 0)
+            }			
+            parameter("", "AL3_U", distance, number, 800, 370, 140)
+            parameter("", "AW3_U", distance, number, 1000, 275, 140)			
+
+
+            attribute("A3_YN", "", option, "%s", none, none, "0.0", "0.0", 800, 275, 140, "toggle_field:AL3_U=1;AW3_U=1;AL3_S=1")
+            {
+                value("Создать", 1)
+                value("Скрыть", 0)
+            }
+
+
+            picture("Virez_v_plite", 0, 0, 210, 110)
+
+
+        }
+    }
+}
