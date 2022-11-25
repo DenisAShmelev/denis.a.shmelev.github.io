@@ -1,0 +1,78 @@
+/***************************************************************************/
+/* User defined attributes for objects */
+/***************************************************************************/
+
+/***************************************************************************/
+/* Part attributes  */
+/***************************************************************************/
+part(0,"Part")
+{
+	tab_page("Sreda_drawing_Primechaniya")
+		{
+			attribute("", "Примечания над штампом", label, "%s", no, none, "0.0", "0.0")
+			parameter("начало строки 1", "Primechanie_1", string, text, 500, 30, 660)
+            parameter("продолжение строки 1", "Primechanie_2", string, text, 500, 60, 660)
+            parameter("начало строки 2", "Primechanie_3", string, text, 500, 90, 660)
+            parameter("продолжение строки 2", "Primechanie_4", string, text, 500, 120, 660)
+            parameter("начало строки 3", "Primechanie_5", string, text, 500, 150, 660)
+            parameter("продолжение строки 3", "Primechanie_6", string, text, 500, 180, 660)
+            parameter("начало строки 4", "Primechanie_7", string, text, 500, 210, 660)
+            parameter("продолжение строки 4", "Primechanie_8", string, text, 500, 240, 660)
+            parameter("начало строки 5", "Primechanie_9", string, text, 500, 270, 660)	
+			parameter("продолжение строки 5", "Primechanie_10", string, text, 500, 300, 660)
+            parameter("начало строки 6", "Primechanie_11", string, text, 500, 330, 660)
+            parameter("продолжение строки 6", "Primechanie_12", string, text, 500, 360, 660)
+            parameter("начало строки 7", "Primechanie_13", string, text, 500, 390, 660)
+            parameter("продолжение строки 7", "Primechanie_14", string, text, 500, 420, 660)
+            parameter("начало строки 8", "Primechanie_15", string, text, 500, 450, 660)
+            parameter("продолжение строки 8", "Primechanie_16", string, text, 500, 480, 660)
+            parameter("начало строки 9", "Primechanie_17", string, text, 500, 510, 660)
+            parameter("продолжение строки 9", "Primechanie_18", string, text, 500, 540, 660)
+			
+			attribute("", "Название позиции для чертежа детали загрузить через МЕНЮ -> ИМПОРТ -> АТРИБУТЫ" , label, "%s", no, none, "0.0", "0.0", 200, 620)
+			parameter("Название позиции [POZICIYA_NOMER]", "POZICIYA_NOMER", string, text, 700, 650, 100)	attribute("", "Название позиции для чертежа детали загрузить через МЕНЮ -> ИМПОРТ -> АТРИБУТЫ" , label, "%s", no, none, "0.0", "0.0", 150, 720)		
+		}
+	tab_page("Sreda_drawing_Primechaniya","Примечания",12) 
+	modify(1)
+}
+/***************************************************************************/
+/* Drawing attributes - single part */
+/***************************************************************************/
+singledrawing(0,"Single-part drawing")
+{
+	tab_page("Sreda_drawing_Primechaniya","Примечания",12)
+	modify(1)
+}
+/***************************************************************************/
+/* Drawing attributes - assembly */
+/***************************************************************************/
+assemblydrawing(0,"Assembly drawing")
+{
+	tab_page("Sreda_drawing_Primechaniya","Примечания",12)
+	modify(1)
+}
+/***************************************************************************/
+/* Drawing attributes - GA */
+/***************************************************************************/
+gadrawing(0,"GA drawing")
+{
+	tab_page("Sreda_drawing_Primechaniya","Примечания",12)
+	modify(1)
+}
+/***************************************************************************/
+/* Drawing attributes - multi */
+/***************************************************************************/
+multidrawing(0,"Multi-drawing")
+{
+	tab_page("Sreda_drawing_Primechaniya","Примечания",12)
+	modify(1)
+}
+/***************************************************************************/
+/* Drawing attributes - Cast Unit drawing */
+/***************************************************************************/
+castunitdrawing(0,"Cast Unit drawing")
+{
+	tab_page("Sreda_drawing_Primechaniya","Примечания",12)
+	modify(1)
+}
+*/

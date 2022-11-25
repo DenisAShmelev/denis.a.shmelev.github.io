@@ -1,0 +1,16 @@
+page("TeklaStructures","")
+{
+   macro(1, "ѕеремычка 4  ирпич")
+   {
+       tab_page("", " ѕараметры 1 ", 1)
+       {
+           parameter("¬ысота проЄма", "H", distance, number, 1)
+           parameter("јнкеровка", "AL_U", distance, number, 2)
+           parameter("јнкеровка", "AR_U", distance, number, 3)
+           parameter("D1.ѕеремычка. райн€€ передн€€ плоскость", "D1", distance, number, 4)
+           parameter("D2.ѕеремычка. райн€€ передн€€ плоскость", "D2", distance, number, 5)
+           parameter("D3.ѕеремычка. райн€€ передн€€ плоскость", "D3", distance, number, 6)
+           parameter("D4.ѕеремычка. райн€€ передн€€ плоскость", "D4", distance, number, 7)
+       }
+   }
+}

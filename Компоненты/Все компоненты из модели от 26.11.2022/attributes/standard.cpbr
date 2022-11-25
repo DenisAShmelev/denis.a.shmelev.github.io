@@ -1,0 +1,14 @@
+cupour_break_dial.InFile "standard"
+cupour_break_dial.OutFile "standard"
+cupour_break_dial.Visibility 0
+cupour_break_dial.VisibleLineColor 157
+cupour_break_dial.VisibleLineType 1
+cupour_break_dial.HiddenLines 0
+cupour_break_dial.HiddenLineColor 159
+cupour_break_dial.HiddenLineType 2
+cupour_break_dial.Visibility_en 1
+cupour_break_dial.VisibleLineColor_en 1
+cupour_break_dial.VisibleLineType_en 1
+cupour_break_dial.HiddenLines_en 1
+cupour_break_dial.HiddenLineColor_en 1
+cupour_break_dial.HiddenLineType_en 1

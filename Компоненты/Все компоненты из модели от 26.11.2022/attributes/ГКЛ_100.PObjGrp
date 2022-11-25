@@ -1,0 +1,31 @@
+TITLE_OBJECT_GROUP 
+{
+    Version= 1.05 
+    Count= 2 
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_part 
+        proMATERIAL 
+        albl_Material 
+        == 
+        albl_Equals 
+        Гипсокартон 
+        0 
+        && 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_part 
+        proPROFILE 
+        albl_Profile 
+        == 
+        albl_Equals 
+        *[*]100 
+        0 
+        && 
+        }
+    }

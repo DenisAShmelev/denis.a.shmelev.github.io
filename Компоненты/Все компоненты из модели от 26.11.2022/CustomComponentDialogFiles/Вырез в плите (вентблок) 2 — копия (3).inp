@@ -1,0 +1,65 @@
+page("TeklaStructures", "")
+{
+    detail(1, "Вырез в плите (вентблок) 2")
+    {
+        tab_page("", " Параметры 1 ", 1)
+        {
+            parameter("", "P3", YesNo, number, 49, 31, 70)
+            parameter("", "P4", YesNo, number, 1338, 43, 70)
+            picture("1_Bitmap", 0, 0, 845, 120)
+            parameter("", "P1", YesNo, number, 712, 276, 70)
+            parameter("", "P2", YesNo, number, 1341, 278, 70)
+            attribute("P5", "", option, "%s", none, none, "0.0", "0.0", 910, 390, 300)
+            {
+                value("300.00", 1)
+            }
+            attribute("", "Ширина", label, "%s", none, none, "0", "0", 776, 396)
+            attribute("P6", "", option, "%s", none, none, "0.0", "0.0", 165, 27, 140)
+            {
+                value("930 (705)", 0)
+                value("1040 (705)", 0)
+                value("1210 (705+880)", 0)
+                value("1640 (705+880)", 0)
+                value("1680 (705+880)", 0)
+                value("1750 (705+880)", 0)
+                value("1860 (705+880)", 1)
+            }
+            attribute("", "Длина", label, "%s", none, none, "0", "0", 828, 314)
+            parameter("", "P10", distance, number, 910, 348, 200)
+            attribute("P8", "", option, "%s", none, none, "0.0", "0.0", 724, 195, 100)
+            {
+            }
+            attribute("P9", "", option, "%s", none, none, "0.0", "0.0", 25, 75, 100)
+            {
+            }
+            attribute("P10", "", option, "%s", none, none, "0.0", "0.0", 1190, 336, 100)
+            {
+            }
+            parameter("", "P12", distance, number, 897, 41, 100)
+            picture("Virez_v_plite", 0, 0, 130, 61)
+            attribute("P6", "", option, "%s", none, none, "0.0", "0.0", 914, 109, 140)
+            {
+                value("930 (705)", 0)
+                value("1040 (705)", 0)
+                value("1210 (705+880)", 0)
+                value("1640 (705+880)", 0)
+                value("1680 (705+880)", 0)
+                value("1750 (705+880)", 0)
+                value("1860 (705+880)", 1)
+            }
+            attribute("P6", "", option, "%s", none, none, "0.0", "0.0", 914, 109, 140)
+            {
+                value("930 (705)", 0)
+                value("1040 (705)", 0)
+                value("1210 (705+880)", 0)
+                value("1640 (705+880)", 0)
+                value("1680 (705+880)", 0)
+                value("1750 (705+880)", 0)
+                value("1860 (705+880)", 1)
+            }
+            attribute("P13", "", option, "%s", none, none, "0.0", "0.0", 1132, 87, 100)
+            {
+            }
+        }
+    }
+}

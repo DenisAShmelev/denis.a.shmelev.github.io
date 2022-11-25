@@ -1,0 +1,44 @@
+TITLE_OBJECT_GROUP 
+{
+    Version= 1.05 
+    Count= 3 
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_part 
+        proPHASE 
+        albl_Phase 
+        == 
+        albl_Equals 
+        101 
+        0 
+        || 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_object 
+        proPHASE 
+        albl_Phase 
+        == 
+        albl_Equals 
+        203 
+        0 
+        || 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_part 
+        proPHASE 
+        albl_Phase 
+        == 
+        albl_Equals 
+        201 
+        0 
+        Empty 
+        }
+    }

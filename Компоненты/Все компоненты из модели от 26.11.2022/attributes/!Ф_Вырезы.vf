@@ -1,0 +1,31 @@
+TITLE_OBJECT_GROUP 
+{
+    Version= 1.05 
+    Count= 2 
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_object 
+        proOBJECT_TYPE 
+        albl_ObjectType 
+        == 
+        albl_Equals 
+        11 
+        0 
+        && 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        TemplateCategory 
+        Name 
+        Name 
+        == 
+        albl_Equals 
+        ДвернойпроёмПСВ 
+        0 
+        && 
+        }
+    }

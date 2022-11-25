@@ -1,0 +1,46 @@
+page("TeklaStructures","")
+{
+   macro(1, "Ћестнична€ клетка")
+   {
+       tab_page("", " ѕараметры 1 ", 1)
+       {
+           parameter("кол-во копий", "number_copies", integer, number, 1)
+           parameter("Parameter1", "P1", distance, number, 2)
+           parameter("D1.ѕроЄм оконный. райн€€ задн€€ плоскость", "D1", distance, number, 3)
+           parameter("D2.ѕроЄм оконный. райн€€ задн€€ плоскость", "D2", distance, number, 4)
+           parameter("D3.ѕанель наружна€. райн€€ задн€€ плоскость", "D3", distance, number, 5)
+           parameter("D4.ѕанель наружна€. райн€€ задн€€ плоскость", "D4", distance, number, 6)
+           parameter("D5.Ѕалка. райн€€ задн€€ плоскость", "D5", distance, number, 7)
+           parameter("D6.Ѕалка. райн€€ задн€€ плоскость", "D6", distance, number, 8)
+           parameter("D7.ƒверной проЄм. райн€€ задн€€ плоскость", "D7", distance, number, 9)
+           parameter("D8.ƒверной проЄм. райн€€ задн€€ плоскость", "D8", distance, number, 10)
+           parameter("D9.ƒверной проЄм. райн€€ задн€€ плоскость", "D9", distance, number, 11)
+           parameter("D10.ƒверной проЄм. райн€€ задн€€ плоскость", "D10", distance, number, 12)
+           parameter("D11.ѕанель внутренн€€. райн€€ задн€€ плоскость", "D11", distance, number, 13)
+           parameter("D12.ѕанель внутренн€€. райн€€ задн€€ плоскость", "D12", distance, number, 14)
+           parameter("D13.ѕанель наружна€. райн€€ задн€€ плоскость", "D13", distance, number, 15)
+           parameter("D14.ѕанель наружна€. райн€€ задн€€ плоскость", "D14", distance, number, 16)
+           parameter("D15.ѕанель внутренн€€. райн€€ задн€€ плоскость", "D15", distance, number, 17)
+           parameter("D16.ѕанель внутренн€€. райн€€ задн€€ плоскость", "D16", distance, number, 18)
+           parameter("D17.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D17", distance, number, 19)
+           parameter("D18.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D18", distance, number, 20)
+           parameter("D19.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D19", distance, number, 21)
+           parameter("D20.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D20", distance, number, 22)
+           parameter("D21.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D21", distance, number, 23)
+           parameter("D22.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D22", distance, number, 24)
+           parameter("D23.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D23", distance, number, 25)
+       }
+       tab_page("", " ѕараметры 2 ", 2)
+       {
+           parameter("D24.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D24", distance, number, 1)
+           parameter("D25.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D25", distance, number, 2)
+           parameter("D26.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D26", distance, number, 3)
+           parameter("D27.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D27", distance, number, 4)
+           parameter("D28.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D28", distance, number, 5)
+           parameter("D29.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D29", distance, number, 6)
+           parameter("D30.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D30", distance, number, 7)
+           parameter("D31.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D31", distance, number, 8)
+           parameter("D32.ѕанель шахты лифта. райн€€ задн€€ плоскость", "D32", distance, number, 9)
+       }
+   }
+}

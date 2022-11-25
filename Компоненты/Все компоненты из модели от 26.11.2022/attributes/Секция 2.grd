@@ -1,0 +1,40 @@
+encoding 1251
+Type 0
+xcoord "0.00 6100.00 5*6000.00 6100.00"
+ycoord "0.00 6250.00 2400.00 6250.00"
+zcoord "-3200.00 -320.00 -100.00 4180.00 4400.00 7180.00 7400.00 10180.00 10400.00 13180.00 13400.00 16180.00 16400.00 19180.00 19400.00 22180.00 22400.00 25180.00 25400.00 28180.00 28400.00 31180.00 31400.00 34180.00 34400.00 37180.00 37400.00 40180.00 40400.00 43180.00 43400.00"
+xtext "5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20"
+ytext "À Á.1 Á.2 Ã"
+ztext "-3.200 -0.320 -0.100 +4.180 +4.400 +7.180 +7.400 +10.180 +10.400 +13.180 +13.400 +16.180 +16.400 +19.180 +19.400 +22.180 +22.400 +25.180 +25.400 +28.180 +28.400 +31.180 +31.400 +34.180 +34.400 +37.180 +37.400 +40.180 +40.400 +43.180 +43.400"
+xleft 2000.000000
+xright 2000.000000
+yleft 2000.000000
+yright 2000.000000
+zleft 2000.000000
+zright 2000.000000
+x0 15200.000000
+y0 0.000000
+z0 0.000000
+aInFile "standard"
+aOutFile "standard"
+XCoordEnabled 1
+YCoordEnabled 1
+ZCoordEnabled 1
+XLabelEnabled 1
+YLabelEnabled 1
+ZLabelEnabled 1
+XLeftBelowEnabled 1
+YLeftBelowEnabled 1
+ZLeftBelowEnabled 1
+XRightAboveEnabled 1
+YRightAboveEnabled 1
+ZRightAboveEnabled 1
+X0Enabled 1
+Y0Enabled 1
+Z0Enabled 1
+MagneticEnabled 1
+Magnetic 0
+LineColor 105731.000000
+FontSize 12
+FontColor 0.000000
+UserDefinedAttrEnabled 1

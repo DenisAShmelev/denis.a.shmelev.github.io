@@ -1,0 +1,16 @@
+page("TeklaStructures","")
+{
+   joint(1, "—двиговые св€зи 3")
+   {
+       tab_page("", " ѕараметры 1 ", 1)
+       {
+           parameter("¬ыборка профил€ плиты дл€ филь", "P1", string, text, 1)
+           parameter("—тади€ заливки", "CastPhase", integer, number, 2)
+           parameter("D17.—тержень. райн€€ задн€€ плоскость", "D17", distance, number, 3)
+           parameter("D22.Ѕалка. райн€€ задн€€ плоскость", "D22", distance, number, 4)
+           parameter("D23.Ѕалка. райн€€ задн€€ плоскость", "D23", distance, number, 5)
+           parameter("D24.Ѕалка. райн€€ задн€€ плоскость", "D24", distance, number, 6)
+           parameter("D25.Ѕалка. райн€€ задн€€ плоскость", "D25", distance, number, 7)
+       }
+   }
+}

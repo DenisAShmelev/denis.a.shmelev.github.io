@@ -1,0 +1,23 @@
+TITLE_CLASSIFIER 
+{
+    Version= 1.00 
+    Count= 3 
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part_mark 
+        !Ф_Панели 
+        !М_ASSEMBLY_PREFIX_Параллельно 
+        }
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part_mark 
+        !Ф_Вентблок 
+        !М_ASSEMBLY_PREFIX_Выноска 
+        }
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part 
+        !Ф_Панелииветблоки 
+        !В_БЕТОН 
+        }
+    }

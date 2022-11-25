@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <spacing>200</spacing>
+  <ClassArm>2</ClassArm>
+  <radius>42</radius>
+  <grade>Undefined</grade>
+  <size>12</size>
+  <name>ST</name>
+</config>

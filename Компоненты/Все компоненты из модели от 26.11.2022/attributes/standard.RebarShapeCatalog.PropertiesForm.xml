@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <OnPlaneCover>
+    <Millimeters>25</Millimeters>
+  </OnPlaneCover>
+  <TargetSpacing>
+    <Millimeters>150</Millimeters>
+  </TargetSpacing>
+  <Radius>
+    <Millimeters>144</Millimeters>
+  </Radius>
+  <Grade>Undefined</Grade>
+  <Size>12</Size>
+  <ShapeCode>1</ShapeCode>
+  <Class>11</Class>
+  <StartNumber>1</StartNumber>
+  <Prefix></Prefix>
+  <ExactSpacingValues />
+  <ExactSpacing>
+    <Millimeters>-2147483648</Millimeters>
+  </ExactSpacing>
+  <NumberOfBars>-2147483648</NumberOfBars>
+  <CreationMethod>1</CreationMethod>
+  <Name>Стержень</Name>
+  <FromPlaneCover>
+    <Millimeters>25</Millimeters>
+  </FromPlaneCover>
+  <EndHookLength>
+    <Millimeters>0</Millimeters>
+  </EndHookLength>
+  <EndHookRadius>
+    <Millimeters>0</Millimeters>
+  </EndHookRadius>
+  <EndHookAngle>0</EndHookAngle>
+  <EndHookShape>0</EndHookShape>
+  <StartHookLength>
+    <Millimeters>0</Millimeters>
+  </StartHookLength>
+  <StartHookRadius>
+    <Millimeters>0</Millimeters>
+  </StartHookRadius>
+  <StartHookAngle>0</StartHookAngle>
+  <StartHookShape>0</StartHookShape>
+</config>

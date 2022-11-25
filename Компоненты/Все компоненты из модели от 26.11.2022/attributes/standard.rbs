@@ -1,0 +1,24 @@
+encoding 1251
+SerieEnable 1
+Serie "К7"
+StartNoEnable 1
+StartNo 1
+NameEnable 1
+Name "Арматурный канат"
+SizeEnable 1
+Size "6"
+GradeEnable 1
+Grade "К-7"
+BendRadEnable 1
+BendRadius "15.00"
+ClassNoEnable 1
+ClassNo 500
+PullForceEnable 1
+PullForce 0.000000
+nPatternEnable 1
+nPattern 1
+UBSymmetricity 0
+UBTableEnable 1
+out_file "standard"
+in_file "standard"
+more_enable 1

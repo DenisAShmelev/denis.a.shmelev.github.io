@@ -1,0 +1,17 @@
+page("TeklaStructures","")
+{
+   detail(1, "Среда_Торец панели под стык на петлях PEIKKO 3")
+   {
+       tab_page("", " Параметры 1 ", 1)
+       {
+           parameter("Шаг петель", "P1", distance, number, 1)
+           parameter("Стартовое расстояние снизу (до", "P6", distance, number, 2)
+           parameter("Минимальное конечное расстояни", "P7", distance, number, 3)
+           parameter("Ширина зазора для заполнения", "A", distance, number, 4)
+           parameter("Ширина обратного зазора", "B", distance, number, 5)
+           parameter("Узел Левый(0)/Правый(1)", "P8", YesNo, number, 6)
+           parameter("Корректировка привязок петель", "P11", distance, number, 7)
+           parameter("Длина петли", "Len", integer, number, 8)
+       }
+   }
+}

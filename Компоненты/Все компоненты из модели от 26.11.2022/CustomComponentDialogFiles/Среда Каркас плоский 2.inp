@@ -1,0 +1,50 @@
+page("TeklaStructures","")
+{
+   macro(1, "Среда Каркас плоский 1")
+   {
+       tab_page("", " Каркас ", 1)
+       {
+			parameter("Высота армируемого элемента", "H1", distance, number, 1)
+			parameter("Каркас Имя", "name", string, text, 2)
+			parameter("Префикс марки каркаса", "Assembly_prefix", string, text, 3)
+			parameter("Стадия бетонирования", "Assembly_phase", integer, number, 4)
+			parameter("Цвет арматуры", "rebar_class", integer, number, 5)
+			parameter("Цвет бетона, "concret_class", integer, number, 6)
+			
+			parameter("Parameter3", "P3", distance, number, 7)
+       }
+	   tab_page("", " Горизонтальные стержни ", 2)
+       {
+			parameter("Диаметр горизонт. стержней", "h_size", integer, number, 1)
+			parameter("Гориз. Сорт арматуры", "h_sort_grade", rebar_grade, text, 2)
+			parameter("Гориз. Имя", "h_name", string, text, 3)
+			parameter("1) Гориз. Распределение. Способ", "Nv1_vvod", integer, number, 4)		   
+			parameter("2) Гориз. Планируемый шаг", "sv1", distance, number, 5)
+			parameter("3) Гориз. Кол-во стержней", "sv2", factor, number, 6)
+			parameter("4) Гориз. Точное значение шага", "sv3", distance, number, 7)		   
+			parameter("5) Гориз. Расстояния", "sv4", distance_list, text, 8)
+			
+			parameter("Гориз. Из плоскости", "h1", distance, number, 9)
+			parameter("Гориз. От плоскости", "h2", distance, number, 10)
+			parameter("Гориз. Защ. слой от начала стержня", "h3", distance, number, 11)
+			parameter("Гориз. Защ. слой от конца стержня", "h4", distance, number, 12)
+       }
+	   tab_page("", " Вертикальные стержни ", 3)
+       {
+			parameter("Да/Нет (Слева/Справа)", "Vid", YesNo, number, 1)
+			
+			parameter("Диаметр вертик. стержней", "v_size", integer, number, 2)
+			parameter("Верт. Сорт арматуры", "v_sort_grade", rebar_grade, text, 3)
+			parameter("Верт. Имя", "v_name", string, text, 4)
+			parameter("1) Верт. Распределение. Способ", "Nh1_vvod", integer, number, 5)
+			parameter("2) Верт. Планируемый шаг", "sh1", distance, number, 6)
+			parameter("3) Верт. Кол-во стержней", "sh2", factor, number, 7)
+			parameter("4) Верт. Точное значение шага", "sh3", distance, number, 8)
+			parameter("5) Верт. Расстояния", "sh4", distance_list, text, 9)
+			
+			parameter("Верт. От плоскости начало", "v2", distance, number, 10)
+			parameter("Верт. Защ. слой от начала стержня", "v3", distance, number, 11)
+			parameter("Верт. Защ. слой от конца стержня", "v4", distance, number, 12)    
+       }
+   }
+}

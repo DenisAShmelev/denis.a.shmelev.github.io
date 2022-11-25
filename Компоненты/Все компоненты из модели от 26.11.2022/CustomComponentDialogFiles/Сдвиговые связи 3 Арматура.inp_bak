@@ -1,0 +1,11 @@
+page("TeklaStructures","")
+{
+   joint(1, "Сдвиговые связи 3 Арматура")
+   {
+       tab_page("", " Параметры 1 ", 1)
+       {
+           parameter("Выборка профиля плиты для филь", "P1", string, text, 1)
+           parameter("Стадия заливки", "CastPhase", integer, number, 2)
+       }
+   }
+}

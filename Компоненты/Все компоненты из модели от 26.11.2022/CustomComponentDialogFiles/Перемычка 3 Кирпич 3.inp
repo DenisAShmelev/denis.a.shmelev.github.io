@@ -1,0 +1,13 @@
+page("TeklaStructures","")
+{
+   macro(1, "Перемычка 3 Кирпич 3")
+   {
+       tab_page("", " Параметры 1 ", 1)
+       {
+           parameter("Высота проёма", "H", distance, number, 1)
+           parameter("Анкеровка в начале", "AL_U", distance, number, 2)
+           parameter("Анкеровка в конце", "AR_U", distance, number, 3)
+           parameter("Профиль", "Profile", string, text, 4)
+       }
+   }
+}

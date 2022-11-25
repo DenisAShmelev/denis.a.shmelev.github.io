@@ -1,0 +1,57 @@
+TITLE_OBJECT_GROUP 
+{
+    Version= 1.05 
+    Count= 4 
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_part 
+        proMATERIAL 
+        albl_Material 
+        == 
+        albl_Equals 
+        ПГП 
+        0 
+        || 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_part 
+        proMATERIAL 
+        albl_Material 
+        == 
+        albl_Equals 
+        ПВП 
+        0 
+        || 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_part 
+        proMATERIAL 
+        albl_Material 
+        == 
+        albl_Equals 
+        Гипсокартон 
+        0 
+        || 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_part 
+        proMATERIAL 
+        albl_Material 
+        == 
+        albl_Equals 
+        "Кирпичкерамический" 
+        0 
+        || 
+        }
+    }

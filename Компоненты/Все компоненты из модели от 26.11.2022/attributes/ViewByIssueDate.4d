@@ -1,0 +1,12 @@
+dia_4D_tool.aInFile "ViewByIssueDate"
+dia_4D_tool.aOutFile "ViewByIssueDate"
+dia_4D_tool.AutomaticRefresh 1
+dia_4D_tool.CreateReportSelected 0
+dia_4D_tool.CurrentDate 0
+dia_4D_tool.DateStep 7
+dia_4D_tool.ObjectRepresentation "ViewByIssueDate"
+dia_4D_tool.ReportMode 0
+dia_4D_tool.ReportTemplate "0LengthSplit"
+dia_4D_tool.ScalePosition 0.191257
+dia_4D_tool.ScaleStartDate 1164931200
+dia_4D_tool.ScaleEndDate 1180742400

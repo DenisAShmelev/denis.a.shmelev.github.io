@@ -1,0 +1,20 @@
+encoding 1251
+in_file "standard"
+out_file "!Р_План панелей"
+GridLineDims 1
+GridLineOverallDims 1
+GridLineHPositioning 1
+GridLineVPositioning 2
+OutsideDimMaxLeaderLen 25.000000
+InsideDimMaxLeaderLen 25.000000
+DimPartialParts 0
+MaxOutsideDimNr 3
+ObjectGroupDimensioningRules "<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE TSGadim><DimensioningRules><Rule><ObjectGroup>!Р¤_Р’РµРЅС‚Р±Р»РѕРє</ObjectGroup><DimensionCreation>3</DimensionCreation><PositionX>2</PositionX><PositionY>1</PositionY><DimensionTag></DimensionTag></Rule><Rule><ObjectGroup>!Р¤_РџР°РЅРµР»Рё</ObjectGroup><DimensionCreation>3</DimensionCreation><PositionX>2</PositionX><PositionY>1</PositionY><DimensionTag></DimensionTag></Rule></DimensioningRules>"
+GridLineDims_en 1
+GridLineOverallDims_en 1
+GridLineHPositioning_en 1
+GridLineVPositioning_en 1
+OutsideDimMaxLeaderLen_en 1
+InsideDimMaxLeaderLen_en 1
+DimPartialParts_en 1
+MaxOutsideDimNr_en 1

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <Grade>А500</Grade>
+  <Size>12</Size>
+  <Name>Стержень</Name>
+  <ShapeCode>39 [0]</ShapeCode>
+  <Radius>
+    <Millimeters>30</Millimeters>
+  </Radius>
+  <TargetSpacing>
+    <Millimeters>-2147483648</Millimeters>
+  </TargetSpacing>
+  <OverlapDistance>
+    <Millimeters>-2147483648</Millimeters>
+  </OverlapDistance>
+  <ExactSpacing>
+    <Millimeters>200</Millimeters>
+  </ExactSpacing>
+  <ExactSpacingList />
+  <OnPlaneCover>
+    <Millimeters>-2147483648</Millimeters>
+  </OnPlaneCover>
+  <FromPlaneCover>
+    <Millimeters>-2147483648</Millimeters>
+  </FromPlaneCover>
+  <Prefix></Prefix>
+  <CreationMethod>7</CreationMethod>
+  <NumberOfBars>0</NumberOfBars>
+  <StartNumber>1</StartNumber>
+  <LayerOrderNo>0</LayerOrderNo>
+  <Class>500</Class>
+  <EndHookShape>0</EndHookShape>
+  <EndHookAngle>0</EndHookAngle>
+  <EndHookRadius>
+    <Millimeters>-2147483648</Millimeters>
+  </EndHookRadius>
+  <EndHookLength>
+    <Millimeters>-2147483648</Millimeters>
+  </EndHookLength>
+  <StartHookShape>0</StartHookShape>
+  <StartHookAngle>0</StartHookAngle>
+  <StartHookRadius>
+    <Millimeters>-2147483648</Millimeters>
+  </StartHookRadius>
+  <StartHookLength>
+    <Millimeters>-2147483648</Millimeters>
+  </StartHookLength>
+  <PickingMode>0</PickingMode>
+  <KeepMode>0</KeepMode>
+</config>

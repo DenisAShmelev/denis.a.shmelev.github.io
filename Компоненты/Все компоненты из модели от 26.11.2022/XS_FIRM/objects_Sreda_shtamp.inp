@@ -1,0 +1,145 @@
+/***************************************************************************/
+/* User defined attributes for objects */
+/***************************************************************************/
+
+/***************************************************************************/
+/* Part attributes  */
+/***************************************************************************/
+
+part(0,"Part")
+{
+	tab_page("ru_zapol_shtampa_2")
+		{
+		
+					attribute("", "Заполнение боковой надписи архива", label, "%s", no, none, "0.0", "0.0")
+			attribute("Archive_Inv_N", "Инвентарный архивный номер", string, "%s", no, none, "0.0", "0.0")
+				{value("", 0)}
+			attribute("Sreda_Archive_Inv_D", "Дата внесения в архив", date, "%d", no, none, "0.0", "0.0")
+				{value("", 0)}
+			attribute("Sreda_Archive_Inv_R", "Взамен инвентарного архивного номера", string, "%s", no, none, "0.0", "0.0")
+				{value("", 0)}		
+			attribute("Sreda_Archivarius", "Архивариус", string, "%s", no, none, "0.0", "0.0")
+				{value("Сиразиева", 1)}		
+			attribute("Sreda2_Show_Signatures", "Отображать подписи", option, "%s", no, none, "0.0", "0.0")
+			{
+				value("да", 1)
+				value("нет", 0)
+			}
+			attribute("Sreda_Data_Cherteja", "Дата подписи в штампе", date, "%d", no, none, "0.0", "0.0")
+				{value("", 0)}
+				
+				
+			picture("rus_Forma_F3_drawing", 0, 0, 15, 125)
+			parameter("", "ru_shifr_dop", string, text, 1140, 155, 500)
+			parameter("", "ru_naz_chert_1", string, text, 840, 450, 375)
+			parameter("", "ru_naz_chert_2", string, text, 840, 490, 375)
+			parameter("", "ru_naz_chert_3", string, text, 840, 530, 375)
+			attribute("ru_list", "", string, "%s", yes, none, "0.0", "0.0",1410, 390, 80) 
+			{
+			value("", 0)
+			}
+			attribute("ru_naz_chert_vivod", "", option,"%s", no, none,"0.0", "0.0",640,450,150)
+			{
+				value("По строкам", 1)
+				value("Объединить", 0)
+			}
+			attribute("ru_naz_chert_dannie", "", option,"%s", no, none,"0.0", "0.0",640,490,150,"toggle_field:ru_naz_chert_1=1;ru_naz_chert_2=1;ru_naz_chert_3=1")
+			{
+				value("Пользовательские поля", 1)
+				value("Заголовок 1,2,3", 0)
+			}
+			parameter("", "ru_11_fam_dop", string, text, 235, 530, 140)
+			parameter("", "ru_11_dop", string, text, 50, 530, 140)
+			parameter("", "ru_10_fam_dop", string, text, 235, 490, 140)
+			parameter("", "ru_10_dop", string, text, 50, 490, 140)
+			parameter("", "ru_9_fam_dop", string, text, 235, 450, 140)
+			parameter("", "ru_9_dop", string, text, 50, 450, 140)
+			parameter("", "ru_8_fam_dop", string, text, 235, 410, 140)
+			parameter("", "ru_8_dop", string, text, 50, 410, 140)
+			parameter("", "ru_7_fam_dop", string, text, 235, 370, 140)
+			parameter("", "ru_7_dop", string, text, 50, 370, 140)
+			parameter("", "ru_6_fam_dop", string, text, 235, 330, 140)
+			parameter("", "ru_6_dop", string, text, 50, 330, 140)
+			attribute("","Марка комплекта чертежей",label,"%s",none,none,"0","0", 25, 90)
+			attribute("ru_marka_komp_chert", "", string, "%s", yes, none, "0.0", "0.0",300, 90, 80)
+				{
+				value("", 0)
+				}
+			picture("rus_Nomer_lista_drawing", 0, 0, 1528, 0)
+			attribute("ru_list_dop", "", string, "%s", yes, none, "0.0", "0.0",1600, 10, 80) 
+				{
+				value("", 0)
+				}
+				
+			attribute("","Отображать подписи:",label,"%s",none,none,"0","0", 35, 570)
+			attribute("Sreda_Show_Signatures", "", option, "%s", no, none, "0.0", "0.0", 335, 570, 220)
+			{
+				value("Отобразить подписи", 1)
+				value("Скрыть подписи", 0)
+			}
+			
+			parameter("", "Sreda_Drawing_3_1", string, text, 720, 330, 500)
+			parameter("", "Sreda_Drawing_3_2", string, text, 720, 357, 500)
+			parameter("", "Sreda_Drawing_3_3", string, text, 720, 384, 500)
+			parameter("", "Sreda_Drawing_3_4", string, text, 720, 411, 500)
+		}
+tab_page("ru_zapol_shtampa_2","Заполнение штампа",15)
+modify(1)
+}
+
+
+
+/***************************************************************************/
+/* Common drawing attributes*/
+/***************************************************************************/
+
+/***************************************************************************/
+/* Drawing attributes - single part */
+/***************************************************************************/
+
+singledrawing(0,"j_Single_part_drawing")
+{
+	tab_page("ru_zapol_shtampa_2","Заполнение штампа",15)
+	modify(1)
+}
+
+/***************************************************************************/
+/* Drawing attributes - assembly */
+/***************************************************************************/
+
+assemblydrawing(0,"j_Assembly_drawing")
+{
+	tab_page("ru_zapol_shtampa_2","Заполнение штампа",15)
+	modify(1)
+}
+
+/***************************************************************************/
+/* Drawing attributes - GA */
+/***************************************************************************/
+
+gadrawing(0,"j_GA_drawing")
+{
+	tab_page("ru_zapol_shtampa_2","Заполнение штампа",15)
+	modify(1)
+}
+	
+/***************************************************************************/
+/* Drawing attributes - multi */
+/***************************************************************************/
+
+multidrawing(0,"j_Multi_drawing")
+{
+	tab_page("ru_zapol_shtampa_2","Заполнение штампа",15)
+	modify(1)
+}
+
+/***************************************************************************/
+/* Drawing attributes - Cast Unit drawing */
+/***************************************************************************/
+
+castunitdrawing(0,"j_Cast_Unit_drawing")
+{
+	tab_page("ru_zapol_shtampa_2","Заполнение штампа",15)
+	modify(1)
+}
+*/

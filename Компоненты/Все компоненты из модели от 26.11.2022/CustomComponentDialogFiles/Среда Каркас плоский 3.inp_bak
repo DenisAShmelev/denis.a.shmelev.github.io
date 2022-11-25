@@ -1,0 +1,43 @@
+page("TeklaStructures","")
+{
+   macro(1, "Среда Каркас плоский 3")
+   {
+       tab_page("", " Параметры 1 ", 1)
+       {
+           parameter("Высота армируемого элемента", "H1", distance, number, 1)
+           parameter("Гориз. Из плоскости", "h1", distance, number, 2)
+           parameter("Гориз. От плоскости", "h2", distance, number, 3)
+           parameter("Гориз. Защ. слой от начала сте", "h3", distance, number, 4)
+           parameter("Гориз. Защ. слой от конца стер", "h4", distance, number, 5)
+           parameter("Верт. От плоскости начало", "v2", distance, number, 6)
+           parameter("Верт. Защ. слой от начала стер", "v3", distance, number, 7)
+           parameter("Верт. Защ. слой от конца стерж", "v4", distance, number, 8)
+           parameter("4) Верт. Расстояния", "sh4", distance_list, text, 9)
+           parameter("3) Верт. Кол-во стержней", "sh2", factor, number, 10)
+           parameter("4) Верт. Точное значение шага", "sh3", distance, number, 11)
+           parameter("Parameter3", "P3", distance, number, 12)
+           parameter("Диаметр горизонт. стержней", "h_size", integer, number, 13)
+           parameter("Диаметр вертик. стержней", "v_size", integer, number, 14)
+           parameter("Да/Нет (Слева/Справа)", "Vid", YesNo, number, 15)
+           parameter("2) Верт. Планируемый шаг", "sh1", distance, number, 16)
+           parameter("1) Верт. Распределение. Способ", "Nh1_vvod", integer, number, 17)
+           parameter("2) Гориз. Планируемый шаг", "sv1", distance, number, 18)
+           parameter("3) Гориз. Кол-во стержней", "sv2", factor, number, 19)
+           parameter("4) Гориз. Точное значение шага", "sv3", distance, number, 20)
+           parameter("1) Гориз. Распределение. Спосо", "Nv1_vvod", integer, number, 21)
+           parameter("4) Гориз. Расстояния", "sv4", distance_list, text, 22)
+           parameter("Гориз. Сорт арматуры", "h_sort_grade", rebar_grade, text, 23)
+           parameter("Верт. Сорт арматуры", "v_sort_grade", rebar_grade, text, 24)
+           parameter("Гориз. Имя", "h_name", string, text, 25)
+       }
+       tab_page("", " Параметры 2 ", 2)
+       {
+           parameter("Верт. Имя", "v_name", string, text, 1)
+           parameter("Каркас Имя", "name", string, text, 2)
+           parameter("Префикс марки каркаса", "Assembly_prefix", string, text, 3)
+           parameter("Стадия бетонирования", "Assembly_phase", integer, number, 4)
+           parameter("Цвет арматуры", "rebar_class", integer, number, 5)
+           parameter("Цвет "бетона"", "concret_class", integer, number, 6)
+       }
+   }
+}

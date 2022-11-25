@@ -1,0 +1,12 @@
+page("TeklaStructures","")
+{
+   detail(1, "Вырезы в лестничной балке")
+   {
+       tab_page("", " Параметры 1 ", 1)
+       {
+           parameter("Привязка большего выреза к цен", "P1", distance, number, 1)
+           parameter("Привязка меньшего выреза к цен", "P2", distance, number, 2)
+           parameter("Ширина марша", "P3", distance, number, 3)
+       }
+   }
+}

@@ -1,0 +1,44 @@
+TITLE_OBJECT_GROUP 
+{
+    Version= 1.05 
+    Count= 3 
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_assembly 
+        proPHASE 
+        albl_Phase 
+        == 
+        albl_Equals 
+        401402403404405406407408409 
+        0 
+        || 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        0 
+        co_part 
+        proPHASE 
+        albl_Phase 
+        != 
+        albl_DoesNotEqual 
+        121000 
+        0 
+        || 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        0 
+        co_assembly 
+        proPHASE 
+        albl_Phase 
+        != 
+        albl_DoesNotEqual 
+        121000 
+        0 
+        && 
+        }
+    }

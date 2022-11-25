@@ -1,0 +1,12 @@
+encoding 1251
+aOutFile "standard"
+aInFile "standard"
+NameEnable 1
+Name "Поверхность"
+TypeEnable 1
+Type "Опалубка"
+ClassEnable 1
+Class "13"
+CreateHolesEnable 1
+CreateHoles 1
+MoreEnable 1

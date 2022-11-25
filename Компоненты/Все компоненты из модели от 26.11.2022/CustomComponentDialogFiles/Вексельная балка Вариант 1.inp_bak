@@ -1,0 +1,12 @@
+page("TeklaStructures","")
+{
+   macro(1, "Вексельная балка Вариант 1")
+   {
+       tab_page("", " Параметры 1 ", 1)
+       {
+           parameter("Длина балки", "P1", distance, number, 1)
+           parameter("Показать нижний уголок 1", "P2", YesNo, number, 2)
+           parameter("Показать нижний уголок 2", "P3", YesNo, number, 3)
+       }
+   }
+}

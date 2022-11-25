@@ -1,0 +1,29 @@
+TITLE_CLASSIFIER 
+{
+    Version= 1.00 
+    Count= 4 
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part 
+        !Ф_МУмеждуплитами 
+        !В_МУ 
+        }
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part 
+        !Ф_ПлитыиМУ 
+        !В_БЕТОН 
+        }
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part_mark 
+        !Ф_В-2_МУвперекрытии 
+        !М_Монолитныеучастки 
+        }
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part_mark 
+        !Ф_В-2_Плитыперекрытия 
+        !М_ПРЕФИКС_ПАРАЛ 
+        }
+    }

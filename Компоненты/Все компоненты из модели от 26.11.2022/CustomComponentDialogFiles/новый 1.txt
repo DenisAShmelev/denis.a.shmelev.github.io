@@ -1,0 +1,1 @@
+=if (P5=0) then double(P5) else 300.00 endif

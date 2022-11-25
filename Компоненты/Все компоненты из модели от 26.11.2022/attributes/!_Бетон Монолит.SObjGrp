@@ -1,0 +1,57 @@
+TITLE_OBJECT_GROUP 
+{
+    Version= 1.05 
+    Count= 4 
+    SECTION_OBJECT_GROUP 
+    {
+        1 
+        1 
+        TemplateCategory 
+        MATERIAL_TYPE 
+        MATERIAL_TYPE 
+        *CONTAINS* 
+        albl_Contains 
+        CONCRETE 
+        0 
+        && 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_assembly 
+        proAssemblyType 
+        albl_Assembly_type 
+        == 
+        albl_Equals 
+        1 
+        1 
+        || 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        1 
+        0 
+        TemplateCategory 
+        MATERIAL_TYPE 
+        MATERIAL_TYPE 
+        *CONTAINS* 
+        albl_Contains 
+        CONCRETE 
+        0 
+        && 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        0 
+        co_assembly 
+        proAssemblyType 
+        albl_Assembly_type 
+        == 
+        albl_Equals 
+        0 
+        1 
+        Empty 
+        }
+    }

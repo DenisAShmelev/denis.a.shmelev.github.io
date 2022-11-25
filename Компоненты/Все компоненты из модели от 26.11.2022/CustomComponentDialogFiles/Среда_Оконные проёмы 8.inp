@@ -1,0 +1,12 @@
+page("TeklaStructures","")
+{
+   joint(1, "Среда_Оконные проёмы 8")
+   {
+       tab_page("", " Параметры 1 ", 1)
+       {
+           parameter("Parameter1", "P1", integer, number, 1)
+           parameter("Parameter2", "P2", YesNo, number, 2)
+           parameter("Parameter3", "P3", YesNo, number, 3)
+       }
+   }
+}

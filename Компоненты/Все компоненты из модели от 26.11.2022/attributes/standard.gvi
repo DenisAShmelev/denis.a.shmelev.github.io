@@ -1,0 +1,12 @@
+encoding 1251
+XDir 3
+YDir 3
+ZDir 3
+XText "Разрез по оси "
+YText "Разрез по оси "
+ZText "План на отм. "
+XInFile "Плоскость"
+YInFile "Плоскость"
+ZInFile "Плоскость"
+aInFile "standard"
+aOutFile "standard"

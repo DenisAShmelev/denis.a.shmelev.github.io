@@ -1,0 +1,17 @@
+encoding 1251
+Prefix ""
+StartNumber 1
+Name "Стержень"
+Size "12"
+Grade "А500"
+BendingRadius 30.000000
+Class 500
+RebarSetLayerOrderNumber 0
+GuidelineStartOffset 31.000000
+GuidelineEndOffset 31.000000
+GuidelineStartOffsetIsFixed 0
+GuidelineEndOffsetIsFixed 0
+GuidelineStartOffsetIsAutomatic 0
+GuidelineEndOffsetIsAutomatic 0
+InFile ""
+OutFile ""

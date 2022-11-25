@@ -1,0 +1,17 @@
+TITLE_CLASSIFIER 
+{
+    Version= 1.00 
+    Count= 2 
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part_mark 
+        !Ф_Панели 
+        !Б_Имя_Панель 
+        }
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part_mark 
+        !Ф_Вентблок 
+        !Б_Имя_Вентшахта 
+        }
+    }

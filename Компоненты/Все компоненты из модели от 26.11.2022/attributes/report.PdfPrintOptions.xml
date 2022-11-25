@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PdfPrintOptions Version="1.0">
+  <Options>
+    <PrintTarget>PDF</PrintTarget>
+    <PrinterName>\\a-print\RUS_CL1</PrinterName>
+    <PDFAndPlotFileLocation>.\Plotfiles</PDFAndPlotFileLocation>
+    <EmbedFonts>true</EmbedFonts>
+    <OpenFolderWhenFinished>false</OpenFolderWhenFinished>
+    <OpenFileWhenFinished>false</OpenFileWhenFinished>
+    <OutputToSingleFile>false</OutputToSingleFile>
+    <SinglePDFFileName>Combined</SinglePDFFileName>
+    <PlotFileExtension>plt</PlotFileExtension>
+    <PlotFilePrefix />
+    <PlotFileSuffix />
+    <ScalingMethod>Scale</ScalingMethod>
+    <ScaleFactor>1</ScaleFactor>
+    <CenterDrawingOnPaper>false</CenterDrawingOnPaper>
+    <PrintOnMultipleSheets>false</PrintOnMultipleSheets>
+    <MultipleSheetOrder>LeftToRightTopToBottom</MultipleSheetOrder>
+    <PaperSize>A4 (297x210)</PaperSize>
+    <Orientation>Portrait</Orientation>
+    <ColorMode>Color</ColorMode>
+    <NumberOfCopies>1</NumberOfCopies>
+    <LineThicknesses>
+      <LineThickness Color="152" Pen="1" />
+      <LineThickness Color="153" Pen="1" />
+      <LineThickness Color="160" Pen="5" />
+      <LineThickness Color="161" Pen="2" />
+      <LineThickness Color="162" Pen="5" />
+      <LineThickness Color="163" Pen="2" />
+      <LineThickness Color="164" Pen="1" />
+      <LineThickness Color="165" Pen="2" />
+      <LineThickness Color="154" Pen="2" />
+      <LineThickness Color="155" Pen="2" />
+      <LineThickness Color="156" Pen="2" />
+      <LineThickness Color="157" Pen="2" />
+      <LineThickness Color="158" Pen="1" />
+      <LineThickness Color="159" Pen="2" />
+      <LineThickness Color="120" Pen="1" />
+    </LineThicknesses>
+  </Options>
+  <PreviewMinimumPenWidth>0.5</PreviewMinimumPenWidth>
+</PdfPrintOptions>

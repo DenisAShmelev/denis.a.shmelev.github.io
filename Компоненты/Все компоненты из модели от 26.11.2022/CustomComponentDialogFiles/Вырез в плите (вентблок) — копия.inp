@@ -1,0 +1,45 @@
+page("TeklaStructures", "")
+{
+    detail(1, "Вырез в плите (вентблок)")
+    {
+        tab_page("", " Параметры 1 ", 1)
+        {
+            attribute("", "Отступ от грани плиты (X)1", label, "%s", none, none, "0", "0", 20, 0)
+            parameter("", "X1", distance, number, 374, 0, 160)
+            attribute("", "Отступ от грани плиты (Y)1", label, "%s", none, none, "0", "0", 20, 28)
+            parameter("", "Y1", distance, number, 374, 28, 160)
+            attribute("", "Отступ от грани плиты (X)2", label, "%s", none, none, "0", "0", 20, 56)
+            parameter("", "X3", distance, number, 374, 56, 160)
+            attribute("", "Отступ от грани плиты (Y)2", label, "%s", none, none, "0", "0", 20, 84)
+            parameter("", "Y3", distance, number, 374, 84, 160)
+            parameter("", "L5", distance, number, 480, 112, 60)
+            parameter("", "L6", distance, number, 480, 140, 60)
+            parameter("", "B7", distance, number, 480, 168, 60)
+            parameter("", "B8", distance, number, 480, 196, 60)
+            parameter("", "L7", distance, number, 480, 224, 60)
+            parameter("", "L8", distance, number, 480, 252, 60)
+            attribute("", "Вырез 1", label, "%s", none, none, "0", "0", 20, 280)
+            parameter("", "P1", YesNo, number, 374, 280, 160)
+            attribute("", "Вырез 2", label, "%s", none, none, "0", "0", 20, 308)
+            parameter("", "P2", YesNo, number, 374, 308, 160)
+            attribute("", "Вырез 3", label, "%s", none, none, "0", "0", 20, 336)
+            parameter("", "P3", YesNo, number, 374, 336, 160)
+            attribute("", "Вырез 4", label, "%s", none, none, "0", "0", 20, 364)
+            parameter("", "P4", YesNo, number, 374, 364, 160)
+            attribute("", "Стандартная длина", label, "%s", none, none, "0", "0", 20, 392)
+            attribute("P5", "", option, "%s", none, none, "0.0", "0.0", 404, 392, 100)
+            {
+                value("300.00", 1)
+                value("400.00", 0)
+            }
+            attribute("", "Стандартная ширина", label, "%s", none, none, "0", "0", 20, 420)
+            attribute("P5", "", option, "%s", none, none, "0.0", "0.0", 409, 434, 100)
+            {
+                value("1860.00", 1)
+                value("1500.00", 0)
+                value("500", 0)
+                value("600", 0)
+            }
+        }
+    }
+}

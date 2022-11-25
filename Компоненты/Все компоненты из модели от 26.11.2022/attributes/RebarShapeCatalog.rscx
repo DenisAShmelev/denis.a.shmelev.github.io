@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--Reinforcement shape catalog saved at: 17.10.2022 14:16:24-->
+<ShapeCatalog>
+  <Category Name="Прямая">
+    <Shape ID="1 [0]">1</Shape>
+    <Shape ID="75_2 [1]">75_2</Shape>
+  </Category>
+  <Category Name="1 загиб">
+    <Shape ID="2_1 [0]">2_1</Shape>
+  </Category>
+  <Category Name="2 загиба">
+    <Shape ID="4 [0]">4</Shape>
+    <Shape ID="35 [0]">35</Shape>
+    <Shape ID="39 [0]">39</Shape>
+  </Category>
+  <Category Name="3 загиба">
+    <Shape ID="50 [0]">50</Shape>
+  </Category>
+  <Category Name="4 загиба">
+    <Shape ID="14 [1]">14</Shape>
+    <Shape ID="14 [2]">14 (1)</Shape>
+    <Shape ID="14_2 [0]">14_2</Shape>
+    <Shape ID="54 [0]">54</Shape>
+    <Shape ID="12 [0]">12</Shape>
+  </Category>
+  <Category Name="5 загибов">
+    <Shape ID="65 [0]">65</Shape>
+  </Category>
+  <Category Name="6 загибов">
+    <Shape ID="67 [0]">67</Shape>
+  </Category>
+</ShapeCatalog>

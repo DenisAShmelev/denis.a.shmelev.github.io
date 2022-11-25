@@ -1,0 +1,29 @@
+TITLE_CLASSIFIER 
+{
+    Version= 1.00 
+    Count= 4 
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part_mark 
+        !Ф_Панели 
+        !М_ПРЕФИКС_ПАРАЛ 
+        }
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part_mark 
+        !Ф_Вентблок 
+        !М_ПРЕФИКС_ВЫНОСКА 
+        }
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part 
+        !Ф_Панели 
+        !В_БЕТОН 
+        }
+    SECTION_CLASSIFIER_GROUP 
+    {
+        albl_Part 
+        !Ф_Вентблок 
+        !В_БЕТОН 
+        }
+    }

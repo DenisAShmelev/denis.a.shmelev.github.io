@@ -1,0 +1,33 @@
+page("TeklaStructures", "")
+{
+    detail(1, "Вырез в плите (вентблок) 2")
+    {
+        tab_page("", " Параметры 1 ", 1)
+        {
+            attribute("", "Вырез 1", label, "%s", none, none, "0", "0", 20, 0)
+            parameter("", "P1", YesNo, number, 374, 0, 160)
+            attribute("", "Вырез 2", label, "%s", none, none, "0", "0", 20, 28)
+            parameter("", "P2", YesNo, number, 374, 28, 160)
+            attribute("", "Вырез 3", label, "%s", none, none, "0", "0", 20, 56)
+            parameter("", "P3", YesNo, number, 374, 56, 160)
+            attribute("", "Вырез 4", label, "%s", none, none, "0", "0", 20, 84)
+            parameter("", "P4", YesNo, number, 374, 84, 160)
+            attribute("", "Стандартная длина", label, "%s", none, none, "0", "0", 20, 112)
+            attribute("P5", "", option, "%s", yes, none, "0.0", "0.0", 374, 112, 300)
+            {
+                value("300.00", 1)
+            }
+            attribute("", "Стандартная ширина", label, "%s", none, none, "0", "0", 20, 140)
+            attribute("P6", "", option, "%s", none, none, "0.0", "0.0", 374, 140, 300)
+            {
+                value("930 (705)", 0)
+                value("1040 (705)", 0)
+                value("1210 (705+880)", 0)
+				value("1640 (705+880)", 0)
+                value("1680 (705+880)", 0)
+                value("1750 (705+880)", 0)
+				value("1860 (705+880)", 1)
+            }
+        }
+    }
+}

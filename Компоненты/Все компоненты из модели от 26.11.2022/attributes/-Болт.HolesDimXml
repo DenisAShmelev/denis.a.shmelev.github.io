@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rule name="-Болт" xsi:noNamespaceSchemaLocation="DimRule.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <selection type="Holes"></selection>
+  <position>
+    <selectionArea>Whole</selectionArea>
+    <placing>Below</placing>
+    <edgeShapeVisbleFaceType>All</edgeShapeVisbleFaceType>
+    <linkingTopLeft>false</linkingTopLeft>
+    <linkingTopRight>false</linkingTopRight>
+    <linkingBottomLeft>false</linkingBottomLeft>
+    <linkingBottomRight>false</linkingBottomRight>
+    <orientation>Global</orientation>
+  </position>
+  <settings>
+    <startPointHorizontal>Left</startPointHorizontal>
+    <startPointVertical>Bottom</startPointVertical>
+    <verticalEqualsHorizontal>false</verticalEqualsHorizontal>
+    <closeLinesHorizontal>false</closeLinesHorizontal>
+    <closeLinesVertical>true</closeLinesVertical>
+    <dimensionToHorizontal>Middle</dimensionToHorizontal>
+    <dimensionToVertical>Middle</dimensionToVertical>
+    <roundHolesHorizontal>Center</roundHolesHorizontal>
+    <roundHolesVertical>Center</roundHolesVertical>
+    <sameDimensionOnAllSides>true</sameDimensionOnAllSides>
+    <dimPropertiesHorizontal>standard</dimPropertiesHorizontal>
+    <dimPropertiesBottom>standard</dimPropertiesBottom>
+    <dimPropertiesLeft>standard</dimPropertiesLeft>
+    <dimPropertiesRight>standard</dimPropertiesRight>
+    <dimPropertiesTop>standard</dimPropertiesTop>
+    <dimensionType>Straight</dimensionType>
+    <measureFrom>MainPart</measureFrom>
+    <dimensionAlsoFromGrid>false</dimensionAlsoFromGrid>
+    <measureObject>0</measureObject>
+    <combine>HolesAll</combine>
+    <minDistanceToCreate>0.00</minDistanceToCreate>
+    <minHolesToDim>0.00</minHolesToDim>
+  </settings>
+</rule>

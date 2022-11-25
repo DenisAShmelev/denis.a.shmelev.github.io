@@ -1,0 +1,116 @@
+*																				*/
+*	Tekla Structures Connections "job_defs.lis" file						*/
+*	location of file = %XS_SYSTEM% in startup batch file						*/
+*					eg c:\Tekla Structures\10.0\environments\europe\system\	*/
+*	Default Values.  Copy to database directory and modify if required			*/
+*	* = comment line (do not leave blank lines, must put *					*/
+*	Some values are for future use												*/
+*																				
+  0             jobnumber;      /*company job number							*/
+  1             shearpltype;    /*1=regular, 2=connect to top, 3= full depth			*/
+  0             bolted;         /*1=end clips bolts,0=welded					*/
+  0             slots;          /*1=slots required, 0=regular					*/
+  0             units;          /*0=metric, 1=imperial						*/
+* 																				
+  20.00		boltdia;        /*standard bolt diameter						*/
+  60.0		pitch;          /*standard vertical pitch of bolts				*/
+  80.0		firsthl;        /*standard 1st hole down						*/
+  20.0		slotsize;       /*standard slot size if required				*/
+  6.0			minweld;        /*minimun fillet weld size						*/
+  6.0			clipweld;       /*weld size for clip angle connection			*/
+  6.0			plateweld;      /*weld size for end plate or shear plate		*/
+  10.0		platethk;       /*standard end plate thickness					*/
+  10.0		shearthk;       /*standard shear plate thickness				*/
+  10.0		gussthk;        /*standard shear gusset thickness				*/
+  35.0		edge;           /*standard edge distance						*/
+*
+  130.0		cc;             /*standard hole centers							*/
+  44.0		to1;            /*standard take-off for shear plates at beams	*/
+  65.0          	to2;            /*standard take-off for shear plates at col web	*/
+  65.0          	to3;            /*standard take-off for shear plates at col flg	*/
+  80.0		to4;            /*standard 2nd row of bolts dim					*/
+*
+  L150*100*10	lsize[20];      /*standard clip angle size (double clip conn)	*/
+*                               /*ie L90X100X8									*/
+  100.0		leg;            /*standard leg size of clip in main view ie 75mm*/
+*
+  20.0		gap;            /*standard gap (clip to beam) (ie 12mm)			*/
+*
+  20.0		copedepth;      /*standard cope depth							*/
+  20.0		copeclear       /*standard cope clearance						*/
+  5.0			copedepinc      /*standard cope depth increment (ie 5mm, 10mm)	*/
+  5.0			copeleninc      /*standard cope length increment (rounding)		*/
+*
+  22.0		cutclear        /*standard dist to check for bolt foul (2sided)	*/
+  25.0		cutback         /*standard cutback for "cut to wide" when bolts	*/
+*                               /*foul in 2sided conn's (will be gage-2*cutback)*/
+  75.0		cutlen          /*standard length for "cut to wide"				*/
+*
+  50.0		webplwid        /*min plate width for web extension plates      */
+*                               /*(when flg strippped and plate added)          */
+  150.0		webpllen        /*min plate length for web extension plates     */     
+*
+  1.0			plateclear      /*fitting clearance for full depth stif or sh pl*/
+*
+  S235JR		matl            /*default material ie S235JR						*/
+  7990		boltgrade       /*default bolt grade ie 7990					*/
+*
+ 60.0			stiffweldangle  /*angle in degrees for stiffener prep welds     */
+ 10.0			stiffweldgap    /*gap for prep weld                             */
+ 0.0			stiffweldroot   /*root for prep welds                           */
+*
+ 60.0			beamweldangle   /*angle in degrees for beam flg prep welds      */
+ 10.0			beamweldgap     /*gap for prep weld                             */
+ 0.0			beamweldroot    /*root for prep welds                           */
+0			wbolts;         /* 0=no work point bolts , 1= yes               */
+*
+ 0			designdata		/*create design data file or not (for debugging	*/
+*
+ 10.0    		slot_A_top		/* see picture in help files */
+ 10.0    		slot_A_btm		
+ 10.0    		slot_A_front
+ 10.0    		slot_A_back
+ 2.0	   		slot_A_sides
+*
+ 10.0    		slot_B_top		/* see picture in help files */
+ 10.0    		slot_B_btm
+ 10.0    		slot_B_front
+ 10.0    		slot_B_back
+ 2.0	   		slot_B_sides
+*
+ 5.0			small_round		/* general purpose for rounding some values	*/
+ 10.0			medium_round	/* general purpose for rounding some values		*/
+ 25.0			large_round		/* general purpose for rounding some values	*/
+*
+ 25.0			clear			/* clearance for brace connections		*/
+*
+ 13.0 		real_user_0		/* used for radius in gusset cope for wrap around*/
+ 0.0            	real_user_1     /* Using in seat_0 for Y offset                 */
+ 65.0            	real_user_2     /* Using in seat_0 for Sec/First in primary     */
+ 65.0            	real_user_3     /* Using in seat_0 for Sec/First in secondary   */
+ 12.0            	real_user_4     /* Using in seat_0 for fitting clearance        */ 
+ 3.0            	real_user_5     /* Tolerance to ride 'k' distance for stripping	*/
+ 300.0           	real_user_6     /* Using in seat_0 default length of stub       */
+ 35.0             real_user_7     /* using for safety cut vert clear from hole in joint34*/
+ 65.0            	real_user_8     /* using for 1st hole down on W8 (W200) beams*/           
+ 10.0            	real_user_9     /* using for 1st hole down increment (if not 80, then 90, then 100 etc*/              
+ 0.0 			real_user_10
+* 
+ 0              	int_user_0    /* integers general purpose for future use      */
+ 0              	int_user_1	  /* flag for copes to be MIN supported flg + 1"	*/
+ 0              	int_user_2    /* joint 44, 0=use 'slot_A_back', 1=1/2 slot width
+ 0              	int_user_3    /* Clip angle joints, 0= means N/S is acutally F/S on end 2
+*					  /* 1= N/S is on the same side at both ends of the beam
+ 0              	int_user_4    /* End plate 32, 34, 1=Center plate on workpoint
+*					  /* 0=center plate on 'collision'           
+ 0              	int_user_5    /* For skewed connections when part of the flange is cliped
+*				        /* 0= will round cliped dims, 1= will not round, will be parallel to prim
+ 0              	int_user_6    /* For joints, 31-39, 69, 1=cope will also check K of Primary, 0=clear primary flg only
+ 0              	int_user_7               
+ 0              	int_user_8               
+ 0              	int_user_9       
+ 0              	int_user_10 
+*
+2		tolerance	/* bolt hole torlerance */
+*
+ENDLIST

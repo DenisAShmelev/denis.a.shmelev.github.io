@@ -1,0 +1,31 @@
+TITLE_OBJECT_GROUP 
+{
+    Version= 1.05 
+    Count= 2 
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_part 
+        proPROFILE 
+        albl_Profile 
+        *BEGINS* 
+        albl_BeginsWith 
+        STRMON* 
+        0 
+        && 
+        }
+    SECTION_OBJECT_GROUP 
+    {
+        0 
+        1 
+        co_part 
+        proPHASE 
+        albl_Phase 
+        == 
+        albl_Equals 
+        104204304404504604 
+        0 
+        Empty 
+        }
+    }
